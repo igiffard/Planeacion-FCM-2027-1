@@ -1,0 +1,6 @@
+{
+  "name": "Planeación Académica FCM 2027-1",
+  "description": "Plataforma abierta para programación y edición de horarios, cursos, docentes y espacios físicos para la Facultad de Ciencias Marinas (FCM - UABC).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

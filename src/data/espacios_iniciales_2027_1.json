@@ -1,0 +1,3936 @@
+[
+  {
+    "id": "espacio_BUC",
+    "codigo": "BUC",
+    "codigo_normalizado": "buc",
+    "nombre": "Almacén de Buceo",
+    "nombre_normalizado": "almacen de buceo",
+    "alias": "BUC",
+    "aliases_normalizados": [
+      "buc",
+      "almacén de buceo"
+    ],
+    "categoria": "espacios_apoyo",
+    "tipo_espacio": "espacio_apoyo",
+    "edificio": "Edificio 13",
+    "edificio_codigo": "E-13",
+    "ubicacion": "Edificio 13 - Planta Baja",
+    "planta": "Planta Baja",
+    "capacidad_original": 15,
+    "capacidad_maxima": 15,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 15
+    },
+    "equipos": [
+      "tanques_buceo",
+      "compresor",
+      "reguladores",
+      "trajes_neopreno"
+    ],
+    "caracteristicas": [
+      "almacenamiento_equipo"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": false,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_ALM",
+    "codigo": "ALM",
+    "codigo_normalizado": "alm",
+    "nombre": "Almacén General de la FCM",
+    "nombre_normalizado": "almacen general de la fcm",
+    "alias": "ALM",
+    "aliases_normalizados": [
+      "alm",
+      "almacén general de la fcm"
+    ],
+    "categoria": "espacios_apoyo",
+    "tipo_espacio": "espacio_apoyo",
+    "edificio": "Edificio 13",
+    "edificio_codigo": "E-13",
+    "ubicacion": "Edificio 13 - Planta Baja",
+    "planta": "Planta Baja",
+    "capacidad_original": 10,
+    "capacidad_maxima": 10,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 10
+    },
+    "equipos": [
+      "estantes_pesados",
+      "montacargas_manual"
+    ],
+    "caracteristicas": [
+      "bodega"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": false,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_SC",
+    "codigo": "SC",
+    "codigo_normalizado": "sc",
+    "nombre": "Sala de Consejo",
+    "nombre_normalizado": "sala de consejo",
+    "alias": "SC",
+    "aliases_normalizados": [
+      "sc",
+      "sala de consejo"
+    ],
+    "categoria": "audiovisuales_auditorios",
+    "tipo_espacio": "audiovisual",
+    "edificio": "Edificio 14 (Dirección FCM)",
+    "edificio_codigo": "E-14",
+    "ubicacion": "Edificio 14 (Dirección FCM) - Planta Baja",
+    "planta": "Planta Baja",
+    "capacidad_original": 25,
+    "capacidad_maxima": 25,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 25
+    },
+    "equipos": [
+      "mesa_consejo",
+      "sistema_videoconferencia",
+      "pantalla"
+    ],
+    "caracteristicas": [
+      "reuniones_oficiales"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_SA",
+    "codigo": "SA",
+    "codigo_normalizado": "sa",
+    "nombre": "Salón de Asesorías",
+    "nombre_normalizado": "salon de asesorias",
+    "alias": "SA",
+    "aliases_normalizados": [
+      "sa",
+      "salón de asesorías"
+    ],
+    "categoria": "aulas_salones_teoricos",
+    "tipo_espacio": "aula",
+    "edificio": "Edificio 14 (Dirección FCM)",
+    "edificio_codigo": "E-14",
+    "ubicacion": "Edificio 14 (Dirección FCM) - Planta Baja",
+    "planta": "Planta Baja",
+    "capacidad_original": 15,
+    "capacidad_maxima": 15,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 15
+    },
+    "equipos": [
+      "pizarron",
+      "mesas"
+    ],
+    "caracteristicas": [
+      "ventilacion"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_CPB",
+    "codigo": "CPB",
+    "codigo_normalizado": "cpb",
+    "nombre": "Centro de Cómputo de Posgrado, Sala B",
+    "nombre_normalizado": "centro de computo de posgrado, sala b",
+    "alias": "CPB",
+    "aliases_normalizados": [
+      "cpb",
+      "centro de cómputo de posgrado, sala b"
+    ],
+    "categoria": "centros_computo",
+    "tipo_espacio": "aula_computo",
+    "edificio": "Edificio 14 (Dirección FCM)",
+    "edificio_codigo": "E-14",
+    "ubicacion": "Edificio 14 (Dirección FCM) - Planta Baja",
+    "planta": "Planta Baja",
+    "capacidad_original": 25,
+    "capacidad_maxima": 25,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 25
+    },
+    "equipos": [
+      "computadoras_estudiantes",
+      "proyector"
+    ],
+    "caracteristicas": [
+      "aire_acondicionado"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_CCL",
+    "codigo": "CCL",
+    "codigo_normalizado": "ccl",
+    "nombre": "Centro de cómputo de licenciatura",
+    "nombre_normalizado": "centro de computo de licenciatura",
+    "alias": "CCL",
+    "aliases_normalizados": [
+      "ccl",
+      "centro de cómputo de licenciatura"
+    ],
+    "categoria": "centros_computo",
+    "tipo_espacio": "aula_computo",
+    "edificio": "Edificio 14 (Dirección FCM)",
+    "edificio_codigo": "E-14",
+    "ubicacion": "Edificio 14 (Dirección FCM) - Planta Baja",
+    "planta": "Planta Baja",
+    "capacidad_original": 40,
+    "capacidad_maxima": 40,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 40
+    },
+    "equipos": [
+      "computadoras_estudiantes",
+      "proyector",
+      "switch_red",
+      "software_estadistica"
+    ],
+    "caracteristicas": [
+      "aire_acondicionado",
+      "red_gigabit"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_SPD",
+    "codigo": "SPD",
+    "codigo_normalizado": "spd",
+    "nombre": "Sala de Procesamiento de Datos Oceanográficos",
+    "nombre_normalizado": "sala de procesamiento de datos oceanograficos",
+    "alias": "SPD",
+    "aliases_normalizados": [
+      "spd",
+      "sala de procesamiento de datos oceanográficos"
+    ],
+    "categoria": "centros_computo",
+    "tipo_espacio": "aula_computo",
+    "edificio": "Edificio 14 (Dirección FCM)",
+    "edificio_codigo": "E-14",
+    "ubicacion": "Edificio 14 (Dirección FCM) - Planta Baja",
+    "planta": "Planta Baja",
+    "capacidad_original": 20,
+    "capacidad_maxima": 20,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 20
+    },
+    "equipos": [
+      "computadoras_estudiantes",
+      "software_matlab_python",
+      "pantalla_gran_formato"
+    ],
+    "caracteristicas": [
+      "aire_acondicionado"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_LZ",
+    "codigo": "LZ",
+    "codigo_normalizado": "lz",
+    "nombre": "Laboratorio de Zoología",
+    "nombre_normalizado": "laboratorio de zoologia",
+    "alias": "LZ",
+    "aliases_normalizados": [
+      "lz",
+      "laboratorio de zoología"
+    ],
+    "categoria": "laboratorios_especializados",
+    "tipo_espacio": "laboratorio",
+    "edificio": "Edificio 15",
+    "edificio_codigo": "E-15",
+    "ubicacion": "Edificio 15 - Planta Baja",
+    "planta": "Planta Baja",
+    "capacidad_original": 25,
+    "capacidad_maxima": 25,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 25
+    },
+    "equipos": [
+      "microscopios",
+      "lupas",
+      "cubas_diseccion"
+    ],
+    "caracteristicas": [
+      "toma_agua",
+      "ventilacion"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_LOB",
+    "codigo": "LOB",
+    "codigo_normalizado": "lob",
+    "nombre": "Laboratorio de Oceanografía Biológica",
+    "nombre_normalizado": "laboratorio de oceanografia biologica",
+    "alias": "LOB",
+    "aliases_normalizados": [
+      "lob",
+      "laboratorio de oceanografía biológica"
+    ],
+    "categoria": "laboratorios_especializados",
+    "tipo_espacio": "laboratorio",
+    "edificio": "Edificio 15",
+    "edificio_codigo": "E-15",
+    "ubicacion": "Edificio 15 - Planta Baja",
+    "planta": "Planta Baja",
+    "capacidad_original": 25,
+    "capacidad_maxima": 25,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 25
+    },
+    "equipos": [
+      "microscopios_avanzados",
+      "centrifugas",
+      "muestreadores_plancton"
+    ],
+    "caracteristicas": [
+      "refrigeracion",
+      "toma_agua_marina"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_LMB",
+    "codigo": "LMB",
+    "codigo_normalizado": "lmb",
+    "nombre": "Laboratorio de Microbiología",
+    "nombre_normalizado": "laboratorio de microbiologia",
+    "alias": "LMB",
+    "aliases_normalizados": [
+      "lmb",
+      "laboratorio de microbiología"
+    ],
+    "categoria": "laboratorios_especializados",
+    "tipo_espacio": "laboratorio",
+    "edificio": "Edificio 15",
+    "edificio_codigo": "E-15",
+    "ubicacion": "Edificio 15 - Planta Baja",
+    "planta": "Planta Baja",
+    "capacidad_original": 25,
+    "capacidad_maxima": 25,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 25
+    },
+    "equipos": [
+      "autoclave",
+      "campana_flujo_laminar",
+      "incubadoras"
+    ],
+    "caracteristicas": [
+      "area_esteril",
+      "gas"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_LQO",
+    "codigo": "LQO",
+    "codigo_normalizado": "lqo",
+    "nombre": "Laboratorio de Química Orgánica",
+    "nombre_normalizado": "laboratorio de quimica organica",
+    "alias": "LQO",
+    "aliases_normalizados": [
+      "lqo",
+      "laboratorio de química orgánica"
+    ],
+    "categoria": "laboratorios_especializados",
+    "tipo_espacio": "laboratorio",
+    "edificio": "Edificio 15",
+    "edificio_codigo": "E-15",
+    "ubicacion": "Edificio 15 - Planta Alta",
+    "planta": "Planta Alta",
+    "capacidad_original": 25,
+    "capacidad_maxima": 25,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 25
+    },
+    "equipos": [
+      "campanas_extraccion",
+      "rotavapor",
+      "mantas_calefactoras"
+    ],
+    "caracteristicas": [
+      "seguridad_quimica",
+      "ducha_lavaojos"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_LBQ",
+    "codigo": "LBQ",
+    "codigo_normalizado": "lbq",
+    "nombre": "Laboratorio de Bioquímica",
+    "nombre_normalizado": "laboratorio de bioquimica",
+    "alias": "LBQ",
+    "aliases_normalizados": [
+      "lbq",
+      "laboratorio de bioquímica"
+    ],
+    "categoria": "laboratorios_especializados",
+    "tipo_espacio": "laboratorio",
+    "edificio": "Edificio 15",
+    "edificio_codigo": "E-15",
+    "ubicacion": "Edificio 15 - Planta Alta",
+    "planta": "Planta Alta",
+    "capacidad_original": 25,
+    "capacidad_maxima": 25,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 25
+    },
+    "equipos": [
+      "espectrofotometro",
+      "balanzas_analiticas",
+      "centrifugas"
+    ],
+    "caracteristicas": [
+      "campana_extraccion",
+      "gas",
+      "agua_destilada"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_SFE",
+    "codigo": "SFE",
+    "codigo_normalizado": "sfe",
+    "nombre": "Sala de Física Experimental",
+    "nombre_normalizado": "sala de fisica experimental",
+    "alias": "SFE",
+    "aliases_normalizados": [
+      "sfe",
+      "sala de física experimental"
+    ],
+    "categoria": "laboratorios_especializados",
+    "tipo_espacio": "laboratorio",
+    "edificio": "Edificio 16",
+    "edificio_codigo": "E-16",
+    "ubicacion": "Edificio 16 - Planta Baja",
+    "planta": "Planta Baja",
+    "capacidad_original": 30,
+    "capacidad_maxima": 30,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 30
+    },
+    "equipos": [
+      "mesas_antivibratorias",
+      "sensores_fisica",
+      "osciloscopios"
+    ],
+    "caracteristicas": [
+      "instalacion_electrica_reforzada"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_SFF",
+    "codigo": "SFF",
+    "codigo_normalizado": "sff",
+    "nombre": "Sala de Física de Fluidos",
+    "nombre_normalizado": "sala de fisica de fluidos",
+    "alias": "SFF",
+    "aliases_normalizados": [
+      "sff",
+      "sala de física de fluidos"
+    ],
+    "categoria": "laboratorios_especializados",
+    "tipo_espacio": "laboratorio",
+    "edificio": "Edificio 16",
+    "edificio_codigo": "E-16",
+    "ubicacion": "Edificio 16 - Planta Baja",
+    "planta": "Planta Baja",
+    "capacidad_original": 25,
+    "capacidad_maxima": 25,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 25
+    },
+    "equipos": [
+      "tanque_ondas",
+      "sensores_hidraulicos",
+      "canal_flujo"
+    ],
+    "caracteristicas": [
+      "toma_agua",
+      "drenaje_especial"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_LFQ",
+    "codigo": "LFQ",
+    "codigo_normalizado": "lfq",
+    "nombre": "Laboratorio de Fisicoquímica",
+    "nombre_normalizado": "laboratorio de fisicoquimica",
+    "alias": "LFQ",
+    "aliases_normalizados": [
+      "lfq",
+      "laboratorio de fisicoquímica"
+    ],
+    "categoria": "laboratorios_especializados",
+    "tipo_espacio": "laboratorio",
+    "edificio": "Edificio 16",
+    "edificio_codigo": "E-16",
+    "ubicacion": "Edificio 16 - Planta Baja",
+    "planta": "Planta Baja",
+    "capacidad_original": 25,
+    "capacidad_maxima": 25,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 25
+    },
+    "equipos": [
+      "conductimetro",
+      "potenciometro",
+      "calorimetro"
+    ],
+    "caracteristicas": [
+      "aire_acondicionado"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_LPA",
+    "codigo": "LPA",
+    "codigo_normalizado": "lpa",
+    "nombre": "Lab. de Procesamiento de Productos Acuáticos",
+    "nombre_normalizado": "lab. de procesamiento de productos acuaticos",
+    "alias": "LPA",
+    "aliases_normalizados": [
+      "lpa",
+      "lab. de procesamiento de productos acuáticos"
+    ],
+    "categoria": "laboratorios_especializados",
+    "tipo_espacio": "laboratorio",
+    "edificio": "Edificio 16",
+    "edificio_codigo": "E-16",
+    "ubicacion": "Edificio 16 - Planta Baja",
+    "planta": "Planta Baja",
+    "capacidad_original": 20,
+    "capacidad_maxima": 20,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 20
+    },
+    "equipos": [
+      "selladoras",
+      "congeladores",
+      "mesas_acero_inoxidable"
+    ],
+    "caracteristicas": [
+      "toma_agua_potable",
+      "drenaje_lavado"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_LT",
+    "codigo": "LT",
+    "codigo_normalizado": "lt",
+    "nombre": "Laboratorio de Tamices",
+    "nombre_normalizado": "laboratorio de tamices",
+    "alias": "LT",
+    "aliases_normalizados": [
+      "lt",
+      "laboratorio de tamices"
+    ],
+    "categoria": "laboratorios_especializados",
+    "tipo_espacio": "laboratorio",
+    "edificio": "Edificio 16",
+    "edificio_codigo": "E-16",
+    "ubicacion": "Edificio 16 - Planta Alta",
+    "planta": "Planta Alta",
+    "capacidad_original": 20,
+    "capacidad_maxima": 20,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 20
+    },
+    "equipos": [
+      "juegos_tamices",
+      "agitador_ro-tap"
+    ],
+    "caracteristicas": [
+      "insonorizacion_parcial"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_LOS",
+    "codigo": "LOS",
+    "codigo_normalizado": "los",
+    "nombre": "Laboratorio de Oc. Geológica/Sedimentología",
+    "nombre_normalizado": "laboratorio de oc. geologica/sedimentologia",
+    "alias": "LOS",
+    "aliases_normalizados": [
+      "los",
+      "laboratorio de oc. geológica/sedimentología"
+    ],
+    "categoria": "laboratorios_especializados",
+    "tipo_espacio": "laboratorio",
+    "edificio": "Edificio 16",
+    "edificio_codigo": "E-16",
+    "ubicacion": "Edificio 16 - Planta Alta",
+    "planta": "Planta Alta",
+    "capacidad_original": 25,
+    "capacidad_maxima": 25,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 25
+    },
+    "equipos": [
+      "tamizadoras",
+      "balanzas",
+      "lupas_binoculares"
+    ],
+    "caracteristicas": [
+      "mesas_trabajo_pesado"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_SGP",
+    "codigo": "SGP",
+    "codigo_normalizado": "sgp",
+    "nombre": "Sala de Geología y Procesos Costeros",
+    "nombre_normalizado": "sala de geologia y procesos costeros",
+    "alias": "SGP",
+    "aliases_normalizados": [
+      "sgp",
+      "sala de geología y procesos costeros"
+    ],
+    "categoria": "laboratorios_especializados",
+    "tipo_espacio": "laboratorio",
+    "edificio": "Edificio 16",
+    "edificio_codigo": "E-16",
+    "ubicacion": "Edificio 16 - Planta Alta",
+    "planta": "Planta Alta",
+    "capacidad_original": 25,
+    "capacidad_maxima": 25,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 25
+    },
+    "equipos": [
+      "muestras_rocas",
+      "mapas_batimetricos"
+    ],
+    "caracteristicas": [
+      "aire_acondicionado"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_SFL",
+    "codigo": "SFL",
+    "codigo_normalizado": "sfl",
+    "nombre": "Sala de Fluidos",
+    "nombre_normalizado": "sala de fluidos",
+    "alias": "SFL",
+    "aliases_normalizados": [
+      "sfl",
+      "sala de fluidos"
+    ],
+    "categoria": "laboratorios_especializados",
+    "tipo_espacio": "laboratorio",
+    "edificio": "Edificio 17",
+    "edificio_codigo": "E-17",
+    "ubicacion": "Edificio 17 - Planta Baja",
+    "planta": "Planta Baja",
+    "capacidad_original": 25,
+    "capacidad_maxima": 25,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 25
+    },
+    "equipos": [
+      "viscosimetros",
+      "manometros"
+    ],
+    "caracteristicas": [
+      "toma_agua"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_SB",
+    "codigo": "SB",
+    "codigo_normalizado": "sb",
+    "nombre": "Sala de Biología",
+    "nombre_normalizado": "sala de biologia",
+    "alias": "SB",
+    "aliases_normalizados": [
+      "sb",
+      "sala de biología"
+    ],
+    "categoria": "laboratorios_especializados",
+    "tipo_espacio": "laboratorio",
+    "edificio": "Edificio 17",
+    "edificio_codigo": "E-17",
+    "ubicacion": "Edificio 17 - Planta Baja",
+    "planta": "Planta Baja",
+    "capacidad_original": 30,
+    "capacidad_maxima": 30,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 30
+    },
+    "equipos": [
+      "microscopios_opticos",
+      "estereomicroscopios"
+    ],
+    "caracteristicas": [
+      "gas",
+      "toma_agua"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_LG",
+    "codigo": "LG",
+    "codigo_normalizado": "lg",
+    "nombre": "Laboratorio de Genética",
+    "nombre_normalizado": "laboratorio de genetica",
+    "alias": "LG",
+    "aliases_normalizados": [
+      "lg",
+      "laboratorio de genética"
+    ],
+    "categoria": "laboratorios_especializados",
+    "tipo_espacio": "laboratorio",
+    "edificio": "Edificio 17",
+    "edificio_codigo": "E-17",
+    "ubicacion": "Edificio 17 - Planta Baja",
+    "planta": "Planta Baja",
+    "capacidad_original": 20,
+    "capacidad_maxima": 20,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 20
+    },
+    "equipos": [
+      "termociclador",
+      "cubas_electroforesis",
+      "transiluminador_uv"
+    ],
+    "caracteristicas": [
+      "aire_acondicionado",
+      "ultracongelador"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_NUT",
+    "codigo": "NUT",
+    "codigo_normalizado": "nut",
+    "nombre": "Laboratorio de Nutrición",
+    "nombre_normalizado": "laboratorio de nutricion",
+    "alias": "NUT",
+    "aliases_normalizados": [
+      "nut",
+      "laboratorio de nutrición"
+    ],
+    "categoria": "laboratorios_especializados",
+    "tipo_espacio": "laboratorio",
+    "edificio": "Edificio 17",
+    "edificio_codigo": "E-17",
+    "ubicacion": "Edificio 17 - Planta Baja",
+    "planta": "Planta Baja",
+    "capacidad_original": 20,
+    "capacidad_maxima": 20,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 20
+    },
+    "equipos": [
+      "digestor_kjeldahl",
+      "estufas_secado",
+      "mufla"
+    ],
+    "caracteristicas": [
+      "campana_extraccion"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_S8",
+    "codigo": "S8",
+    "codigo_normalizado": "s8",
+    "nombre": "Salón 8",
+    "nombre_normalizado": "salon 8",
+    "alias": "S8",
+    "aliases_normalizados": [
+      "s8",
+      "salón 8"
+    ],
+    "categoria": "aulas_salones_teoricos",
+    "tipo_espacio": "aula",
+    "edificio": "Edificio 17",
+    "edificio_codigo": "E-17",
+    "ubicacion": "Edificio 17 - Planta Alta",
+    "planta": "Planta Alta",
+    "capacidad_original": 45,
+    "capacidad_maxima": 45,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 45
+    },
+    "equipos": [
+      "proyector",
+      "pantalla",
+      "pizarron"
+    ],
+    "caracteristicas": [
+      "aire_acondicionado"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_AM1",
+    "codigo": "AM1",
+    "codigo_normalizado": "am1",
+    "nombre": "Aula Magna I",
+    "nombre_normalizado": "aula magna i",
+    "alias": "AM1",
+    "aliases_normalizados": [
+      "am1",
+      "aula magna i"
+    ],
+    "categoria": "audiovisuales_auditorios",
+    "tipo_espacio": "auditorio",
+    "edificio": "Edificio 17",
+    "edificio_codigo": "E-17",
+    "ubicacion": "Edificio 17 - Planta Alta",
+    "planta": "Planta Alta",
+    "capacidad_original": 70,
+    "capacidad_maxima": 70,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 70
+    },
+    "equipos": [
+      "proyector_hd",
+      "sistema_audio",
+      "microfono",
+      "pantalla_gigante"
+    ],
+    "caracteristicas": [
+      "aire_acondicionado",
+      "gradas_auditorio"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_AM2",
+    "codigo": "AM2",
+    "codigo_normalizado": "am2",
+    "nombre": "Aula Magna II",
+    "nombre_normalizado": "aula magna ii",
+    "alias": "AM2",
+    "aliases_normalizados": [
+      "am2",
+      "aula magna ii"
+    ],
+    "categoria": "audiovisuales_auditorios",
+    "tipo_espacio": "auditorio",
+    "edificio": "Edificio 17",
+    "edificio_codigo": "E-17",
+    "ubicacion": "Edificio 17 - Planta Alta",
+    "planta": "Planta Alta",
+    "capacidad_original": 70,
+    "capacidad_maxima": 70,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 70
+    },
+    "equipos": [
+      "proyector",
+      "pantalla",
+      "audio"
+    ],
+    "caracteristicas": [
+      "aire_acondicionado"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_S1",
+    "codigo": "S1",
+    "codigo_normalizado": "s1",
+    "nombre": "Salón 1",
+    "nombre_normalizado": "salon 1",
+    "alias": "S1",
+    "aliases_normalizados": [
+      "s1",
+      "salón 1"
+    ],
+    "categoria": "aulas_salones_teoricos",
+    "tipo_espacio": "aula",
+    "edificio": "Edificio 18",
+    "edificio_codigo": "E-18",
+    "ubicacion": "Edificio 18 - Planta Baja",
+    "planta": "Planta Baja",
+    "capacidad_original": 45,
+    "capacidad_maxima": 45,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 45
+    },
+    "equipos": [
+      "proyector",
+      "pantalla",
+      "pizarron"
+    ],
+    "caracteristicas": [
+      "aire_acondicionado",
+      "iluminacion_natural"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_S2",
+    "codigo": "S2",
+    "codigo_normalizado": "s2",
+    "nombre": "Salón 2",
+    "nombre_normalizado": "salon 2",
+    "alias": "S2",
+    "aliases_normalizados": [
+      "s2",
+      "salón 2"
+    ],
+    "categoria": "aulas_salones_teoricos",
+    "tipo_espacio": "aula",
+    "edificio": "Edificio 18",
+    "edificio_codigo": "E-18",
+    "ubicacion": "Edificio 18 - Planta Baja",
+    "planta": "Planta Baja",
+    "capacidad_original": 45,
+    "capacidad_maxima": 45,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 45
+    },
+    "equipos": [
+      "proyector",
+      "pantalla",
+      "pizarron"
+    ],
+    "caracteristicas": [
+      "aire_acondicionado"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_S3",
+    "codigo": "S3",
+    "codigo_normalizado": "s3",
+    "nombre": "Salón 3",
+    "nombre_normalizado": "salon 3",
+    "alias": "S3",
+    "aliases_normalizados": [
+      "s3",
+      "salón 3"
+    ],
+    "categoria": "aulas_salones_teoricos",
+    "tipo_espacio": "aula",
+    "edificio": "Edificio 18",
+    "edificio_codigo": "E-18",
+    "ubicacion": "Edificio 18 - Planta Baja",
+    "planta": "Planta Baja",
+    "capacidad_original": 45,
+    "capacidad_maxima": 45,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 45
+    },
+    "equipos": [
+      "proyector",
+      "pantalla",
+      "pizarron"
+    ],
+    "caracteristicas": [
+      "aire_acondicionado"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_SG",
+    "codigo": "SG",
+    "codigo_normalizado": "sg",
+    "nombre": "Sala de Geología",
+    "nombre_normalizado": "sala de geologia",
+    "alias": "SG",
+    "aliases_normalizados": [
+      "sg",
+      "sala de geología"
+    ],
+    "categoria": "aulas_salones_teoricos",
+    "tipo_espacio": "aula",
+    "edificio": "Edificio 18",
+    "edificio_codigo": "E-18",
+    "ubicacion": "Edificio 18 - Planta Baja",
+    "planta": "Planta Baja",
+    "capacidad_original": 35,
+    "capacidad_maxima": 35,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 35
+    },
+    "equipos": [
+      "muestras_geologicas",
+      "proyector",
+      "pantalla"
+    ],
+    "caracteristicas": [
+      "mesas_trabajo"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_LTA",
+    "codigo": "LTA",
+    "codigo_normalizado": "lta",
+    "nombre": "Laboratorio de Tópicos de Acuacultura",
+    "nombre_normalizado": "laboratorio de topicos de acuacultura",
+    "alias": "LTA",
+    "aliases_normalizados": [
+      "lta",
+      "laboratorio de tópicos de acuacultura"
+    ],
+    "categoria": "laboratorios_especializados",
+    "tipo_espacio": "laboratorio",
+    "edificio": "Edificio 18",
+    "edificio_codigo": "E-18",
+    "ubicacion": "Edificio 18 - Planta Baja",
+    "planta": "Planta Baja",
+    "capacidad_original": 20,
+    "capacidad_maxima": 20,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 20
+    },
+    "equipos": [
+      "tanques_experimentales",
+      "oximetro",
+      "fotometros"
+    ],
+    "caracteristicas": [
+      "agua_mar",
+      "aireacion"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_S5",
+    "codigo": "S5",
+    "codigo_normalizado": "s5",
+    "nombre": "Salón 5",
+    "nombre_normalizado": "salon 5",
+    "alias": "S5",
+    "aliases_normalizados": [
+      "s5",
+      "salón 5"
+    ],
+    "categoria": "aulas_salones_teoricos",
+    "tipo_espacio": "aula",
+    "edificio": "Edificio 18",
+    "edificio_codigo": "E-18",
+    "ubicacion": "Edificio 18 - Planta Alta",
+    "planta": "Planta Alta",
+    "capacidad_original": 45,
+    "capacidad_maxima": 45,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 45
+    },
+    "equipos": [
+      "proyector",
+      "pantalla",
+      "pizarron"
+    ],
+    "caracteristicas": [
+      "aire_acondicionado"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_S6",
+    "codigo": "S6",
+    "codigo_normalizado": "s6",
+    "nombre": "Salón 6",
+    "nombre_normalizado": "salon 6",
+    "alias": "S6",
+    "aliases_normalizados": [
+      "s6",
+      "salón 6"
+    ],
+    "categoria": "aulas_salones_teoricos",
+    "tipo_espacio": "aula",
+    "edificio": "Edificio 18",
+    "edificio_codigo": "E-18",
+    "ubicacion": "Edificio 18 - Planta Alta",
+    "planta": "Planta Alta",
+    "capacidad_original": 45,
+    "capacidad_maxima": 45,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 45
+    },
+    "equipos": [
+      "proyector",
+      "pantalla",
+      "pizarron"
+    ],
+    "caracteristicas": [
+      "aire_acondicionado"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_S7",
+    "codigo": "S7",
+    "codigo_normalizado": "s7",
+    "nombre": "Salón 7",
+    "nombre_normalizado": "salon 7",
+    "alias": "S7",
+    "aliases_normalizados": [
+      "s7",
+      "salón 7"
+    ],
+    "categoria": "aulas_salones_teoricos",
+    "tipo_espacio": "aula",
+    "edificio": "Edificio 18",
+    "edificio_codigo": "E-18",
+    "ubicacion": "Edificio 18 - Planta Alta",
+    "planta": "Planta Alta",
+    "capacidad_original": 45,
+    "capacidad_maxima": 45,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 45
+    },
+    "equipos": [
+      "proyector",
+      "pantalla",
+      "pizarron"
+    ],
+    "caracteristicas": [
+      "aire_acondicionado"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_LT2",
+    "codigo": "LT2",
+    "codigo_normalizado": "lt2",
+    "nombre": "Laboratorio de Tamices II",
+    "nombre_normalizado": "laboratorio de tamices ii",
+    "alias": "LT2",
+    "aliases_normalizados": [
+      "lt2",
+      "laboratorio de tamices ii"
+    ],
+    "categoria": "laboratorios_especializados",
+    "tipo_espacio": "laboratorio",
+    "edificio": "Edificio 18",
+    "edificio_codigo": "E-18",
+    "ubicacion": "Edificio 18 - Planta Alta",
+    "planta": "Planta Alta",
+    "capacidad_original": 20,
+    "capacidad_maxima": 20,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 20
+    },
+    "equipos": [
+      "tamices",
+      "balanzas"
+    ],
+    "caracteristicas": [
+      "ventilacion"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_ECO",
+    "codigo": "ECO",
+    "codigo_normalizado": "eco",
+    "nombre": "Taller de Ecotecnias",
+    "nombre_normalizado": "taller de ecotecnias",
+    "alias": "ECO",
+    "aliases_normalizados": [
+      "eco",
+      "taller de ecotecnias"
+    ],
+    "categoria": "talleres_practicas",
+    "tipo_espacio": "taller",
+    "edificio": "Edificio 18",
+    "edificio_codigo": "E-18",
+    "ubicacion": "Edificio 18 - Parte Posterior",
+    "planta": "Parte Posterior",
+    "capacidad_original": 25,
+    "capacidad_maxima": 25,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 25
+    },
+    "equipos": [
+      "herramientas_construccion",
+      "modulos_solares",
+      "composteros"
+    ],
+    "caracteristicas": [
+      "area_semicubierta",
+      "toma_agua"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_REU",
+    "codigo": "REU",
+    "codigo_normalizado": "reu",
+    "nombre": "Taller de Reutilización",
+    "nombre_normalizado": "taller de reutilizacion",
+    "alias": "REU",
+    "aliases_normalizados": [
+      "reu",
+      "taller de reutilización"
+    ],
+    "categoria": "talleres_practicas",
+    "tipo_espacio": "taller",
+    "edificio": "Edificio 18",
+    "edificio_codigo": "E-18",
+    "ubicacion": "Edificio 18 - Parte Posterior",
+    "planta": "Parte Posterior",
+    "capacidad_original": 25,
+    "capacidad_maxima": 25,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 25
+    },
+    "equipos": [
+      "bancos_trabajo",
+      "herramientas_manuales"
+    ],
+    "caracteristicas": [
+      "ventilacion_abierta"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_LMO",
+    "codigo": "LMO",
+    "codigo_normalizado": "lmo",
+    "nombre": "Laboratorio de Moluscos",
+    "nombre_normalizado": "laboratorio de moluscos",
+    "alias": "LMO",
+    "aliases_normalizados": [
+      "lmo",
+      "laboratorio de moluscos"
+    ],
+    "categoria": "laboratorios_especializados",
+    "tipo_espacio": "laboratorio",
+    "edificio": "Edificio 20",
+    "edificio_codigo": "E-20",
+    "ubicacion": "Edificio 20 - Planta Baja",
+    "planta": "Planta Baja",
+    "capacidad_original": 20,
+    "capacidad_maxima": 20,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 20
+    },
+    "equipos": [
+      "tanques_larvarios",
+      "tamices_plancton"
+    ],
+    "caracteristicas": [
+      "flujo_continuo_agua_mar"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_LTO",
+    "codigo": "LTO",
+    "codigo_normalizado": "lto",
+    "nombre": "Laboratorio de Totoaba",
+    "nombre_normalizado": "laboratorio de totoaba",
+    "alias": "LTO",
+    "aliases_normalizados": [
+      "lto",
+      "laboratorio de totoaba"
+    ],
+    "categoria": "laboratorios_especializados",
+    "tipo_espacio": "laboratorio",
+    "edificio": "Edificio 20",
+    "edificio_codigo": "E-20",
+    "ubicacion": "Edificio 20 - Planta Alta",
+    "planta": "Planta Alta",
+    "capacidad_original": 20,
+    "capacidad_maxima": 20,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 20
+    },
+    "equipos": [
+      "sistemas_recirculacion",
+      "filtros_biologicos"
+    ],
+    "caracteristicas": [
+      "agua_marina_filtrada"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_ESP",
+    "codigo": "ESP",
+    "codigo_normalizado": "esp",
+    "nombre": "Salón de Especialidad",
+    "nombre_normalizado": "salon de especialidad",
+    "alias": "ESP",
+    "aliases_normalizados": [
+      "esp",
+      "salón de especialidad"
+    ],
+    "categoria": "aulas_salones_teoricos",
+    "tipo_espacio": "aula",
+    "edificio": "Edificio 21",
+    "edificio_codigo": "E-21",
+    "ubicacion": "Edificio 21 - Planta Baja",
+    "planta": "Planta Baja",
+    "capacidad_original": 30,
+    "capacidad_maxima": 30,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 30
+    },
+    "equipos": [
+      "proyector",
+      "pantalla"
+    ],
+    "caracteristicas": [
+      "aire_acondicionado"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_PT",
+    "codigo": "PT",
+    "codigo_normalizado": "pt",
+    "nombre": "Prácticas de Topografía",
+    "nombre_normalizado": "practicas de topografia",
+    "alias": "PT",
+    "aliases_normalizados": [
+      "pt",
+      "prácticas de topografía"
+    ],
+    "categoria": "talleres_practicas",
+    "tipo_espacio": "laboratorio",
+    "edificio": "Edificio 21",
+    "edificio_codigo": "E-21",
+    "ubicacion": "Edificio 21 - Planta Baja",
+    "planta": "Planta Baja",
+    "capacidad_original": 25,
+    "capacidad_maxima": 25,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 25
+    },
+    "equipos": [
+      "estaciones_totales",
+      "teodolitos",
+      "niveles_opticos",
+      "gps_geodesicos"
+    ],
+    "caracteristicas": [
+      "area_resguardo_equipo"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_GEO",
+    "codigo": "GEO",
+    "codigo_normalizado": "geo",
+    "nombre": "Salón de Geomática",
+    "nombre_normalizado": "salon de geomatica",
+    "alias": "GEO",
+    "aliases_normalizados": [
+      "geo",
+      "salón de geomática"
+    ],
+    "categoria": "centros_computo",
+    "tipo_espacio": "aula_computo",
+    "edificio": "Edificio 21",
+    "edificio_codigo": "E-21",
+    "ubicacion": "Edificio 21 - Planta Alta",
+    "planta": "Planta Alta",
+    "capacidad_original": 30,
+    "capacidad_maxima": 30,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 30
+    },
+    "equipos": [
+      "proyector",
+      "pantalla"
+    ],
+    "caracteristicas": [
+      "aire_acondicionado"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_LCA",
+    "codigo": "LCA",
+    "codigo_normalizado": "lca",
+    "nombre": "Lab. de Cultivos de Apoyo",
+    "nombre_normalizado": "lab. de cultivos de apoyo",
+    "alias": "LCA",
+    "aliases_normalizados": [
+      "lca",
+      "lab. de cultivos de apoyo"
+    ],
+    "categoria": "laboratorios_especializados",
+    "tipo_espacio": "laboratorio",
+    "edificio": "Edificio 41",
+    "edificio_codigo": "E-41",
+    "ubicacion": "Edificio 41 - Planta Baja",
+    "planta": "Planta Baja",
+    "capacidad_original": 20,
+    "capacidad_maxima": 20,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 20
+    },
+    "equipos": [
+      "cepario_microalgas",
+      "camaras_iluminacion"
+    ],
+    "caracteristicas": [
+      "temperatura_controlada"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_LEO",
+    "codigo": "LEO",
+    "codigo_normalizado": "leo",
+    "nombre": "Laboratorio de Especies Ornamentales",
+    "nombre_normalizado": "laboratorio de especies ornamentales",
+    "alias": "LEO",
+    "aliases_normalizados": [
+      "leo",
+      "laboratorio de especies ornamentales"
+    ],
+    "categoria": "laboratorios_especializados",
+    "tipo_espacio": "laboratorio",
+    "edificio": "Edificio 41",
+    "edificio_codigo": "E-41",
+    "ubicacion": "Edificio 41 - Planta Baja",
+    "planta": "Planta Baja",
+    "capacidad_original": 20,
+    "capacidad_maxima": 20,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 20
+    },
+    "equipos": [
+      "acuarios_marinos",
+      "sistemas_iluminacion_led"
+    ],
+    "caracteristicas": [
+      "agua_mar"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_CRU",
+    "codigo": "CRU",
+    "codigo_normalizado": "cru",
+    "nombre": "Laboratorio de Crustáceos",
+    "nombre_normalizado": "laboratorio de crustaceos",
+    "alias": "CRU",
+    "aliases_normalizados": [
+      "cru",
+      "laboratorio de crustáceos"
+    ],
+    "categoria": "laboratorios_especializados",
+    "tipo_espacio": "laboratorio",
+    "edificio": "Edificio 41",
+    "edificio_codigo": "E-41",
+    "ubicacion": "Edificio 41 - Planta Baja",
+    "planta": "Planta Baja",
+    "capacidad_original": 20,
+    "capacidad_maxima": 20,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 20
+    },
+    "equipos": [
+      "estanques_camaron",
+      "oxigenadores"
+    ],
+    "caracteristicas": [
+      "agua_mar"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_SIS",
+    "codigo": "SIS",
+    "codigo_normalizado": "sis",
+    "nombre": "Laboratorio de Sistemas",
+    "nombre_normalizado": "laboratorio de sistemas",
+    "alias": "SIS",
+    "aliases_normalizados": [
+      "sis",
+      "laboratorio de sistemas"
+    ],
+    "categoria": "laboratorios_especializados",
+    "tipo_espacio": "laboratorio",
+    "edificio": "Edificio 41",
+    "edificio_codigo": "E-41",
+    "ubicacion": "Edificio 41 - Planta Baja",
+    "planta": "Planta Baja",
+    "capacidad_original": 20,
+    "capacidad_maxima": 20,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 20
+    },
+    "equipos": [
+      "bombas_sumergibles",
+      "sensores_iot_calidad_agua"
+    ],
+    "caracteristicas": [
+      "electricidad_monitoreada"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_FIS",
+    "codigo": "FIS",
+    "codigo_normalizado": "fis",
+    "nombre": "Laboratorio de Fisiología",
+    "nombre_normalizado": "laboratorio de fisiologia",
+    "alias": "FIS",
+    "aliases_normalizados": [
+      "fis",
+      "laboratorio de fisiología"
+    ],
+    "categoria": "laboratorios_especializados",
+    "tipo_espacio": "laboratorio",
+    "edificio": "Edificio 41",
+    "edificio_codigo": "E-41",
+    "ubicacion": "Edificio 41 - Planta Baja",
+    "planta": "Planta Baja",
+    "capacidad_original": 20,
+    "capacidad_maxima": 20,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 20
+    },
+    "equipos": [
+      "respirometros",
+      "termorreguladores"
+    ],
+    "caracteristicas": [
+      "aire_acondicionado"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_TOA",
+    "codigo": "TOA",
+    "codigo_normalizado": "toa",
+    "nombre": "Salón Totoaba A",
+    "nombre_normalizado": "salon totoaba a",
+    "alias": "TOA",
+    "aliases_normalizados": [
+      "toa",
+      "salón totoaba a"
+    ],
+    "categoria": "aulas_salones_teoricos",
+    "tipo_espacio": "aula",
+    "edificio": "Edificio 56",
+    "edificio_codigo": "E-56",
+    "ubicacion": "Edificio 56 - Planta Baja",
+    "planta": "Planta Baja",
+    "capacidad_original": 35,
+    "capacidad_maxima": 35,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 35
+    },
+    "equipos": [
+      "proyector",
+      "pantalla"
+    ],
+    "caracteristicas": [
+      "ventilacion"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_TOB",
+    "codigo": "TOB",
+    "codigo_normalizado": "tob",
+    "nombre": "Salón Totoaba B",
+    "nombre_normalizado": "salon totoaba b",
+    "alias": "TOB",
+    "aliases_normalizados": [
+      "tob",
+      "salón totoaba b"
+    ],
+    "categoria": "aulas_salones_teoricos",
+    "tipo_espacio": "aula",
+    "edificio": "Edificio 56",
+    "edificio_codigo": "E-56",
+    "ubicacion": "Edificio 56 - Planta Baja",
+    "planta": "Planta Baja",
+    "capacidad_original": 35,
+    "capacidad_maxima": 35,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 35
+    },
+    "equipos": [
+      "proyector",
+      "pantalla"
+    ],
+    "caracteristicas": [
+      "ventilacion"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_PEC",
+    "codigo": "PEC",
+    "codigo_normalizado": "pec",
+    "nombre": "Laboratorio de Peces",
+    "nombre_normalizado": "laboratorio de peces",
+    "alias": "PEC",
+    "aliases_normalizados": [
+      "pec",
+      "laboratorio de peces"
+    ],
+    "categoria": "laboratorios_especializados",
+    "tipo_espacio": "laboratorio",
+    "edificio": "Edificio 56",
+    "edificio_codigo": "E-56",
+    "ubicacion": "Edificio 56 - Planta Baja",
+    "planta": "Planta Baja",
+    "capacidad_original": 25,
+    "capacidad_maxima": 25,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 25
+    },
+    "equipos": [
+      "tanques_piscicultura",
+      "monitores_oxigeno"
+    ],
+    "caracteristicas": [
+      "flujo_agua_mar"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_AVI",
+    "codigo": "AVI",
+    "codigo_normalizado": "avi",
+    "nombre": "Audiovisual IIO",
+    "nombre_normalizado": "audiovisual iio",
+    "alias": "AVI",
+    "aliases_normalizados": [
+      "avi",
+      "audiovisual iio"
+    ],
+    "categoria": "audiovisuales_auditorios",
+    "tipo_espacio": "audiovisual",
+    "edificio": "Instituto de Investigaciones Oceanológicas (E-25)",
+    "edificio_codigo": "E-25",
+    "ubicacion": "Instituto de Investigaciones Oceanológicas (E-25) - Planta Baja",
+    "planta": "Planta Baja",
+    "capacidad_original": 45,
+    "capacidad_maxima": 45,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 45
+    },
+    "equipos": [
+      "proyector_laser",
+      "sistema_audio_surround",
+      "microfonia_inalambrica"
+    ],
+    "caracteristicas": [
+      "aire_acondicionado",
+      "butacas_acojinadas"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_MAL",
+    "codigo": "MAL",
+    "codigo_normalizado": "mal",
+    "nombre": "Laboratorio de Macroalgas",
+    "nombre_normalizado": "laboratorio de macroalgas",
+    "alias": "MAL",
+    "aliases_normalizados": [
+      "mal",
+      "laboratorio de macroalgas"
+    ],
+    "categoria": "laboratorios_especializados",
+    "tipo_espacio": "laboratorio",
+    "edificio": "Instituto de Investigaciones Oceanológicas (E-25)",
+    "edificio_codigo": "E-25",
+    "ubicacion": "Instituto de Investigaciones Oceanológicas (E-25) - Planta Baja",
+    "planta": "Planta Baja",
+    "capacidad_original": 20,
+    "capacidad_maxima": 20,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 20
+    },
+    "equipos": [
+      "cubas_cultivo",
+      "espectrofotometro"
+    ],
+    "caracteristicas": [
+      "agua_marina_continua"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_MOL",
+    "codigo": "MOL",
+    "codigo_normalizado": "mol",
+    "nombre": "Laboratorio de Moluscos",
+    "nombre_normalizado": "laboratorio de moluscos",
+    "alias": "MOL",
+    "aliases_normalizados": [
+      "mol",
+      "laboratorio de moluscos"
+    ],
+    "categoria": "laboratorios_especializados",
+    "tipo_espacio": "laboratorio",
+    "edificio": "Instituto de Investigaciones Oceanológicas (E-25)",
+    "edificio_codigo": "E-25",
+    "ubicacion": "Instituto de Investigaciones Oceanológicas (E-25) - Planta Baja",
+    "planta": "Planta Baja",
+    "capacidad_original": 20,
+    "capacidad_maxima": 20,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 20
+    },
+    "equipos": [
+      "tanques_maduracion",
+      "estereomicroscopios"
+    ],
+    "caracteristicas": [
+      "agua_mar"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_CAI",
+    "codigo": "CAI",
+    "codigo_normalizado": "cai",
+    "nombre": "Laboratorio de Cultivos de Apoyo",
+    "nombre_normalizado": "laboratorio de cultivos de apoyo",
+    "alias": "CAI",
+    "aliases_normalizados": [
+      "cai",
+      "laboratorio de cultivos de apoyo"
+    ],
+    "categoria": "laboratorios_especializados",
+    "tipo_espacio": "laboratorio",
+    "edificio": "Instituto de Investigaciones Oceanológicas (E-25)",
+    "edificio_codigo": "E-25",
+    "ubicacion": "Instituto de Investigaciones Oceanológicas (E-25) - Planta Baja",
+    "planta": "Planta Baja",
+    "capacidad_original": 20,
+    "capacidad_maxima": 20,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 20
+    },
+    "equipos": [
+      "biorreactores",
+      "iluminacion_controlada"
+    ],
+    "caracteristicas": [
+      "aire_filtrado"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_SP1",
+    "codigo": "SP1",
+    "codigo_normalizado": "sp1",
+    "nombre": "Salón de Posgrado 1",
+    "nombre_normalizado": "salon de posgrado 1",
+    "alias": "SP1",
+    "aliases_normalizados": [
+      "sp1",
+      "salón de posgrado 1"
+    ],
+    "categoria": "aulas_salones_teoricos",
+    "tipo_espacio": "aula",
+    "edificio": "Instituto de Investigaciones Oceanológicas (E-25)",
+    "edificio_codigo": "E-25",
+    "ubicacion": "Instituto de Investigaciones Oceanológicas (E-25) - Planta Alta",
+    "planta": "Planta Alta",
+    "capacidad_original": 25,
+    "capacidad_maxima": 25,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 25
+    },
+    "equipos": [
+      "proyector",
+      "pantalla",
+      "audio",
+      "videoconferencia"
+    ],
+    "caracteristicas": [
+      "aire_acondicionado",
+      "mesa_seminario"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_SP2",
+    "codigo": "SP2",
+    "codigo_normalizado": "sp2",
+    "nombre": "Salón de Posgrado 2",
+    "nombre_normalizado": "salon de posgrado 2",
+    "alias": "SP2",
+    "aliases_normalizados": [
+      "sp2",
+      "salón de posgrado 2"
+    ],
+    "categoria": "aulas_salones_teoricos",
+    "tipo_espacio": "aula",
+    "edificio": "Instituto de Investigaciones Oceanológicas (E-25)",
+    "edificio_codigo": "E-25",
+    "ubicacion": "Instituto de Investigaciones Oceanológicas (E-25) - Planta Alta",
+    "planta": "Planta Alta",
+    "capacidad_original": 25,
+    "capacidad_maxima": 25,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 25
+    },
+    "equipos": [
+      "proyector",
+      "pantalla",
+      "audio"
+    ],
+    "caracteristicas": [
+      "aire_acondicionado"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_GIM",
+    "codigo": "GIM",
+    "codigo_normalizado": "gim",
+    "nombre": "Gimnasio",
+    "nombre_normalizado": "gimnasio",
+    "alias": "GIM",
+    "aliases_normalizados": [
+      "gim",
+      "gimnasio"
+    ],
+    "categoria": "espacios_apoyo",
+    "tipo_espacio": "espacio_apoyo",
+    "edificio": "Gimnasio FCM",
+    "edificio_codigo": "Gimnasio",
+    "ubicacion": "Gimnasio FCM - General",
+    "planta": "General",
+    "capacidad_original": 80,
+    "capacidad_maxima": 80,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 80
+    },
+    "equipos": [
+      "proyector",
+      "pantalla",
+      "pizarron"
+    ],
+    "caracteristicas": [
+      "aire_acondicionado"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_CAF",
+    "codigo": "CAF",
+    "codigo_normalizado": "caf",
+    "nombre": "Cafetería",
+    "nombre_normalizado": "cafeteria",
+    "alias": "CAF",
+    "aliases_normalizados": [
+      "caf",
+      "cafetería"
+    ],
+    "categoria": "espacios_apoyo",
+    "tipo_espacio": "espacio_apoyo",
+    "edificio": "Cafetería FCM",
+    "edificio_codigo": "Cafetería",
+    "ubicacion": "Cafetería FCM - General",
+    "planta": "General",
+    "capacidad_original": 60,
+    "capacidad_maxima": 60,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 60
+    },
+    "equipos": [
+      "proyector",
+      "pantalla",
+      "pizarron"
+    ],
+    "caracteristicas": [
+      "aire_acondicionado"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": false,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_SMU",
+    "codigo": "SMU",
+    "codigo_normalizado": "smu",
+    "nombre": "Sala de usos múltiples",
+    "nombre_normalizado": "sala de usos multiples",
+    "alias": "SMU",
+    "aliases_normalizados": [
+      "smu",
+      "sala de usos múltiples"
+    ],
+    "categoria": "audiovisuales_auditorios",
+    "tipo_espacio": "audiovisual",
+    "edificio": "Sala de usos múltiples",
+    "edificio_codigo": "Sala de usos múltiples",
+    "ubicacion": "Sala de usos múltiples - General",
+    "planta": "General",
+    "capacidad_original": 50,
+    "capacidad_maxima": 50,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 50
+    },
+    "equipos": [
+      "proyector",
+      "pantalla",
+      "pizarron"
+    ],
+    "caracteristicas": [
+      "aire_acondicionado"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_VIR",
+    "codigo": "VIR",
+    "codigo_normalizado": "vir",
+    "nombre": "Modalidad Virtual",
+    "nombre_normalizado": "modalidad virtual",
+    "alias": "VIR",
+    "aliases_normalizados": [
+      "vir",
+      "modalidad virtual"
+    ],
+    "categoria": "modalidad_virtual",
+    "tipo_espacio": "virtual",
+    "edificio": "Virtual",
+    "edificio_codigo": "VIR",
+    "ubicacion": "Virtual - General",
+    "planta": "General",
+    "capacidad_original": 100,
+    "capacidad_maxima": 100,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 100
+    },
+    "equipos": [
+      "licencia_videoconferencia",
+      "grabacion_nube"
+    ],
+    "caracteristicas": [
+      "acceso_remoto"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE",
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": true,
+    "oficial_mapa": true,
+    "estado_catalogo": "oficial_mapa"
+  },
+  {
+    "id": "espacio_AF1",
+    "codigo": "AF1",
+    "codigo_normalizado": "af1",
+    "nombre": "Aula Anexo de Física 1",
+    "nombre_normalizado": "aula anexo de fisica 1",
+    "alias": "AF1",
+    "aliases_normalizados": [
+      "af1",
+      "anexo fisica 1"
+    ],
+    "categoria": "aulas_salones_teoricos",
+    "tipo_espacio": "aula",
+    "edificio": "Edificio 17",
+    "ubicacion": "Planta Baja",
+    "capacidad_original": 75,
+    "capacidad_maxima": 75,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 75
+    },
+    "equipos": [
+      "proyector",
+      "pantalla",
+      "pizarron"
+    ],
+    "caracteristicas": [
+      "aire_acondicionado"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "OCE"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": false,
+    "duda_homologacion": true,
+    "estado_catalogo": "pendiente_revision_subdireccion",
+    "motivo_duda": "Espacio no figura en la lámina oficial de Aulas/Laboratorios FCM (Mapa 4K). Pasa a Homologación de Catálogo para revisión de Subdirección."
+  },
+  {
+    "id": "espacio_AF2",
+    "codigo": "AF2",
+    "codigo_normalizado": "af2",
+    "nombre": "Aula Anexo de Física 2",
+    "nombre_normalizado": "aula anexo de fisica 2",
+    "alias": "AF2",
+    "aliases_normalizados": [
+      "af2",
+      "anexo fisica 2"
+    ],
+    "categoria": "aulas_salones_teoricos",
+    "tipo_espacio": "aula",
+    "edificio": "Edificio 17",
+    "ubicacion": "Planta Baja",
+    "capacidad_original": 75,
+    "capacidad_maxima": 75,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 75
+    },
+    "equipos": [
+      "proyector",
+      "pantalla",
+      "pizarron"
+    ],
+    "caracteristicas": [
+      "aire_acondicionado"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "OCE"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": false,
+    "duda_homologacion": true,
+    "estado_catalogo": "pendiente_revision_subdireccion",
+    "motivo_duda": "Espacio no figura en la lámina oficial de Aulas/Laboratorios FCM (Mapa 4K). Pasa a Homologación de Catálogo para revisión de Subdirección."
+  },
+  {
+    "id": "espacio_AF3",
+    "codigo": "AF3",
+    "codigo_normalizado": "af3",
+    "nombre": "Aula Anexo de Física 3",
+    "nombre_normalizado": "aula anexo de fisica 3",
+    "alias": "AF3",
+    "aliases_normalizados": [
+      "af3",
+      "anexo fisica 3"
+    ],
+    "categoria": "aulas_salones_teoricos",
+    "tipo_espacio": "aula",
+    "edificio": "Edificio 17",
+    "ubicacion": "Planta Baja",
+    "capacidad_original": 75,
+    "capacidad_maxima": 75,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 75
+    },
+    "equipos": [
+      "proyector",
+      "pantalla",
+      "pizarron"
+    ],
+    "caracteristicas": [
+      "aire_acondicionado"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "OCE"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": false,
+    "duda_homologacion": true,
+    "estado_catalogo": "pendiente_revision_subdireccion",
+    "motivo_duda": "Espacio no figura en la lámina oficial de Aulas/Laboratorios FCM (Mapa 4K). Pasa a Homologación de Catálogo para revisión de Subdirección."
+  },
+  {
+    "id": "espacio_DIE",
+    "codigo": "DIE",
+    "codigo_normalizado": "die",
+    "nombre": "Área de Ingeniería / Docencia",
+    "nombre_normalizado": "area de ingenieria docencia",
+    "alias": "DIE",
+    "aliases_normalizados": [
+      "die",
+      "area ingenieria"
+    ],
+    "categoria": "aulas_salones_teoricos",
+    "tipo_espacio": "aula",
+    "edificio": "Edificio 41",
+    "ubicacion": "Planta Baja",
+    "capacidad_original": 23,
+    "capacidad_maxima": 23,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 23
+    },
+    "equipos": [
+      "pizarron",
+      "proyector"
+    ],
+    "caracteristicas": [
+      "aire_acondicionado"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "LBA"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": false,
+    "duda_homologacion": true,
+    "estado_catalogo": "pendiente_revision_subdireccion",
+    "motivo_duda": "Espacio no figura en la lámina oficial de Aulas/Laboratorios FCM (Mapa 4K). Pasa a Homologación de Catálogo para revisión de Subdirección."
+  },
+  {
+    "id": "espacio_P3",
+    "codigo": "P3",
+    "codigo_normalizado": "p3",
+    "nombre": "Salón de Posgrado 3",
+    "nombre_normalizado": "salon de posgrado 3",
+    "alias": "P3",
+    "aliases_normalizados": [
+      "p3",
+      "salon posgrado 3"
+    ],
+    "categoria": "aulas_salones_teoricos",
+    "tipo_espacio": "aula",
+    "edificio": "Edificio 25",
+    "ubicacion": "Planta Baja",
+    "capacidad_original": 30,
+    "capacidad_maxima": 30,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 30
+    },
+    "equipos": [
+      "proyector",
+      "pantalla"
+    ],
+    "caracteristicas": [
+      "aire_acondicionado"
+    ],
+    "niveles_educativos_permitidos": [
+      "posgrado",
+      "licenciatura"
+    ],
+    "programas_preferentes_ids": [
+      "MOC",
+      "DOC",
+      "EGA"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": false,
+    "duda_homologacion": true,
+    "estado_catalogo": "pendiente_revision_subdireccion",
+    "motivo_duda": "Espacio no figura en la lámina oficial de Aulas/Laboratorios FCM (Mapa 4K). Pasa a Homologación de Catálogo para revisión de Subdirección."
+  },
+  {
+    "id": "espacio_SPI",
+    "codigo": "SPI",
+    "codigo_normalizado": "spi",
+    "nombre": "Sala de Posgrado IIO",
+    "nombre_normalizado": "sala de posgrado iio",
+    "alias": "SPI",
+    "aliases_normalizados": [
+      "spi",
+      "sala posgrado iio"
+    ],
+    "categoria": "aulas_salones_teoricos",
+    "tipo_espacio": "aula",
+    "edificio": "Edificio 25",
+    "ubicacion": "Planta Baja",
+    "capacidad_original": 40,
+    "capacidad_maxima": 40,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 40
+    },
+    "equipos": [
+      "proyector_hd",
+      "pantalla",
+      "audio"
+    ],
+    "caracteristicas": [
+      "aire_acondicionado"
+    ],
+    "niveles_educativos_permitidos": [
+      "posgrado",
+      "licenciatura"
+    ],
+    "programas_preferentes_ids": [
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": false,
+    "duda_homologacion": true,
+    "estado_catalogo": "pendiente_revision_subdireccion",
+    "motivo_duda": "Espacio no figura en la lámina oficial de Aulas/Laboratorios FCM (Mapa 4K). Pasa a Homologación de Catálogo para revisión de Subdirección."
+  },
+  {
+    "id": "espacio_IIO_ESP",
+    "codigo": "IIO-ESP",
+    "codigo_normalizado": "iio esp",
+    "nombre": "Auditorio / Espacio IIO",
+    "nombre_normalizado": "auditorio espacio iio",
+    "alias": "IIO",
+    "aliases_normalizados": [
+      "iio",
+      "iio esp",
+      "espacio iio"
+    ],
+    "categoria": "aulas_salones_teoricos",
+    "tipo_espacio": "aula",
+    "edificio": "Edificio 25",
+    "ubicacion": "Planta Baja",
+    "capacidad_original": 40,
+    "capacidad_maxima": 40,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 40
+    },
+    "equipos": [
+      "proyector",
+      "pantalla",
+      "audio"
+    ],
+    "caracteristicas": [
+      "aire_acondicionado"
+    ],
+    "niveles_educativos_permitidos": [
+      "posgrado",
+      "licenciatura"
+    ],
+    "programas_preferentes_ids": [
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": false,
+    "duda_homologacion": true,
+    "estado_catalogo": "pendiente_revision_subdireccion",
+    "motivo_duda": "Espacio no figura en la lámina oficial de Aulas/Laboratorios FCM (Mapa 4K). Pasa a Homologación de Catálogo para revisión de Subdirección."
+  },
+  {
+    "id": "espacio_P5",
+    "codigo": "P5",
+    "codigo_normalizado": "p5",
+    "nombre": "Salón de Posgrado 5",
+    "nombre_normalizado": "salon de posgrado 5",
+    "alias": "P5",
+    "aliases_normalizados": [
+      "p5",
+      "salon posgrado 5"
+    ],
+    "categoria": "aulas_salones_teoricos",
+    "tipo_espacio": "aula",
+    "edificio": "Edificio 14",
+    "ubicacion": "Planta Baja",
+    "capacidad_original": 10,
+    "capacidad_maxima": 10,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 10
+    },
+    "equipos": [
+      "pantalla_tv",
+      "pizarron"
+    ],
+    "caracteristicas": [
+      "mesa_redonda"
+    ],
+    "niveles_educativos_permitidos": [
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "MOC",
+      "DOC",
+      "EGA"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": false,
+    "duda_homologacion": true,
+    "estado_catalogo": "pendiente_revision_subdireccion",
+    "motivo_duda": "Espacio no figura en la lámina oficial de Aulas/Laboratorios FCM (Mapa 4K). Pasa a Homologación de Catálogo para revisión de Subdirección."
+  },
+  {
+    "id": "espacio_DOM",
+    "codigo": "DOM",
+    "codigo_normalizado": "dom",
+    "nombre": "Domo Central FCM",
+    "nombre_normalizado": "domo central fcm",
+    "alias": "DOM",
+    "aliases_normalizados": [
+      "dom",
+      "domo fcm",
+      "domo central"
+    ],
+    "categoria": "aulas_salones_teoricos",
+    "tipo_espacio": "aula",
+    "edificio": "Edificio 14",
+    "ubicacion": "Planta Baja",
+    "capacidad_original": 10,
+    "capacidad_maxima": 10,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 10
+    },
+    "equipos": [
+      "mesas",
+      "sillas"
+    ],
+    "caracteristicas": [
+      "area_abierta"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "TC-CMA",
+      "LBA",
+      "LCA",
+      "OCE"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": false,
+    "duda_homologacion": true,
+    "estado_catalogo": "pendiente_revision_subdireccion",
+    "motivo_duda": "Espacio no figura en la lámina oficial de Aulas/Laboratorios FCM (Mapa 4K). Pasa a Homologación de Catálogo para revisión de Subdirección."
+  },
+  {
+    "id": "espacio_EAP2",
+    "codigo": "EAP2",
+    "codigo_normalizado": "eap2",
+    "nombre": "Espacio Académico Piso 2",
+    "nombre_normalizado": "espacio academico piso 2",
+    "alias": "Ex oficina J.L. Fermán",
+    "aliases_normalizados": [
+      "eap2",
+      "ex oficina ferman",
+      "oficina ferman"
+    ],
+    "categoria": "aulas_salones_teoricos",
+    "tipo_espacio": "aula",
+    "edificio": "Edificio 21",
+    "ubicacion": "Piso 2",
+    "capacidad_original": 12,
+    "capacidad_maxima": 12,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 12
+    },
+    "equipos": [
+      "mesa_juntas",
+      "pizarron"
+    ],
+    "caracteristicas": [
+      "aire_acondicionado"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "LCA",
+      "EGA"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": false,
+    "duda_homologacion": true,
+    "estado_catalogo": "pendiente_revision_subdireccion",
+    "motivo_duda": "Espacio no figura en la lámina oficial de Aulas/Laboratorios FCM (Mapa 4K). Pasa a Homologación de Catálogo para revisión de Subdirección."
+  },
+  {
+    "id": "espacio_SJT",
+    "codigo": "SJT",
+    "codigo_normalizado": "sjt",
+    "nombre": "Sala / Laboratorio Totoaba",
+    "nombre_normalizado": "sala laboratorio totoaba",
+    "alias": "SJT",
+    "aliases_normalizados": [
+      "sjt",
+      "lab totoaba 56"
+    ],
+    "categoria": "laboratorios_especializados",
+    "tipo_espacio": "laboratorio",
+    "edificio": "Edificio 56",
+    "ubicacion": "Planta Baja",
+    "capacidad_original": 15,
+    "capacidad_maxima": 15,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 15
+    },
+    "equipos": [
+      "estanques_biologicos"
+    ],
+    "caracteristicas": [
+      "agua_mar"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "LBA"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": false,
+    "duda_homologacion": true,
+    "estado_catalogo": "pendiente_revision_subdireccion",
+    "motivo_duda": "Espacio no figura en la lámina oficial de Aulas/Laboratorios FCM (Mapa 4K). Pasa a Homologación de Catálogo para revisión de Subdirección."
+  },
+  {
+    "id": "espacio_CPA",
+    "codigo": "CPA",
+    "codigo_normalizado": "cpa",
+    "nombre": "Centro de Cómputo de Posgrado, Sala A",
+    "nombre_normalizado": "centro de computo de posgrado sala a",
+    "alias": "CPA",
+    "aliases_normalizados": [
+      "cpa",
+      "computo posgrado a"
+    ],
+    "categoria": "centros_computo",
+    "tipo_espacio": "aula_computo",
+    "edificio": "Edificio 14",
+    "ubicacion": "Planta Baja",
+    "capacidad_original": 19,
+    "capacidad_maxima": 19,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 19
+    },
+    "equipos": [
+      "computadoras_estudiantes",
+      "workstations",
+      "proyector"
+    ],
+    "caracteristicas": [
+      "aire_acondicionado"
+    ],
+    "niveles_educativos_permitidos": [
+      "posgrado",
+      "licenciatura"
+    ],
+    "programas_preferentes_ids": [
+      "MOC",
+      "DOC",
+      "EGA"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": false,
+    "duda_homologacion": true,
+    "estado_catalogo": "pendiente_revision_subdireccion",
+    "motivo_duda": "Espacio no figura en la lámina oficial de Aulas/Laboratorios FCM (Mapa 4K). Pasa a Homologación de Catálogo para revisión de Subdirección."
+  },
+  {
+    "id": "espacio_SJG",
+    "codigo": "SJG",
+    "codigo_normalizado": "sjg",
+    "nombre": "Sala de Sistemas de Información Geográfica",
+    "nombre_normalizado": "sala de sistemas de informacion geografica",
+    "alias": "SJG",
+    "aliases_normalizados": [
+      "sjg",
+      "sala sig",
+      "sig"
+    ],
+    "categoria": "centros_computo",
+    "tipo_espacio": "aula_computo",
+    "edificio": "Edificio 21",
+    "ubicacion": "Planta Alta",
+    "capacidad_original": 13,
+    "capacidad_maxima": 13,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 13
+    },
+    "equipos": [
+      "computadoras_estudiantes",
+      "software_arcgis_qgis",
+      "plotter"
+    ],
+    "caracteristicas": [
+      "aire_acondicionado"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "LCA",
+      "OCE",
+      "EGA"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": false,
+    "duda_homologacion": true,
+    "estado_catalogo": "pendiente_revision_subdireccion",
+    "motivo_duda": "Espacio no figura en la lámina oficial de Aulas/Laboratorios FCM (Mapa 4K). Pasa a Homologación de Catálogo para revisión de Subdirección."
+  },
+  {
+    "id": "espacio_IIO_AUD",
+    "codigo": "IIO-AUD",
+    "codigo_normalizado": "iio aud",
+    "nombre": "Auditorio General IIO",
+    "nombre_normalizado": "auditorio general iio",
+    "alias": "IIO",
+    "aliases_normalizados": [
+      "iio aud",
+      "auditorio iio",
+      "auditorio general"
+    ],
+    "categoria": "audiovisuales_auditorios",
+    "tipo_espacio": "auditorio",
+    "edificio": "Edificio 25",
+    "ubicacion": "Planta Baja",
+    "capacidad_original": 40,
+    "capacidad_maxima": 40,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 40
+    },
+    "equipos": [
+      "proyector",
+      "pantalla",
+      "audio"
+    ],
+    "caracteristicas": [
+      "aire_acondicionado"
+    ],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [
+      "MOC",
+      "DOC",
+      "EGA"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": false,
+    "duda_homologacion": true,
+    "estado_catalogo": "pendiente_revision_subdireccion",
+    "motivo_duda": "Espacio no figura en la lámina oficial de Aulas/Laboratorios FCM (Mapa 4K). Pasa a Homologación de Catálogo para revisión de Subdirección."
+  },
+  {
+    "id": "espacio_SALAB",
+    "codigo": "Sala B",
+    "codigo_normalizado": "sala b",
+    "nombre": "Sala B (Posgrado FCM)",
+    "nombre_normalizado": "sala b posgrado fcm",
+    "alias": "Sala B",
+    "aliases_normalizados": [
+      "sala b",
+      "salab",
+      "posgrado b",
+      "cpb"
+    ],
+    "categoria": "aulas_salones_teoricos",
+    "tipo_espacio": "aula",
+    "edificio": "Edificio de Posgrado FCM",
+    "ubicacion": "Planta Alta Posgrado",
+    "capacidad_original": 30,
+    "capacidad_maxima": 30,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 30
+    },
+    "equipos": [
+      "proyector",
+      "pantalla",
+      "pizarron",
+      "computadora"
+    ],
+    "caracteristicas": [
+      "aire_acondicionado",
+      "audiovisual"
+    ],
+    "niveles_educativos_permitidos": [
+      "posgrado",
+      "licenciatura"
+    ],
+    "programas_preferentes_ids": [
+      "MOC",
+      "DOC",
+      "EGA"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": false,
+    "duda_homologacion": true,
+    "estado_catalogo": "pendiente_revision_subdireccion",
+    "motivo_duda": "Espacio no figura en la lámina oficial de Aulas/Laboratorios FCM (Mapa 4K). Pasa a Homologación de Catálogo para revisión de Subdirección."
+  },
+  {
+    "id": "espacio_S1_IIO",
+    "codigo": "Sala 1 IIO",
+    "codigo_normalizado": "sala 1 iio",
+    "nombre": "Sala 1 IIO (Investigaciones Oceanológicas)",
+    "nombre_normalizado": "sala 1 iio",
+    "alias": "Sala 1 IIO",
+    "aliases_normalizados": [
+      "sala 1 iio",
+      "s1 iio",
+      "sala 1",
+      "iio 1"
+    ],
+    "categoria": "aulas_salones_teoricos",
+    "tipo_espacio": "aula",
+    "edificio": "Instituto de Investigaciones Oceanológicas (IIO)",
+    "ubicacion": "Edificio IIO",
+    "capacidad_original": 25,
+    "capacidad_maxima": 25,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 25
+    },
+    "equipos": [
+      "proyector",
+      "pantalla",
+      "pizarron"
+    ],
+    "caracteristicas": [
+      "aire_acondicionado"
+    ],
+    "niveles_educativos_permitidos": [
+      "posgrado",
+      "licenciatura"
+    ],
+    "programas_preferentes_ids": [
+      "MOC",
+      "DOC"
+    ],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": false,
+    "duda_homologacion": true,
+    "estado_catalogo": "pendiente_revision_subdireccion",
+    "motivo_duda": "Espacio no figura en la lámina oficial de Aulas/Laboratorios FCM (Mapa 4K). Pasa a Homologación de Catálogo para revisión de Subdirección."
+  },
+  {
+    "id": "espacio_PEND",
+    "codigo": "Por definir",
+    "codigo_normalizado": "por definir",
+    "nombre": "Espacio por definir / Asignación pendiente",
+    "nombre_normalizado": "espacio por definir",
+    "alias": "Pendiente",
+    "aliases_normalizados": [
+      "por definir",
+      "pendiente",
+      "sin asignar"
+    ],
+    "categoria": "espacios_apoyo",
+    "tipo_espacio": "espacio_apoyo",
+    "edificio": "FCM / IIO",
+    "ubicacion": "Pendiente de confirmación",
+    "capacidad_original": 40,
+    "capacidad_maxima": 40,
+    "capacidad_operativa_por_periodo": {
+      "2027-1": 40
+    },
+    "equipos": [],
+    "caracteristicas": [],
+    "niveles_educativos_permitidos": [
+      "licenciatura",
+      "posgrado"
+    ],
+    "programas_preferentes_ids": [],
+    "disponible": true,
+    "disponible_periodos": [
+      "2027-1"
+    ],
+    "activo": true,
+    "apto_para_docencia": true,
+    "es_modalidad_virtual": false,
+    "oficial_mapa": false,
+    "duda_homologacion": true,
+    "estado_catalogo": "pendiente_revision_subdireccion",
+    "motivo_duda": "Espacio no figura en la lámina oficial de Aulas/Laboratorios FCM (Mapa 4K). Pasa a Homologación de Catálogo para revisión de Subdirección."
+  }
+]

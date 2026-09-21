@@ -1,0 +1,77 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "asignaciones",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "periodo_id", "order": "ASCENDING" },
+        { "fieldPath": "escenario_id", "order": "ASCENDING" },
+        { "fieldPath": "dia", "order": "ASCENDING" },
+        { "fieldPath": "hora_inicio", "order": "ASCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "asignaciones",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "periodo_id", "order": "ASCENDING" },
+        { "fieldPath": "escenario_id", "order": "ASCENDING" },
+        { "fieldPath": "espacio_id", "order": "ASCENDING" },
+        { "fieldPath": "dia", "order": "ASCENDING" },
+        { "fieldPath": "hora_inicio", "order": "ASCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "asignaciones",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "periodo_id", "order": "ASCENDING" },
+        { "fieldPath": "escenario_id", "order": "ASCENDING" },
+        { "fieldPath": "profesores_ids", "arrayConfig": "CONTAINS" },
+        { "fieldPath": "dia", "order": "ASCENDING" },
+        { "fieldPath": "hora_inicio", "order": "ASCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "asignaciones",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "periodo_id", "order": "ASCENDING" },
+        { "fieldPath": "escenario_id", "order": "ASCENDING" },
+        { "fieldPath": "nivel_educativo", "order": "ASCENDING" },
+        { "fieldPath": "programas_ids", "arrayConfig": "CONTAINS" },
+        { "fieldPath": "dia", "order": "ASCENDING" },
+        { "fieldPath": "hora_inicio", "order": "ASCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "preferencias",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "periodo_id", "order": "ASCENDING" },
+        { "fieldPath": "profesor_id", "order": "ASCENDING" },
+        { "fieldPath": "estado", "order": "ASCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "grupos",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "periodo_id", "order": "ASCENDING" },
+        { "fieldPath": "programas_ids", "arrayConfig": "CONTAINS" },
+        { "fieldPath": "activo", "order": "ASCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "espacios",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "activo", "order": "ASCENDING" },
+        { "fieldPath": "disponible", "order": "ASCENDING" },
+        { "fieldPath": "categoria", "order": "ASCENDING" },
+        { "fieldPath": "codigo", "order": "ASCENDING" }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}

@@ -1,0 +1,125 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Funciones auxiliares de seguridad
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(uid) {
+      return isSignedIn() && request.auth.uid == uid;
+    }
+
+    function getUserData() {
+      return get(/databases/$(database)/documents/usuarios/$(request.auth.uid)).data;
+    }
+
+    function isAdmin() {
+      return isSignedIn() && getUserData().role == 'admin';
+    }
+
+    function isCoordinator() {
+      return isSignedIn() && getUserData().role == 'coordinador';
+    }
+
+    function isAdminOrCoordinator() {
+      return isAdmin() || isCoordinator();
+    }
+
+    // Colección: usuarios
+    match /usuarios/{uid} {
+      allow read: if isSignedIn();
+      // Permitir creación inicial si es su propio uid
+      allow create: if isOwner(uid) && (!('role' in request.resource.data) || request.resource.data.role == 'profesor' || isAdmin());
+      // No permitir modificar su propio rol a menos que sea admin
+      allow update: if isOwner(uid) && (request.resource.data.role == resource.data.role || isAdmin()) || isAdmin();
+      allow delete: if isAdmin();
+    }
+
+    // Colección: programas
+    match /programas/{id} {
+      allow read: if isSignedIn();
+      allow write: if isAdmin();
+    }
+
+    // Colección: periodos
+    match /periodos/{id} {
+      allow read: if isSignedIn();
+      allow write: if isAdmin();
+    }
+
+    // Colección: escenarios
+    match /escenarios/{id} {
+      allow read: if isSignedIn();
+      allow write: if isAdmin();
+    }
+
+    // Colección: espacios
+    match /espacios/{id} {
+      allow read: if isSignedIn();
+      allow write: if isAdmin();
+    }
+
+    // Subcolecciones de catálogos y equivalencias
+    match /catalogos/{tipo}/items/{id} {
+      allow read: if isSignedIn();
+      allow write: if isAdmin();
+    }
+
+    // Colección: cursos
+    match /cursos/{id} {
+      allow read: if isSignedIn();
+      allow write: if isAdmin();
+    }
+
+    // Colección: grupos
+    match /grupos/{id} {
+      allow read: if isSignedIn();
+      allow write: if isAdminOrCoordinator();
+    }
+
+    // Colección: componentes_grupo
+    match /componentes_grupo/{id} {
+      allow read: if isSignedIn();
+      allow write: if isAdminOrCoordinator();
+    }
+
+    // Colección: subgrupos
+    match /subgrupos/{id} {
+      allow read: if isSignedIn();
+      allow write: if isAdminOrCoordinator();
+    }
+
+    // Colección: preferencias
+    match /preferencias/{id} {
+      allow read: if isSignedIn() && (request.auth.uid == resource.data.profesor_id || isAdminOrCoordinator());
+      allow create: if isSignedIn() && request.auth.uid == request.resource.data.profesor_id;
+      allow update: if isSignedIn() && (request.auth.uid == resource.data.profesor_id || isAdminOrCoordinator());
+      allow delete: if isAdmin() || (isOwner(resource.data.profesor_id) && resource.data.estado == 'borrador');
+    }
+
+    // Colección: asignaciones
+    match /asignaciones/{id} {
+      allow read: if isSignedIn();
+      allow create, update: if isAdminOrCoordinator();
+      allow delete: if isAdmin();
+    }
+
+    // Colección: solicitudes_cambio
+    match /solicitudes_cambio/{id} {
+      allow read: if isSignedIn() && (request.auth.uid == resource.data.profesor_id || isAdminOrCoordinator());
+      allow create: if isSignedIn() && request.auth.uid == request.resource.data.profesor_id;
+      allow update: if isAdminOrCoordinator() || (isOwner(resource.data.profesor_id) && resource.data.estado == 'pendiente');
+      allow delete: if isAdmin();
+    }
+
+    // Colección: solicitudes_cursos
+    match /solicitudes_cursos/{id} {
+      allow read: if isSignedIn() && (request.auth.uid == resource.data.profesor_id || isAdminOrCoordinator());
+      allow create: if isSignedIn() && request.auth.uid == request.resource.data.profesor_id;
+      allow update: if isAdminOrCoordinator();
+      allow delete: if isAdmin();
+    }
+  }
+}
