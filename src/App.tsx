@@ -24,6 +24,7 @@ import { ModalMoverAsignacion } from './components/ModalMoverAsignacion';
 import { InfografiaView } from './components/InfografiaView';
 import { MapaAulasView } from './components/MapaAulasView';
 import { ReporteAvanceView } from './components/ReporteAvanceView';
+import { HistorialCambiosView } from './components/HistorialCambiosView';
 
 import {
   Espacio,
@@ -38,7 +39,9 @@ import {
   Periodo,
   EquivalenciaEspacio,
   PreferenciaDocente,
-  Conflicto
+  Conflicto,
+  RegistroHistorialCambio,
+  TipoAccionHistorial
 } from './types';
 
 import {
@@ -53,6 +56,10 @@ import {
   exportarRespaldoJSON,
   importarRespaldoJSON,
   restablecerDatosPredeterminados,
+  cargarHistorialCambiosStorage,
+  guardarHistorialCambiosStorage,
+  registrarCambioHistorial,
+  limpiarHistorialCambiosStorage,
   EstadoCompletoApp
 } from './services/storage';
 
@@ -85,6 +92,24 @@ export default function App() {
   const [docentes, setDocentes] = useState<Usuario[]>(estadoBase.docentes);
   const [equivalencias, setEquivalencias] = useState<EquivalenciaEspacio[]>(estadoBase.equivalencias);
   const [preferenciasDocentes, setPreferenciasDocentes] = useState<PreferenciaDocente[]>(estadoBase.preferencias);
+
+  // Historial de Cambios y Auditoría Subdirección
+  const [historialCambios, setHistorialCambios] = useState<RegistroHistorialCambio[]>(() =>
+    cargarHistorialCambiosStorage()
+  );
+
+  const registrarAccionAuditoria = (
+    accion: Omit<RegistroHistorialCambio, 'id' | 'timestamp' | 'fecha_formateada'> & {
+      fecha_formateada?: string;
+    }
+  ) => {
+    try {
+      const nuevo = registrarCambioHistorial(accion);
+      setHistorialCambios((prev) => [nuevo, ...prev.slice(0, 249)]);
+    } catch (e) {
+      console.warn('Error al registrar auditoría en historial:', e);
+    }
+  };
 
   // Estados de Navegación y Usuario
   const [vistaActiva, setVistaActiva] = useState<VistaActiva>('dashboard');
@@ -239,10 +264,87 @@ export default function App() {
     setModalMoverAbierto(true);
   };
 
-  // Manejador para guardar o modificar asignación (local y reactivo)
+  // Manejador para guardar o modificar asignación (local y reactivo con auditoría)
   const handleGuardarAsignacion = async (nuevaAsig: Asignacion) => {
     setEstaCargando(true);
     try {
+      const anterior = asignaciones.find((a) => a.id === nuevaAsig.id);
+      const curso = cursos.find((c) => c.id === nuevaAsig.curso_id);
+      const grupo = grupos.find((g) => g.id === nuevaAsig.grupo_principal_id);
+      const docenteNuevo = docentes.find((d) => d.id === nuevaAsig.profesor_principal_id);
+      const docenteAnt = anterior ? docentes.find((d) => d.id === anterior.profesor_principal_id) : undefined;
+      const espacioNuevo = espacios.find((e) => e.id === nuevaAsig.espacio_id);
+      const espacioAnt = anterior ? espacios.find((e) => e.id === anterior.espacio_id) : undefined;
+      const grupoClave = grupo?.clave || nuevaAsig.grupo_principal_id;
+
+      // Auditoría automática en localStorage para Subdirección
+      if (anterior) {
+        let tipoAccion: TipoAccionHistorial = 'modificar_asignacion';
+        let desc = `${usuarioActual?.nombre || 'Usuario'} modificó la planeación de ${curso?.nombre || 'clase'} (${grupoClave})`;
+
+        if (anterior.espacio_id !== nuevaAsig.espacio_id && (anterior.hora_inicio !== nuevaAsig.hora_inicio || anterior.dia !== nuevaAsig.dia)) {
+          tipoAccion = 'cambiar_dia_y_aula';
+          desc = `${usuarioActual?.nombre || 'Usuario'} movió ${curso?.nombre || 'clase'} (${grupoClave}) del aula ${espacioAnt?.nombre || anterior.espacio_id} al aula ${espacioNuevo?.nombre || nuevaAsig.espacio_id} el ${nuevaAsig.dia} (${nuevaAsig.hora_inicio}-${nuevaAsig.hora_fin})`;
+        } else if (anterior.espacio_id !== nuevaAsig.espacio_id) {
+          tipoAccion = 'mover_aula';
+          desc = `${usuarioActual?.nombre || 'Usuario'} reubicó ${curso?.nombre || 'clase'} (${grupoClave}) del aula ${espacioAnt?.nombre || anterior.espacio_id} al aula ${espacioNuevo?.nombre || nuevaAsig.espacio_id}`;
+        } else if (anterior.hora_inicio !== nuevaAsig.hora_inicio || anterior.dia !== nuevaAsig.dia) {
+          tipoAccion = 'cambiar_horario';
+          desc = `${usuarioActual?.nombre || 'Usuario'} cambió el horario de ${curso?.nombre || 'clase'} (${anterior.dia} ${anterior.hora_inicio}-${anterior.hora_fin} ➔ ${nuevaAsig.dia} ${nuevaAsig.hora_inicio}-${nuevaAsig.hora_fin})`;
+        } else if (anterior.profesor_principal_id !== nuevaAsig.profesor_principal_id) {
+          tipoAccion = 'asignar_docente';
+          desc = `${usuarioActual?.nombre || 'Usuario'} asignó como titular a ${docenteNuevo?.nombre || 'Docente'} para ${curso?.nombre || 'clase'} (${grupoClave})`;
+        }
+
+        registrarAccionAuditoria({
+          usuario_id: usuarioActual?.id || 'admin',
+          usuario_nombre: usuarioActual?.nombre || 'Subdirección Académica',
+          usuario_email: usuarioActual?.email || 'fcm@uabc.edu.mx',
+          usuario_rol: (usuarioActual?.role as any) || 'admin',
+          usuario_cargo: usuarioActual?.cargo || 'Subdirección',
+          tipo_accion: tipoAccion,
+          descripcion: desc,
+          detalles: {
+            curso_id: nuevaAsig.curso_id,
+            curso_codigo: curso?.codigo,
+            curso_nombre: curso?.nombre,
+            grupo_clave: grupoClave,
+            espacio_anterior_codigo: espacioAnt?.codigo,
+            espacio_anterior_nombre: espacioAnt?.nombre,
+            espacio_nuevo_codigo: espacioNuevo?.codigo,
+            espacio_nuevo_nombre: espacioNuevo?.nombre,
+            dia_anterior: anterior.dia,
+            dia_nuevo: nuevaAsig.dia,
+            horario_anterior: `${anterior.hora_inicio} - ${anterior.hora_fin}`,
+            horario_nuevo: `${nuevaAsig.hora_inicio} - ${nuevaAsig.hora_fin}`,
+            docente_anterior_nombre: docenteAnt?.nombre,
+            docente_nuevo_nombre: docenteNuevo?.nombre,
+            motivo: 'Ajuste de planeación FCM 2027-1'
+          }
+        });
+      } else {
+        registrarAccionAuditoria({
+          usuario_id: usuarioActual?.id || 'admin',
+          usuario_nombre: usuarioActual?.nombre || 'Subdirección Académica',
+          usuario_email: usuarioActual?.email || 'fcm@uabc.edu.mx',
+          usuario_rol: (usuarioActual?.role as any) || 'admin',
+          usuario_cargo: usuarioActual?.cargo || 'Subdirección',
+          tipo_accion: 'crear_asignacion',
+          descripcion: `${usuarioActual?.nombre || 'Usuario'} programó ${curso?.nombre || 'clase'} (${grupoClave}) en ${espacioNuevo?.nombre || 'aula'} (${nuevaAsig.dia} ${nuevaAsig.hora_inicio}-${nuevaAsig.hora_fin})`,
+          detalles: {
+            curso_id: nuevaAsig.curso_id,
+            curso_codigo: curso?.codigo,
+            curso_nombre: curso?.nombre,
+            grupo_clave: grupoClave,
+            espacio_nuevo_codigo: espacioNuevo?.codigo,
+            espacio_nuevo_nombre: espacioNuevo?.nombre,
+            dia_nuevo: nuevaAsig.dia,
+            horario_nuevo: `${nuevaAsig.hora_inicio} - ${nuevaAsig.hora_fin}`,
+            docente_nuevo_nombre: docenteNuevo?.nombre
+          }
+        });
+      }
+
       setAsignaciones((prev) => {
         const existe = prev.some((a) => a.id === nuevaAsig.id);
         const actualizadas = existe
@@ -261,6 +363,35 @@ export default function App() {
 
   // Manejador para eliminar asignación
   const handleEliminarAsignacion = async (asigId: string) => {
+    const eliminada = asignaciones.find((a) => a.id === asigId);
+    if (eliminada) {
+      const curso = cursos.find((c) => c.id === eliminada.curso_id);
+      const grupo = grupos.find((g) => g.id === eliminada.grupo_principal_id);
+      const espacio = espacios.find((e) => e.id === eliminada.espacio_id);
+      const docente = docentes.find((d) => d.id === eliminada.profesor_principal_id);
+      const grupoClave = grupo?.clave || eliminada.grupo_principal_id;
+
+      registrarAccionAuditoria({
+        usuario_id: usuarioActual?.id || 'admin',
+        usuario_nombre: usuarioActual?.nombre || 'Subdirección Académica',
+        usuario_email: usuarioActual?.email || 'fcm@uabc.edu.mx',
+        usuario_rol: (usuarioActual?.role as any) || 'admin',
+        usuario_cargo: usuarioActual?.cargo || 'Subdirección',
+        tipo_accion: 'eliminar_asignacion',
+        descripcion: `${usuarioActual?.nombre || 'Usuario'} canceló la sesión de ${curso?.nombre || 'clase'} en ${espacio?.nombre || 'aula'} (${eliminada.dia} ${eliminada.hora_inicio}-${eliminada.hora_fin})`,
+        detalles: {
+          curso_id: eliminada.curso_id,
+          curso_nombre: curso?.nombre,
+          grupo_clave: grupoClave,
+          espacio_anterior_codigo: espacio?.codigo,
+          espacio_anterior_nombre: espacio?.nombre,
+          dia_anterior: eliminada.dia,
+          horario_anterior: `${eliminada.hora_inicio} - ${eliminada.hora_fin}`,
+          docente_anterior_nombre: docente?.nombre
+        }
+      });
+    }
+
     setAsignaciones((prev) => {
       const actualizadas = prev.filter((a) => a.id !== asigId);
       guardarAsignacionesStorage(actualizadas);
@@ -375,10 +506,25 @@ export default function App() {
     }
   };
 
-  // Manejador para actualizar datos y nombre de aula
+  // Manejador para actualizar datos y nombre de aula con auditoría
   const handleActualizarAula = async (espacioActualizado: Espacio) => {
     setEstaCargando(true);
     try {
+      registrarAccionAuditoria({
+        usuario_id: usuarioActual?.id || 'admin',
+        usuario_nombre: usuarioActual?.nombre || 'Subdirección Académica',
+        usuario_email: usuarioActual?.email || 'fcm@uabc.edu.mx',
+        usuario_rol: (usuarioActual?.role as any) || 'admin',
+        usuario_cargo: usuarioActual?.cargo || 'Subdirección',
+        tipo_accion: 'editar_aula',
+        descripcion: `${usuarioActual?.nombre || 'Usuario'} actualizó datos del aula ${espacioActualizado.codigo} (${espacioActualizado.nombre}) con capacidad de ${espacioActualizado.capacidad_maxima} estudiantes`,
+        detalles: {
+          espacio_nuevo_codigo: espacioActualizado.codigo,
+          espacio_nuevo_nombre: espacioActualizado.nombre,
+          motivo: 'Actualización en catálogo de espacios'
+        }
+      });
+
       setEspacios((prev) => {
         const actualizados = prev.map((esp) => (esp.id === espacioActualizado.id ? espacioActualizado : esp));
         guardarEspaciosStorage(actualizados);
@@ -411,10 +557,25 @@ export default function App() {
     }
   };
 
-  // Manejador para crear nueva aula en el catálogo
+  // Manejador para crear nueva aula en el catálogo con auditoría
   const handleCrearNuevaAula = async (nuevaAula: Espacio) => {
     setEstaCargando(true);
     try {
+      registrarAccionAuditoria({
+        usuario_id: usuarioActual?.id || 'admin',
+        usuario_nombre: usuarioActual?.nombre || 'Subdirección Académica',
+        usuario_email: usuarioActual?.email || 'fcm@uabc.edu.mx',
+        usuario_rol: (usuarioActual?.role as any) || 'admin',
+        usuario_cargo: usuarioActual?.cargo || 'Subdirección',
+        tipo_accion: 'crear_aula',
+        descripcion: `${usuarioActual?.nombre || 'Usuario'} dio de alta el espacio físico ${nuevaAula.codigo} (${nuevaAula.nombre}) con capacidad de ${nuevaAula.capacidad_maxima} estudiantes`,
+        detalles: {
+          espacio_nuevo_codigo: nuevaAula.codigo,
+          espacio_nuevo_nombre: nuevaAula.nombre,
+          motivo: 'Alta en catálogo de espacios FCM'
+        }
+      });
+
       setEspacios((prev) => {
         const existe = prev.some((e) => e.id === nuevaAula.id || e.codigo === nuevaAula.codigo);
         const actualizados = existe ? prev.map((e) => (e.id === nuevaAula.id ? nuevaAula : e)) : [...prev, nuevaAula];
@@ -764,6 +925,7 @@ export default function App() {
     setDocentes(defaultState.docentes);
     setEquivalencias(defaultState.equivalencias);
     setPreferenciasDocentes(defaultState.preferencias);
+    setHistorialCambios(cargarHistorialCambiosStorage());
     const admin = defaultState.docentes.find((d) => d.email === 'igiffard@uabc.edu.mx') || defaultState.docentes[0];
     setUsuarioActual(admin);
     alert('Se han restablecido los datos a la propuesta oficial 2027-1.');
@@ -964,6 +1126,30 @@ export default function App() {
               onExportarJSON={handleExportarJSON}
               onImportarJSON={handleImportarJSON}
               onRestablecerDatos={handleRestablecerDatos}
+            />
+          )}
+
+          {vistaActiva === 'historial_cambios' && (
+            <HistorialCambiosView
+              historial={historialCambios}
+              usuarioActual={usuarioActual}
+              onLimpiarHistorial={() => {
+                limpiarHistorialCambiosStorage();
+                setHistorialCambios([]);
+              }}
+              onRegistrarNotaAuditoria={(nota) => {
+                if (!usuarioActual) return;
+                registrarAccionAuditoria({
+                  usuario_id: usuarioActual.id,
+                  usuario_nombre: usuarioActual.nombre,
+                  usuario_email: usuarioActual.email,
+                  usuario_rol: usuarioActual.role,
+                  usuario_cargo: usuarioActual.cargo,
+                  tipo_accion: 'nota_auditoria',
+                  descripcion: `Nota de Auditoría Subdirección: ${nota}`,
+                  detalles: { motivo: nota }
+                });
+              }}
             />
           )}
         </main>

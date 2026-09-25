@@ -108,3 +108,44 @@ Todos los cursos, grupos y asignaciones conviven en una base de datos centraliza
   * Dorado UABC: `#d97706`
   * Esmeralda Posgrado: `#059669`
 * **Tipografía:** Plus Jakarta Sans con pesos balanceados y jerarquía visual estricta.
+
+---
+
+## 7. Ejecución Local y Pruebas
+
+Para clonar y correr la plataforma en tu computadora o servidor:
+
+1. **Requisitos:** Node.js v18+ o v20+ y npm.
+2. **Instalar dependencias:**
+   ```bash
+   npm install
+   ```
+3. **Iniciar en modo desarrollo:**
+   ```bash
+   npm run dev
+   ```
+   Abre [http://localhost:3000](http://localhost:3000) en tu navegador.
+
+4. **Compilar para producción:**
+   ```bash
+   npm run build
+   ```
+   Genera la carpeta `dist/` optimizada para despliegue estático o servidor.
+
+---
+
+## 8. Despliegue Automático en GitHub (GitHub Pages)
+
+El proyecto incluye el flujo oficial de GitHub Actions configurado en `.github/workflows/main.yml`.
+
+### Pasos para activar GitHub Pages en el repositorio:
+1. En GitHub, ve a la pestaña **Settings** (Configuración) de tu repositorio.
+2. En el menú lateral izquierdo, haz clic en **Pages**.
+3. En la sección **Build and deployment** (Compilación y despliegue):
+   - En **Source**, selecciona: **GitHub Actions**.
+4. Haz cualquier `push` o ejecuta el flujo manualmente desde la pestaña **Actions**.
+5. Tu sitio estará publicado automáticamente en:
+   `https://<tu-usuario-o-organizacion>.github.io/<nombre-del-repo>/`
+
+> **Nota Técnica:** `vite.config.ts` está configurado con `base: './'`, permitiendo que todos los scripts, estilos y fuentes funcionen sin errores 404 tanto en GitHub Pages como en Google Sites o dominios personalizados.
+

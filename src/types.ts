@@ -443,7 +443,9 @@ export type TipoAccionHistorial =
   | 'editar_aula'
   | 'unificar_aulas'
   | 'importar_csv'
-  | 'restablecer_datos';
+  | 'restablecer_datos'
+  | 'nota_auditoria'
+  | 'modificar_asignacion';
 
 export interface DetalleCambioPlaneacion {
   curso_id?: string;
