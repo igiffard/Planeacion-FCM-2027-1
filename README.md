@@ -138,14 +138,66 @@ Para clonar y correr la plataforma en tu computadora o servidor:
 
 El proyecto incluye el flujo oficial de GitHub Actions configurado en `.github/workflows/main.yml`.
 
-### Pasos para activar GitHub Pages en el repositorio:
+### Pasos para subir el código a GitHub (Push inicial):
+Si vas a publicar este proyecto en un repositorio nuevo de GitHub:
+
+1. Crea un repositorio vacío en [GitHub](https://github.com/new) (por ejemplo: `planeacion-fcm-2027-1`).
+2. En tu terminal ejecuta:
+   ```bash
+   git add .
+   git commit -m "feat: plataforma de planeacion academica fcm 2027-1 completa"
+   git branch -M main
+   git remote add origin https://github.com/<tu-usuario>/<tu-repositorio>.git
+   git push -u origin main
+   ```
+
+### Pasos para activar el despliegue automático con GitHub Actions:
 1. En GitHub, ve a la pestaña **Settings** (Configuración) de tu repositorio.
 2. En el menú lateral izquierdo, haz clic en **Pages**.
 3. En la sección **Build and deployment** (Compilación y despliegue):
-   - En **Source**, selecciona: **GitHub Actions**.
-4. Haz cualquier `push` o ejecuta el flujo manualmente desde la pestaña **Actions**.
-5. Tu sitio estará publicado automáticamente en:
-   `https://<tu-usuario-o-organizacion>.github.io/<nombre-del-repo>/`
+   - En **Source**, cambia de *"Deploy from a branch"* a: **GitHub Actions**.
+4. ¡Listo! En cuanto hagas `push`, la pestaña **Actions** compilará el proyecto con Vite y publicará la web automáticamente.
+5. Tu sitio estará disponible en:
+   `https://<tu-usuario>.github.io/<tu-repositorio>/`
 
-> **Nota Técnica:** `vite.config.ts` está configurado con `base: './'`, permitiendo que todos los scripts, estilos y fuentes funcionen sin errores 404 tanto en GitHub Pages como en Google Sites o dominios personalizados.
+---
+
+## 9. Cómo Incrustar la Plataforma en Google Sites (Paso a Paso)
+
+La aplicación está especialmente optimizada para funcionar dentro del entorno de **Google Sites** (compatible con iframes, sin bloqueos de cookies de terceros y con notificaciones flotantes integradas):
+
+### Método Recomendado (Insertar Código HTML):
+1. Abre tu sitio en el editor de **Google Sites**.
+2. En el panel lateral derecho, ve a la pestaña **Insertar** (`Insert`).
+3. Haz clic en el botón **Incorporar** o **Insertar** (`< > Embed`).
+4. Selecciona la pestaña **Incorporar código** (`Embed code`).
+5. Pega el siguiente bloque reemplazando tu URL de GitHub Pages:
+   ```html
+   <iframe 
+     src="https://<tu-usuario>.github.io/<tu-repositorio>/" 
+     width="100%" 
+     height="950px" 
+     style="border: none; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);" 
+     allowfullscreen
+     loading="lazy">
+   </iframe>
+   ```
+6. Haz clic en **Siguiente** y luego en **Insertar**.
+7. En el lienzo de Google Sites, estira el contenedor hacia los laterales para que ocupe todo el ancho de la página.
+8. Haz clic en el botón azul **Publicar** de Google Sites.
+
+### Método Alternativo (Por URL directa):
+1. En Google Sites, haz clic en **Insertar** -> **Incorporar**.
+2. En la pestaña **Por URL**, pega la dirección directa:
+   `https://<tu-usuario>.github.io/<tu-repositorio>/`
+3. Selecciona **Página completa** y haz clic en **Insertar**.
+
+---
+
+## 10. Garantía de Compatibilidad y Código Limpio
+
+* **Rutas Relativas (`base: './'`):** En `vite.config.ts`, todos los paquetes y activos se cargan de forma relativa, impidiendo errores de tipo 404 al alojarse en subcarpetas de GitHub Pages o dentro de iframes de Google Sites.
+* **Cero llamadas a `window.alert()`:** Reemplazadas por avisos visuales seguros (Toasts y banners inline) que no son bloqueados por las políticas de seguridad de iframes en Google Sites.
+* **HTTPS Nativo:** Cumple al 100% con los requisitos de conexión cifrada obligatoria de Google Sites.
+* **Control de Calidad:** Verificado con `tsc --noEmit` y `npm run build` con cero advertencias bloqueantes.
 

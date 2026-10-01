@@ -5,6 +5,7 @@
 import React, { useState, useMemo } from 'react';
 import {
   Calendar,
+  CalendarDays,
   Plus,
   Filter,
   Search,
@@ -276,6 +277,33 @@ export const PlanificacionView: React.FC<PlanificacionViewProps> = ({
     docentesMap
   ]);
 
+  // Clasificación de docentes para filtros rápidos y visualización fluida
+  const docentesConAsignacion = useMemo(() => {
+    return docentes
+      .filter((d) =>
+        asignaciones.some((a) => a.profesores_ids?.includes(d.uid) && a.escenario_id === escenarioActivoId)
+      )
+      .sort((a, b) => a.nombre.localeCompare(b.nombre));
+  }, [docentes, asignaciones, escenarioActivoId]);
+
+  const docentesSinAsignacion = useMemo(() => {
+    return docentes
+      .filter((d) =>
+        !asignaciones.some((a) => a.profesores_ids?.includes(d.uid) && a.escenario_id === escenarioActivoId)
+      )
+      .sort((a, b) => a.nombre.localeCompare(b.nombre));
+  }, [docentes, asignaciones, escenarioActivoId]);
+
+  // Lista de docentes para la barra de botones rápidos: docentes con carga + docente activo si no tiene
+  const docentesParaPills = useMemo(() => {
+    const lista = [...docentesConAsignacion];
+    if (filtroDocente !== 'todos' && !lista.some((d) => d.uid === filtroDocente)) {
+      const activo = docentesMap.get(filtroDocente);
+      if (activo) lista.push(activo);
+    }
+    return lista;
+  }, [docentesConAsignacion, filtroDocente, docentesMap]);
+
   // Validación en tiempo real dentro del formulario
   const validacionFormulario = useMemo(() => {
     if (!formEspacioId || !formHoraInicio || !formHoraFin || !formDia) {
@@ -443,7 +471,7 @@ export const PlanificacionView: React.FC<PlanificacionViewProps> = ({
       await onEliminarAsignacion(id);
       setAsignacionDetalle(null);
     } catch (err: any) {
-      alert(err.message || 'Error al eliminar');
+      setErrorGuardado(err.message || 'Error al eliminar');
     }
   };
 
@@ -608,14 +636,25 @@ export const PlanificacionView: React.FC<PlanificacionViewProps> = ({
               id="filtro-docente"
               value={filtroDocente}
               onChange={(e) => setFiltroDocente(e.target.value)}
-              className="w-full bg-slate-50 border border-slate-300 rounded-lg px-2.5 py-1.5 text-slate-800 focus:ring-1 focus:ring-sky-500"
+              className="w-full bg-slate-50 border border-slate-300 rounded-lg px-2.5 py-1.5 text-slate-800 focus:ring-1 focus:ring-sky-500 font-medium"
             >
-              <option value="todos">Todos los docentes</option>
-              {docentes.map((d) => (
-                <option key={d.uid} value={d.uid}>
-                  {d.nombre}
-                </option>
-              ))}
+              <option value="todos">Todos los docentes ({docentes.length})</option>
+              {docentesConAsignacion.length > 0 && (
+                <optgroup label={`📋 Docentes con Clases Asignadas (${docentesConAsignacion.length})`}>
+                  {docentesConAsignacion.map((d) => (
+                    <option key={d.uid} value={d.uid}>
+                      {d.nombre}
+                    </option>
+                  ))}
+                </optgroup>
+              )}
+              <optgroup label={`🏛️ Claustro Docente Completo FCM (${docentesSinAsignacion.length})`}>
+                {docentesSinAsignacion.map((d) => (
+                  <option key={d.uid} value={d.uid}>
+                    {d.nombre}
+                  </option>
+                ))}
+              </optgroup>
             </select>
           </div>
 
@@ -762,7 +801,7 @@ export const PlanificacionView: React.FC<PlanificacionViewProps> = ({
             Todos ({docentes.length})
           </button>
 
-          {docentes.map((d) => {
+          {docentesParaPills.map((d) => {
             const activo = filtroDocente === d.uid;
             const tieneAsig = asignaciones.some(
               (a) => a.profesores_ids?.includes(d.uid) && a.escenario_id === escenarioActivoId
@@ -1326,12 +1365,14 @@ export const PlanificacionView: React.FC<PlanificacionViewProps> = ({
                   required
                   className="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2 text-slate-800 text-xs focus:ring-1 focus:ring-sky-500"
                 >
-                  <option value="">Seleccione docente...</option>
-                  {docentes.map((d) => (
-                    <option key={d.uid} value={d.uid}>
-                      {d.nombre} ({d.academia_area || d.email})
-                    </option>
-                  ))}
+                  <option value="">Seleccione docente ({docentes.length} disponibles)...</option>
+                  {[...docentes]
+                    .sort((a, b) => a.nombre.localeCompare(b.nombre))
+                    .map((d) => (
+                      <option key={d.uid} value={d.uid}>
+                        {d.nombre} ({d.academia_area || d.email})
+                      </option>
+                    ))}
                 </select>
               </div>
 

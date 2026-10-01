@@ -28,6 +28,7 @@ export const ModalEditarPerfilDocente: React.FC<ModalEditarPerfilDocenteProps> =
   const [role, setRole] = useState<RolUsuario>('profesor');
   const [guardando, setGuardando] = useState(false);
   const [exito, setExito] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     if (usuario) {
@@ -73,9 +74,9 @@ export const ModalEditarPerfilDocente: React.FC<ModalEditarPerfilDocenteProps> =
         setExito(false);
         onCerrar();
       }, 1000);
-    } catch (error) {
-      console.error('Error al guardar perfil docente:', error);
-      alert('Error al guardar los cambios del perfil');
+    } catch (err: any) {
+      console.error('Error al guardar perfil docente:', err);
+      setError(err?.message || 'Error al guardar los cambios del perfil');
     } finally {
       setGuardando(false);
     }
@@ -110,7 +111,14 @@ export const ModalEditarPerfilDocente: React.FC<ModalEditarPerfilDocenteProps> =
           {exito && (
             <div className="p-3 bg-emerald-50 border border-emerald-300 rounded-lg flex items-center gap-2 text-emerald-800 font-bold">
               <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-              <span>Nombre real y perfil docente actualizados exitosamente en Firestore.</span>
+              <span>Nombre real y perfil docente actualizados exitosamente.</span>
+            </div>
+          )}
+
+          {error && (
+            <div className="p-3 bg-rose-50 border border-rose-300 rounded-lg flex items-center gap-2 text-rose-800 font-bold">
+              <X className="w-4 h-4 text-rose-600 shrink-0" />
+              <span>{error}</span>
             </div>
           )}
 

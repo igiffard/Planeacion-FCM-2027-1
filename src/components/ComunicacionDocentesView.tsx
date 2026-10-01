@@ -142,7 +142,7 @@ export const ComunicacionDocentesView: React.FC<ComunicacionDocentesViewProps> =
       const coincideArea = filtroArea === 'todas' || doc.academia_area === filtroArea;
 
       return coincideBusqueda && coincideArea;
-    });
+    }).sort((a, b) => a.nombre.localeCompare(b.nombre));
   }, [docentesConDetalle, busqueda, filtroArea, cursosMap]);
 
   // Copiar tarjeta o ficha limpia para WhatsApp / Estudiantes
@@ -814,7 +814,7 @@ export const ComunicacionDocentesView: React.FC<ComunicacionDocentesViewProps> =
                         <GraduationCap className="w-3.5 h-3.5 text-emerald-600" />
                         Tutor Académico Asignado:
                       </span>
-                      <p className="font-bold text-slate-900">{item.tutor_nombre}</p>
+                      <p className="font-bold text-slate-900">{tutorDocente?.nombre || item.tutor_nombre}</p>
                       {tutorDocente?.cubiculo && (
                         <p className="text-[11px] text-slate-500 flex items-center gap-1">
                           <MapPin className="w-3 h-3 text-slate-400" />

@@ -5,6 +5,7 @@
  */
 
 import React, { useState, useEffect, useMemo } from 'react';
+import { CheckCircle2, AlertCircle, Info, X } from 'lucide-react';
 import { Header } from './components/Header';
 import { Sidebar, VistaActiva } from './components/Sidebar';
 import { DashboardView } from './components/DashboardView';
@@ -134,6 +135,19 @@ export default function App() {
   // Modal para mover en tiempo y espacio físico
   const [modalMoverAbierto, setModalMoverAbierto] = useState<boolean>(false);
   const [asignacionParaMover, setAsignacionParaMover] = useState<Asignacion | null>(null);
+
+  // Notificaciones flotantes tipo Toast (compatibles con iframes y Google Sites)
+  const [toastNotificacion, setToastNotificacion] = useState<{
+    mensaje: string;
+    tipo: 'exito' | 'error' | 'info';
+  } | null>(null);
+
+  const mostrarToast = (mensaje: string, tipo: 'exito' | 'error' | 'info' = 'exito') => {
+    setToastNotificacion({ mensaje, tipo });
+    setTimeout(() => {
+      setToastNotificacion((prev) => (prev?.mensaje === mensaje ? null : prev));
+    }, 4500);
+  };
 
   // Mapas de búsqueda rápida
   const espaciosMap = useMemo(() => new Map(espacios.map((e) => [e.id, e])), [espacios]);
@@ -1028,9 +1042,9 @@ export default function App() {
       setDocentes(estadoCargado.docentes);
       setEquivalencias(estadoCargado.equivalencias);
       setPreferenciasDocentes(estadoCargado.preferencias);
-      alert('¡Respaldo restaurado exitosamente! Todos los horarios y cursos han sido actualizados.');
+      mostrarToast('¡Respaldo restaurado exitosamente! Todos los horarios y cursos han sido actualizados.', 'exito');
     } catch (err: any) {
-      alert(err.message || 'Error al importar archivo de respaldo');
+      mostrarToast(err.message || 'Error al importar archivo de respaldo', 'error');
     }
   };
 
@@ -1051,7 +1065,7 @@ export default function App() {
     setHistorialCambios(cargarHistorialCambiosStorage());
     const admin = defaultState.docentes.find((d) => d.email === 'igiffard@uabc.edu.mx') || defaultState.docentes[0];
     setUsuarioActual(admin);
-    alert('Se han restablecido los datos a la propuesta oficial 2027-1.');
+    mostrarToast('Se han restablecido los datos a la propuesta oficial 2027-1.', 'info');
   };
 
   return (
@@ -1343,6 +1357,40 @@ export default function App() {
         onGuardar={handleCrearNuevaAula}
         roleUsuario={usuarioActual?.role}
       />
+
+      {/* Notificación flotante Toast segura para iframes y Google Sites */}
+      {toastNotificacion && (
+        <div className="fixed top-4 right-4 z-50 max-w-sm w-full animate-in fade-in slide-in-from-top-3 duration-200 pointer-events-auto">
+          <div
+            className={`p-3.5 rounded-xl shadow-xl border flex items-start gap-3 backdrop-blur-md ${
+              toastNotificacion.tipo === 'exito'
+                ? 'bg-emerald-50/95 border-emerald-300 text-emerald-900'
+                : toastNotificacion.tipo === 'error'
+                ? 'bg-rose-50/95 border-rose-300 text-rose-900'
+                : 'bg-sky-50/95 border-sky-300 text-sky-900'
+            }`}
+          >
+            {toastNotificacion.tipo === 'exito' && (
+              <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
+            )}
+            {toastNotificacion.tipo === 'error' && (
+              <AlertCircle className="w-5 h-5 text-rose-600 shrink-0 mt-0.5" />
+            )}
+            {toastNotificacion.tipo === 'info' && (
+              <Info className="w-5 h-5 text-sky-600 shrink-0 mt-0.5" />
+            )}
+            <div className="flex-1 text-xs font-semibold leading-relaxed">
+              {toastNotificacion.mensaje}
+            </div>
+            <button
+              onClick={() => setToastNotificacion(null)}
+              className="text-slate-400 hover:text-slate-700 p-0.5"
+            >
+              <X className="w-4 h-4" />
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

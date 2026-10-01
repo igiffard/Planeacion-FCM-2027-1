@@ -142,8 +142,467 @@ export const EQUIVALENCIAS_ESPACIOS_INICIALES: EquivalenciaEspacio[] = [
 
 export const USUARIOS_INICIALES: Usuario[] = [
   {
+    "uid": "prof_enriquezandrad",
+    "nombre": "Dr. Enriquez Andrade Roberto Ramón",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "eramon@uabc.edu.mx",
+    "email_normalizado": "eramon@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_trueconaldavid",
+    "nombre": "Dr. Conal David True",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "ctrue@uabc.edu.mx",
+    "email_normalizado": "ctrue@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Biotecnología y Cultivo de Peces Marinos (Totoaba)",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_arredondogarci",
+    "nombre": "Dra. María Concepción Arredondo García",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "marredondo@uabc.edu.mx",
+    "email_normalizado": "marredondo@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Biología Marina y Fisiología",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_villegasvicenc",
+    "nombre": "Dr. Luis Javier Villegas Vicencio",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "lvillegas@uabc.edu.mx",
+    "email_normalizado": "lvillegas@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Oceanografía Física e Instrumentación",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_wagnergutierre",
+    "nombre": "Dr. Juan Manuel Wagner Gutiérrez",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "jwagner@uabc.edu.mx",
+    "email_normalizado": "jwagner@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ecología Marina y Zooplancton",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_schrammurrutia",
+    "nombre": "Dra. Yolanda Schramm Urrutia",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "yschramm@uabc.edu.mx",
+    "email_normalizado": "yschramm@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Mastozoología Marina y Mamíferos Marinos",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_jvaca",
+    "nombre": "Dr. Juan Guillermo Vaca Rodríguez",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "jvaca@uabc.edu.mx",
+    "email_normalizado": "jvaca@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "MCOC",
+      "DOC",
+      "OCE"
+    ],
+    "niveles_asignados": [
+      "posgrado",
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": true,
+    "academia_area": "Pesquerías y Dinámica de Poblaciones",
+    "cubiculo": "Edificio 18 · Cubículo 201",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43157",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_lopezacunalusm",
+    "nombre": "Dra. Lus Mercedes López Acuña",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "llopeza@uabc.edu.mx",
+    "email_normalizado": "llopeza@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Química Marina y Contaminación Acuática",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_palvarado",
+    "nombre": "Dra. Patricia Alvarado Graef",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "palvarado@uabc.edu.mx",
+    "email_normalizado": "palvarado@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "MCOC",
+      "DOC",
+      "OCE"
+    ],
+    "niveles_asignados": [
+      "posgrado",
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": true,
+    "academia_area": "Modelación Numérica del Océano y Dinámica Geofísica",
+    "cubiculo": "Edificio 16 · Cubículo 115",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43145",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_spelzmaderoron",
+    "nombre": "Dr. Ronald Michael Spelz Madero",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "rspelz@uabc.edu.mx",
+    "email_normalizado": "rspelz@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Geología Marina y Tectónica Costera",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_garciagastelum",
+    "nombre": "Dr. Alejandro García Gastélum",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "agarcia@uabc.edu.mx",
+    "email_normalizado": "agarcia@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Físico-Química Marina y Procesos de Transporte",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_bmartin",
+    "nombre": "Dra. Beatriz Martín Atienza",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "bmartin@uabc.edu.mx",
+    "email_normalizado": "bmartin@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "MCOC",
+      "DOC",
+      "OCE"
+    ],
+    "niveles_asignados": [
+      "posgrado",
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": true,
+    "academia_area": "Estadística Multivariada y Modelación Bioestadística",
+    "cubiculo": "Edificio 14 · Cubículo 104",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43120",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_gonzalezsilver",
+    "nombre": "Dra. Adriana González Silvera",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "agonzalez@uabc.edu.mx",
+    "email_normalizado": "agonzalez@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Bio-óptica Marina y Percepción Remota",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_gsandoval",
+    "nombre": "Dr. Gerardo Sandoval Garibaldi",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "gsandoval@uabc.edu.mx",
+    "email_normalizado": "gsandoval@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Bioluminiscencia y Oceanografía Biológica",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_lenriquez",
+    "nombre": "Dr. Luis Manuel Enríquez Paredes",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "lenriquez@uabc.edu.mx",
+    "email_normalizado": "lenriquez@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "MCOC",
+      "DOC",
+      "OCE"
+    ],
+    "niveles_asignados": [
+      "posgrado",
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": true,
+    "academia_area": "Ecología Molecular y Genética de Poblaciones",
+    "cubiculo": "Edificio 17 · Cubículo 105",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43135",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_reaton",
+    "nombre": "Dr. Ricardo Bernardino Eaton González",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "reaton@uabc.edu.mx",
+    "email_normalizado": "reaton@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "MCOC",
+      "DOC",
+      "OCE"
+    ],
+    "niveles_asignados": [
+      "posgrado",
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": true,
+    "academia_area": "Oceanografía Física y Modelación Numérica",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_seingiergeorge",
+    "nombre": "Dr. Georges Seingier",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "gseingier@uabc.edu.mx",
+    "email_normalizado": "gseingier@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Gestión Ambiental Costera y Ordenamiento Territorial",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
     "uid": "admin_igiffard",
-    "nombre": "Dra. Ivone Giffard",
+    "nombre": "Dra. Ivone Giffard Mena",
     "cargo": "Subdirectora FCM · Docente de Posgrado",
     "titulo_academico": "Dra.",
     "email": "igiffard@uabc.edu.mx",
@@ -160,461 +619,497 @@ export const USUARIOS_INICIALES: Usuario[] = [
     ],
     "activo": true,
     "origen_pdf_posgrado": true,
-    "academia_area": "Subdirección FCM · Biología y Oceanografía",
+    "academia_area": "Subdirección FCM · Fisiología y Osmorregulación Acuática",
     "cubiculo": "Edificio 14 (Dirección) · Cubículo Subdirección",
-    "horario_tutorias": "Lunes a Viernes 10:00 - 13:00 (Cita previa)",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
     "telefono_extension": "Ext. 43102",
-    "canal_contacto_estudiantes": "Correo UABC / Teams / Presencial",
-    "createdAt": "2027-01-10T08:00:00.000Z",
-    "updatedAt": "2027-01-10T08:00:00.000Z"
-  },
-  {
-    "uid": "prof_bmartin",
-    "nombre": "Dr. Benjamín Martín",
-    "cargo": "Profesor-Investigador",
-    "titulo_academico": "Dr.",
-    "email": "bmartin@uabc.edu.mx",
-    "email_normalizado": "bmartin@uabc.edu.mx",
-    "role": "profesor",
-    "programas_asignados_ids": [
-      "MCOC",
-      "DOC"
-    ],
-    "niveles_asignados": [
-      "posgrado"
-    ],
-    "activo": true,
-    "origen_pdf_posgrado": true,
-    "academia_area": "Estadística y Modelación",
-    "cubiculo": "Edificio 14 · Cubículo 104",
-    "horario_tutorias": "Miércoles y Viernes 11:00 - 13:00",
-    "telefono_extension": "Ext. 43120",
-    "canal_contacto_estudiantes": "Correo UABC / Teams",
-    "createdAt": "2027-01-10T08:00:00.000Z",
-    "updatedAt": "2027-01-10T08:00:00.000Z"
-  },
-  {
-    "uid": "prof_llopez",
-    "nombre": "Dra. Laura Liliana López Galindo",
-    "cargo": "Profesora-Investigadora",
-    "titulo_academico": "Dra.",
-    "email": "llopez@uabc.edu.mx",
-    "email_normalizado": "llopez@uabc.edu.mx",
-    "role": "profesor",
-    "programas_asignados_ids": [
-      "MCOC",
-      "DOC"
-    ],
-    "niveles_asignados": [
-      "posgrado"
-    ],
-    "activo": true,
-    "origen_pdf_posgrado": true,
-    "academia_area": "Biología Molecular y Genética",
-    "cubiculo": "Edificio 25 (IIO) · Cubículo 208",
-    "horario_tutorias": "Martes y Jueves 10:00 - 12:00",
-    "telefono_extension": "Ext. 43215",
-    "canal_contacto_estudiantes": "Correo UABC",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
   {
     "uid": "prof_mtorres",
     "nombre": "Dra. Mónica Torres Beltrán",
-    "cargo": "Profesora-Investigadora",
+    "cargo": "Profesor-Investigador",
     "titulo_academico": "Dra.",
     "email": "mtorres@uabc.edu.mx",
     "email_normalizado": "mtorres@uabc.edu.mx",
     "role": "profesor",
     "programas_asignados_ids": [
       "MCOC",
-      "DOC"
+      "DOC",
+      "OCE"
     ],
     "niveles_asignados": [
-      "posgrado"
+      "posgrado",
+      "licenciatura"
     ],
     "activo": true,
     "origen_pdf_posgrado": true,
-    "academia_area": "Bioinformática y Microbiología Marina",
+    "academia_area": "Bioinformática, Microbiología Marina y Genómica",
     "cubiculo": "Edificio 14 · Cubículo 108",
-    "horario_tutorias": "Lunes y Viernes 13:00 - 15:00",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
     "telefono_extension": "Ext. 43118",
-    "canal_contacto_estudiantes": "Correo UABC / Teams",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
   {
-    "uid": "prof_bjuarez",
-    "nombre": "Dr. Braulio Juárez A.",
+    "uid": "prof_riverahuertahi",
+    "nombre": "Dr. Hiram Rivera Huerta",
     "cargo": "Profesor-Investigador",
     "titulo_academico": "Dr.",
-    "email": "bjuarez@uabc.edu.mx",
-    "email_normalizado": "bjuarez@uabc.edu.mx",
+    "email": "hrivera@uabc.edu.mx",
+    "email_normalizado": "hrivera@uabc.edu.mx",
     "role": "profesor",
     "programas_asignados_ids": [
-      "MCOC",
-      "DOC"
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
     ],
     "niveles_asignados": [
-      "posgrado"
+      "licenciatura"
     ],
     "activo": true,
-    "origen_pdf_posgrado": true,
-    "academia_area": "Oceanografía Física e Hidrodinámica",
-    "cubiculo": "Edificio 16 · Cubículo 112",
-    "horario_tutorias": "Martes y Jueves 14:00 - 16:00",
-    "telefono_extension": "Ext. 43144",
-    "canal_contacto_estudiantes": "Correo UABC / Teams",
+    "origen_pdf_posgrado": false,
+    "academia_area": "Oceanografía Geológica y Sedimentología",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
   {
-    "uid": "prof_palvarado",
-    "nombre": "Dr. Pedro Alvarado",
+    "uid": "prof_tanahararomero",
+    "nombre": "Dra. Tanahara Romero Sarayda Aimé",
     "cargo": "Profesor-Investigador",
-    "titulo_academico": "Dr.",
-    "email": "palvarado@uabc.edu.mx",
-    "email_normalizado": "palvarado@uabc.edu.mx",
-    "role": "profesor",
-    "programas_asignados_ids": [
-      "MCOC",
-      "DOC"
-    ],
-    "niveles_asignados": [
-      "posgrado"
-    ],
-    "activo": true,
-    "origen_pdf_posgrado": true,
-    "academia_area": "Modelación Numérica del Océano",
-    "cubiculo": "Edificio 16 · Cubículo 115",
-    "horario_tutorias": "Martes y Viernes 15:00 - 17:00",
-    "telefono_extension": "Ext. 43145",
-    "canal_contacto_estudiantes": "Correo UABC / Teams",
-    "createdAt": "2027-01-10T08:00:00.000Z",
-    "updatedAt": "2027-01-10T08:00:00.000Z"
-  },
-  {
-    "uid": "prof_stanahara",
-    "nombre": "Dra. Sheila Tanahara",
-    "cargo": "Profesora-Investigadora",
     "titulo_academico": "Dra.",
-    "email": "stanahara@uabc.edu.mx",
-    "email_normalizado": "stanahara@uabc.edu.mx",
+    "email": "taime@uabc.edu.mx",
+    "email_normalizado": "taime@uabc.edu.mx",
     "role": "profesor",
     "programas_asignados_ids": [
-      "MCOC",
-      "DOC"
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
     ],
     "niveles_asignados": [
-      "posgrado"
+      "licenciatura"
     ],
     "activo": true,
-    "origen_pdf_posgrado": true,
-    "academia_area": "Modelación Numérica y Dinámica Oceánica",
-    "cubiculo": "Edificio 16 · Cubículo 116",
-    "horario_tutorias": "Martes 15:00 - 17:00",
-    "telefono_extension": "Ext. 43146",
-    "canal_contacto_estudiantes": "Correo UABC",
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
   {
-    "uid": "prof_eolvera",
-    "nombre": "Dr. Eric Olvera",
+    "uid": "prof_moraleschavezr",
+    "nombre": "Dr. Rafael Morales Chávez",
     "cargo": "Profesor-Investigador",
     "titulo_academico": "Dr.",
-    "email": "eolvera@uabc.edu.mx",
-    "email_normalizado": "eolvera@uabc.edu.mx",
+    "email": "rmorales@uabc.edu.mx",
+    "email_normalizado": "rmorales@uabc.edu.mx",
     "role": "profesor",
     "programas_asignados_ids": [
-      "MCOC",
-      "DOC"
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
     ],
     "niveles_asignados": [
-      "posgrado"
+      "licenciatura"
     ],
     "activo": true,
-    "origen_pdf_posgrado": true,
-    "academia_area": "Modelación Numérica y Cómputo Científico",
-    "cubiculo": "Edificio 14 · Cubículo 109",
-    "horario_tutorias": "Viernes 15:00 - 17:00",
-    "telefono_extension": "Ext. 43119",
-    "canal_contacto_estudiantes": "Correo UABC",
+    "origen_pdf_posgrado": false,
+    "academia_area": "Oceanografía Física Costera",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
   {
-    "uid": "prof_nmillan",
-    "nombre": "Dr. Norberto Millán",
+    "uid": "prof_cardozacontrer",
+    "nombre": "Dra. Cardoza Contreras Marlene Nohemi",
     "cargo": "Profesor-Investigador",
-    "titulo_academico": "Dr.",
-    "email": "nmillan@uabc.edu.mx",
-    "email_normalizado": "nmillan@uabc.edu.mx",
+    "titulo_academico": "Dra.",
+    "email": "cnohemi@uabc.edu.mx",
+    "email_normalizado": "cnohemi@uabc.edu.mx",
     "role": "profesor",
     "programas_asignados_ids": [
-      "MCOC",
-      "DOC"
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
     ],
     "niveles_asignados": [
-      "posgrado"
+      "licenciatura"
     ],
     "activo": true,
-    "origen_pdf_posgrado": true,
-    "academia_area": "Seminarios de Investigación",
-    "cubiculo": "Edificio 14 (SPD) · Cubículo 102",
-    "horario_tutorias": "Lunes 16:00 - 18:00",
-    "telefono_extension": "Ext. 43105",
-    "canal_contacto_estudiantes": "Correo UABC",
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_velazquezgonza",
+    "nombre": "Dra. Ernestina Karen Velázquez González",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "kvelazquez@uabc.edu.mx",
+    "email_normalizado": "kvelazquez@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Biología y Fisiología Marina",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
   {
     "uid": "prof_vfernandez",
-    "nombre": "Dr. Víctor Fernández",
+    "nombre": "Dra. Violeta Zetzangari Fernández Díaz",
     "cargo": "Profesor-Investigador",
-    "titulo_academico": "Dr.",
+    "titulo_academico": "Dra.",
     "email": "vfernandez@uabc.edu.mx",
     "email_normalizado": "vfernandez@uabc.edu.mx",
     "role": "profesor",
     "programas_asignados_ids": [
       "MCOC",
-      "DOC"
+      "DOC",
+      "OCE"
     ],
     "niveles_asignados": [
-      "posgrado"
+      "posgrado",
+      "licenciatura"
     ],
     "activo": true,
     "origen_pdf_posgrado": true,
-    "academia_area": "Tesis de Posgrado y Oceanografía",
+    "academia_area": "Oceanografía Biológica y Avances de Tesis",
     "cubiculo": "Edificio 18 · Cubículo 205",
-    "horario_tutorias": "Martes 17:00 - 19:00",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
     "telefono_extension": "Ext. 43160",
-    "canal_contacto_estudiantes": "Correo UABC",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
   {
-    "uid": "prof_jazepeda",
-    "nombre": "Dr. José Alberto Zepeda Domínguez",
+    "uid": "prof_mgalaviz",
+    "nombre": "Dr. Mario Galaviz Espinoza",
     "cargo": "Profesor-Investigador",
     "titulo_academico": "Dr.",
-    "email": "jazepeda@uabc.edu.mx",
-    "email_normalizado": "jazepeda@uabc.edu.mx",
+    "email": "mgalaviz@uabc.edu.mx",
+    "email_normalizado": "mgalaviz@uabc.edu.mx",
     "role": "profesor",
     "programas_asignados_ids": [
       "MCOC",
-      "DOC"
+      "DOC",
+      "OCE"
     ],
     "niveles_asignados": [
-      "posgrado"
+      "posgrado",
+      "licenciatura"
     ],
     "activo": true,
     "origen_pdf_posgrado": true,
-    "academia_area": "Sistemas Socioecológicos y Manejo Costero",
-    "cubiculo": "Edificio 18 · Cubículo 209",
-    "horario_tutorias": "Jueves 15:00 - 17:00",
-    "telefono_extension": "Ext. 43165",
-    "canal_contacto_estudiantes": "Correo UABC / Teams",
+    "academia_area": "Bioquímica Nutricional Acuícola y Fisiología Digestiva",
+    "cubiculo": "Edificio 14 · Cubículo 107",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43117",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
   {
-    "uid": "prof_jmsandoval",
-    "nombre": "Dr. José Miguel Sandoval",
+    "uid": "prof_reyesortamaris",
+    "nombre": "Dra. Marisa Reyes Orta",
     "cargo": "Profesor-Investigador",
-    "titulo_academico": "Dr.",
-    "email": "jmsandoval@uabc.edu.mx",
-    "email_normalizado": "jmsandoval@uabc.edu.mx",
-    "role": "profesor",
-    "programas_asignados_ids": [
-      "MCOC",
-      "DOC"
-    ],
-    "niveles_asignados": [
-      "posgrado"
-    ],
-    "activo": true,
-    "origen_pdf_posgrado": true,
-    "academia_area": "Botánica Marina y Ecofisiología",
-    "cubiculo": "Edificio 25 (IIO) · Cubículo 105",
-    "horario_tutorias": "Miércoles 17:00 - 19:00",
-    "telefono_extension": "Ext. 43220",
-    "canal_contacto_estudiantes": "Correo UABC / Meet / Teams",
-    "createdAt": "2027-01-10T08:00:00.000Z",
-    "updatedAt": "2027-01-10T08:00:00.000Z"
-  },
-  {
-    "uid": "prof_lenriquez",
-    "nombre": "Dra. Lidia Enríquez",
-    "cargo": "Profesora-Investigadora",
     "titulo_academico": "Dra.",
-    "email": "lenriquez@uabc.edu.mx",
-    "email_normalizado": "lenriquez@uabc.edu.mx",
+    "email": "mreyes@uabc.edu.mx",
+    "email_normalizado": "mreyes@uabc.edu.mx",
     "role": "profesor",
     "programas_asignados_ids": [
-      "MCOC",
-      "DOC"
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
     ],
     "niveles_asignados": [
-      "posgrado"
+      "licenciatura"
     ],
     "activo": true,
-    "origen_pdf_posgrado": true,
-    "academia_area": "Ecología Molecular y Genética de Poblaciones",
-    "cubiculo": "Edificio 56 · Cubículo 101",
-    "horario_tutorias": "Martes y Jueves 09:00 - 11:00",
-    "telefono_extension": "Ext. 43190",
-    "canal_contacto_estudiantes": "Correo UABC",
+    "origen_pdf_posgrado": false,
+    "academia_area": "Oceanografía Química y Ciclos Biogeoquímicos",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
   {
-    "uid": "prof_hgnava",
-    "nombre": "Dr. Héctor García Nava",
+    "uid": "prof_klugo",
+    "nombre": "Dra. Karina del Carmen Lugo Ibarra",
     "cargo": "Profesor-Investigador",
-    "titulo_academico": "Dr.",
-    "email": "hgnava@uabc.edu.mx",
-    "email_normalizado": "hgnava@uabc.edu.mx",
-    "role": "profesor",
-    "programas_asignados_ids": [
-      "MCOC",
-      "DOC"
-    ],
-    "niveles_asignados": [
-      "posgrado"
-    ],
-    "activo": true,
-    "origen_pdf_posgrado": true,
-    "academia_area": "Programación y Física Oceanográfica",
-    "cubiculo": "Edificio 25 (IIO) · Cubículo 210",
-    "horario_tutorias": "Lunes y Viernes 12:00 - 14:00",
-    "telefono_extension": "Ext. 43230",
-    "canal_contacto_estudiantes": "Correo UABC / Teams",
-    "createdAt": "2027-01-10T08:00:00.000Z",
-    "updatedAt": "2027-01-10T08:00:00.000Z"
-  },
-  {
-    "uid": "prof_tolivares",
-    "nombre": "Dr. T. Olivares",
-    "cargo": "Profesor-Investigador",
-    "titulo_academico": "Dr.",
-    "email": "tolivares@uabc.edu.mx",
-    "email_normalizado": "tolivares@uabc.edu.mx",
-    "role": "profesor",
-    "programas_asignados_ids": [
-      "MCOC",
-      "DOC"
-    ],
-    "niveles_asignados": [
-      "posgrado"
-    ],
-    "activo": true,
-    "origen_pdf_posgrado": true,
-    "academia_area": "Biotecnología y Acuacultura",
-    "cubiculo": "Edificio 41 · Cubículo 103",
-    "horario_tutorias": "Miércoles 12:00 - 14:00",
-    "telefono_extension": "Ext. 43180",
-    "canal_contacto_estudiantes": "Correo UABC",
-    "createdAt": "2027-01-10T08:00:00.000Z",
-    "updatedAt": "2027-01-10T08:00:00.000Z"
-  },
-  {
-    "uid": "prof_scastellanos",
-    "nombre": "Dra. Sara Castellanos",
-    "cargo": "Profesora-Investigadora",
     "titulo_academico": "Dra.",
-    "email": "scastellanos@uabc.edu.mx",
-    "email_normalizado": "scastellanos@uabc.edu.mx",
+    "email": "klugo@uabc.edu.mx",
+    "email_normalizado": "klugo@uabc.edu.mx",
     "role": "profesor",
     "programas_asignados_ids": [
       "MCOC",
-      "DOC"
+      "DOC",
+      "OCE"
     ],
     "niveles_asignados": [
-      "posgrado"
+      "posgrado",
+      "licenciatura"
     ],
     "activo": true,
     "origen_pdf_posgrado": true,
-    "academia_area": "Patología Acuícola y Sanidad Marina",
-    "cubiculo": "Edificio 41 · Cubículo 104",
-    "horario_tutorias": "Lunes y Miércoles 14:00 - 16:00",
-    "telefono_extension": "Ext. 43182",
-    "canal_contacto_estudiantes": "Correo UABC",
+    "academia_area": "Microbiología Acuícola y Sanidad Marina",
+    "cubiculo": "Edificio 17 · Cubículo 106",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43134",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
   {
-    "uid": "prof_ngudino",
-    "nombre": "Dr. N. Gudiño",
+    "uid": "prof_jaramontanezro",
+    "nombre": "Dra. Rosario Jara Montañez",
     "cargo": "Profesor-Investigador",
-    "titulo_academico": "Dr.",
-    "email": "ngudino@uabc.edu.mx",
-    "email_normalizado": "ngudino@uabc.edu.mx",
+    "titulo_academico": "Dra.",
+    "email": "rjara@uabc.edu.mx",
+    "email_normalizado": "rjara@uabc.edu.mx",
     "role": "profesor",
     "programas_asignados_ids": [
-      "MCOC",
-      "DOC"
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
     ],
     "niveles_asignados": [
-      "posgrado"
+      "licenciatura"
     ],
     "activo": true,
-    "origen_pdf_posgrado": true,
-    "academia_area": "Morfodinámica Costera y Procesos Litorales",
-    "cubiculo": "Edificio 16 · Cubículo 204",
-    "horario_tutorias": "Martes y Jueves 13:00 - 15:00",
-    "telefono_extension": "Ext. 43150",
-    "canal_contacto_estudiantes": "Correo UABC",
+    "origen_pdf_posgrado": false,
+    "academia_area": "Educación Ambiental y Recursos Marinos",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
   {
-    "uid": "prof_odelrio",
-    "nombre": "Dr. Oscar Basilio del Río Zaragoza",
+    "uid": "prof_mruiz",
+    "nombre": "Dra. Mary Carmen Ruíz de la Torre",
     "cargo": "Profesor-Investigador",
-    "titulo_academico": "Dr.",
-    "email": "odelrio@uabc.edu.mx",
-    "email_normalizado": "odelrio@uabc.edu.mx",
+    "titulo_academico": "Dra.",
+    "email": "mruiz@uabc.edu.mx",
+    "email_normalizado": "mruiz@uabc.edu.mx",
     "role": "profesor",
     "programas_asignados_ids": [
       "MCOC",
-      "DOC"
+      "DOC",
+      "OCE"
     ],
     "niveles_asignados": [
-      "posgrado"
+      "posgrado",
+      "licenciatura"
     ],
     "activo": true,
     "origen_pdf_posgrado": true,
-    "academia_area": "Inmunología y Bioseguridad en Organismos Acuáticos",
-    "cubiculo": "Edificio 41 · Cubículo 105",
-    "horario_tutorias": "Lunes y Miércoles 14:00 - 16:00",
-    "telefono_extension": "Ext. 43185",
-    "canal_contacto_estudiantes": "Correo UABC",
+    "academia_area": "Oceanografía Química y Percepción Remota",
+    "cubiculo": "Edificio 14 · Cubículo 105",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43116",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
   {
-    "uid": "prof_jgcorrea",
-    "nombre": "Dr. J.G. Correa",
+    "uid": "prof_sancheznavaama",
+    "nombre": "Dra. Amara Thaydé Sánchez Nava",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "asanchezn@uabc.edu.mx",
+    "email_normalizado": "asanchezn@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Biología de la Conservación y Vertebrados Marinos",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_floresmoralesa",
+    "nombre": "Dra. Ana Laura Flores Morales",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "afloresm@uabc.edu.mx",
+    "email_normalizado": "afloresm@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ecología Marina y Recursos Costeros",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_rbeas",
+    "nombre": "Dr. Rodrigo Beas Luna",
     "cargo": "Profesor-Investigador",
     "titulo_academico": "Dr.",
-    "email": "jgcorrea@uabc.edu.mx",
-    "email_normalizado": "jgcorrea@uabc.edu.mx",
+    "email": "rbeas@uabc.edu.mx",
+    "email_normalizado": "rbeas@uabc.edu.mx",
     "role": "profesor",
     "programas_asignados_ids": [
       "MCOC",
-      "DOC"
+      "DOC",
+      "OCE"
     ],
     "niveles_asignados": [
-      "posgrado"
+      "posgrado",
+      "licenciatura"
     ],
     "activo": true,
     "origen_pdf_posgrado": true,
-    "academia_area": "Ingeniería de Sistemas Acuícolas",
-    "cubiculo": "Edificio 41 · Cubículo 102",
-    "horario_tutorias": "Martes y Jueves 15:00 - 17:00",
-    "telefono_extension": "Ext. 43178",
-    "canal_contacto_estudiantes": "Correo UABC",
+    "academia_area": "Ecología Marina, Comunidades Bentónicas y Bosques de Macroalgas",
+    "cubiculo": "Edificio 18 · Cubículo 206",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43164",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_aabadia",
+    "nombre": "Dra. Alicia Abadía Cardoso",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "aabadia@uabc.edu.mx",
+    "email_normalizado": "aabadia@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "MCOC",
+      "DOC",
+      "OCE"
+    ],
+    "niveles_asignados": [
+      "posgrado",
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": true,
+    "academia_area": "Genética Marina y Conservación de Recursos Acuáticos",
+    "cubiculo": "Edificio 17 · Cubículo 102",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43131",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_vivancoarandam",
+    "nombre": "Dra. Miroslava Vivanco Aranda",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "mvivanco@uabc.edu.mx",
+    "email_normalizado": "mvivanco@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Biotecnología y Cultivo de Microalgas",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_evangelistaher",
+    "nombre": "Dra. Viridiana Evangelista Hernández",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "vevangelista@uabc.edu.mx",
+    "email_normalizado": "vevangelista@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Biología Marina y Ecosistemas Costeros",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
@@ -628,118 +1123,3368 @@ export const USUARIOS_INICIALES: Usuario[] = [
     "role": "profesor",
     "programas_asignados_ids": [
       "MCOC",
-      "DOC"
+      "DOC",
+      "OCE"
     ],
     "niveles_asignados": [
-      "posgrado"
+      "posgrado",
+      "licenciatura"
     ],
     "activo": true,
     "origen_pdf_posgrado": true,
-    "academia_area": "Nutrición y Fisiología Acuícola",
-    "cubiculo": "Edificio 17 · Cubículo 106",
-    "horario_tutorias": "Martes y Jueves 14:00 - 16:00",
-    "telefono_extension": "Ext. 43135",
-    "canal_contacto_estudiantes": "Correo UABC / Teams",
+    "academia_area": "Sistemas Acuícolas y Bioquímica Nutricional",
+    "cubiculo": "Edificio 18 · Cubículo 202",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43158",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_herreragutierr",
+    "nombre": "Dr. Ángel Raúl Herrera Gutiérrez",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "aherrera@uabc.edu.mx",
+    "email_normalizado": "aherrera@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Oceanografía Física e Hidrología Costera",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_yarbuhlugousam",
+    "nombre": "Dr. Usama Ismael Yarbuh Lugo",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "uyarbuh@uabc.edu.mx",
+    "email_normalizado": "uyarbuh@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Geología Marina y Geofísica Sísmica",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_nmillan",
+    "nombre": "Dra. Natalie Millán Aguiñaga",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "nmillan@uabc.edu.mx",
+    "email_normalizado": "nmillan@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "MCOC",
+      "DOC",
+      "OCE"
+    ],
+    "niveles_asignados": [
+      "posgrado",
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": true,
+    "academia_area": "Biotecnología Marina y Seminarios de Posgrado",
+    "cubiculo": "Edificio 14 (SPD) · Cubículo 102",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43105",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_villegasmendoz",
+    "nombre": "Dr. Josué Rodolfo Villegas Mendoza",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "jvillegas@uabc.edu.mx",
+    "email_normalizado": "jvillegas@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Química Ambiental Marina",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_lopezcalderonj",
+    "nombre": "Dr. Jorge Manuel López Calderón",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "jlopezc@uabc.edu.mx",
+    "email_normalizado": "jlopezc@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ecología Marina y Recursos Bentónicos",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_mejiapinakarla",
+    "nombre": "Dra. Karla Gabriela Mejía Piña",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "kmejia@uabc.edu.mx",
+    "email_normalizado": "kmejia@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Biotecnología Marina y Acuacultura",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_msantiago",
+    "nombre": "Dr. Mauro Wilfrido Santiago García",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "msantiago@uabc.edu.mx",
+    "email_normalizado": "msantiago@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "MCOC",
+      "DOC",
+      "OCE"
+    ],
+    "niveles_asignados": [
+      "posgrado",
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": true,
+    "academia_area": "Oceanografía Biológica y Tutoría Académica",
+    "cubiculo": "Edificio 16 · Cubículo 118",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43149",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_jazepeda",
+    "nombre": "Dr. José Alberto Zepeda Domínguez",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "jazepeda@uabc.edu.mx",
+    "email_normalizado": "jazepeda@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "MCOC",
+      "DOC",
+      "OCE"
+    ],
+    "niveles_asignados": [
+      "posgrado",
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": true,
+    "academia_area": "Sistemas Socioecológicos y Manejo Pesquero Comunitario",
+    "cubiculo": "Edificio 18 · Cubículo 209",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43163",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_lubinskyjinich",
+    "nombre": "Dra. Mónica Lubinsky Jinich",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "mlubinsky@uabc.edu.mx",
+    "email_normalizado": "mlubinsky@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Ambientales y Conservación",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_lopezcastillej",
+    "nombre": "Dr. Julio López Castillejos",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "jlopezcast@uabc.edu.mx",
+    "email_normalizado": "jlopezcast@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Oceanografía Geológica y Métodos Geofísicos",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_arenasislasdia",
+    "nombre": "Dra. Diana Arenas Islas",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "darenas@uabc.edu.mx",
+    "email_normalizado": "darenas@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Microbiología y Biología Molecular",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_cdominguez",
+    "nombre": "Dr. Carlos Alejandro Domínguez Pérez",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "cdominguez@uabc.edu.mx",
+    "email_normalizado": "cdominguez@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "MCOC",
+      "DOC",
+      "OCE"
+    ],
+    "niveles_asignados": [
+      "posgrado",
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": true,
+    "academia_area": "Oceanografía Física e Instrumentación Marina",
+    "cubiculo": "Edificio 16 · Cubículo 114",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43147",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_romeroarteagaa",
+    "nombre": "Dra. Angélica María Romero Arteaga",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "aromero@uabc.edu.mx",
+    "email_normalizado": "aromero@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Ambientales y Educación Superior",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_jgcorreaperez",
+    "nombre": "Dr. Juan Gabriel Correa Pérez",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "jgcorrea@uabc.edu.mx",
+    "email_normalizado": "jgcorrea@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Sistemas Acuícolas y Calidad de Agua",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
   {
     "uid": "prof_acastillo",
-    "nombre": "Dr. A. Castillo",
+    "nombre": "Dra. Alejandra de Jesús Castillo Ramírez",
     "cargo": "Profesor-Investigador",
-    "titulo_academico": "Dr.",
+    "titulo_academico": "Dra.",
     "email": "acastillo@uabc.edu.mx",
     "email_normalizado": "acastillo@uabc.edu.mx",
     "role": "profesor",
     "programas_asignados_ids": [
       "MCOC",
-      "DOC"
+      "DOC",
+      "OCE"
     ],
     "niveles_asignados": [
-      "posgrado"
+      "posgrado",
+      "licenciatura"
     ],
     "activo": true,
     "origen_pdf_posgrado": true,
-    "academia_area": "Percepción Remota y Óptica Marina",
-    "cubiculo": "Edificio 14 · Cubículo 110",
-    "horario_tutorias": "Lunes y Viernes 12:00 - 14:00",
-    "telefono_extension": "Ext. 43122",
-    "canal_contacto_estudiantes": "Correo UABC",
+    "academia_area": "Percepción Remota del Color del Océano y Bio-óptica",
+    "cubiculo": "Edificio 14 · Cubículo 106",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43115",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
   {
-    "uid": "prof_lmalpica",
-    "nombre": "Dr. L. Malpica",
+    "uid": "prof_villasusopalom",
+    "nombre": "Dr. Villasuso Palomares Salvador",
     "cargo": "Profesor-Investigador",
     "titulo_academico": "Dr.",
-    "email": "lmalpica@uabc.edu.mx",
-    "email_normalizado": "lmalpica@uabc.edu.mx",
+    "email": "vsalvador@uabc.edu.mx",
+    "email_normalizado": "vsalvador@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_gomezhernandez",
+    "nombre": "Dra. Guadalupe Gómez Hernández",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "ggomez@uabc.edu.mx",
+    "email_normalizado": "ggomez@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Ambientales y Gestión de Residuos",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_saenzavalosmar",
+    "nombre": "Dra. Mariana Ana Laura Saenz-Ávalos",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "msaenz@uabc.edu.mx",
+    "email_normalizado": "msaenz@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ecología Marina y Dinámica Trófica",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_jennyferschong",
+    "nombre": "Dra. Jennyfers Chong Robles",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "jrobles@uabc.edu.mx",
+    "email_normalizado": "jrobles@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_gustavoalexisc",
+    "nombre": "Dr. Gustavo Alexis Cardenas López",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "glopez@uabc.edu.mx",
+    "email_normalizado": "glopez@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_victormanuello",
+    "nombre": "Dr. Victor Manuel Lomeli Quintero",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "vquintero@uabc.edu.mx",
+    "email_normalizado": "vquintero@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_astridhernande",
+    "nombre": "Dra. Astrid Hernández Cruz",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "acruz@uabc.edu.mx",
+    "email_normalizado": "acruz@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_poulettecaroli",
+    "nombre": "Dra. Poulette Carolina Álvarez Rosales",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "prosales@uabc.edu.mx",
+    "email_normalizado": "prosales@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_eulalioarambul",
+    "nombre": "Dr. Eulalio Arámbul Muñoz",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "emunoz@uabc.edu.mx",
+    "email_normalizado": "emunoz@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_abraga",
+    "nombre": "Dr. Andre Luiz Braga de Souza",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "asouza@uabc.edu.mx",
+    "email_normalizado": "asouza@uabc.edu.mx",
     "role": "profesor",
     "programas_asignados_ids": [
       "MCOC",
-      "DOC"
+      "DOC",
+      "OCE"
     ],
     "niveles_asignados": [
-      "posgrado"
+      "posgrado",
+      "licenciatura"
     ],
     "activo": true,
     "origen_pdf_posgrado": true,
-    "academia_area": "Ecología Marina y Análisis Cuantitativo en R",
-    "cubiculo": "Edificio 25 (IIO) · Cubículo 212",
-    "horario_tutorias": "Lunes y Miércoles 14:00 - 16:00",
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 25 (IIO) · Cubículo 222",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43232",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_victorfroylanc",
+    "nombre": "Dr. Victor Froylán Camacho Ibar",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "vibar@uabc.edu.mx",
+    "email_normalizado": "vibar@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_scastellanos",
+    "nombre": "Dra. Sheila Castellanos Martínez",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "smartinez@uabc.edu.mx",
+    "email_normalizado": "smartinez@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "MCOC",
+      "DOC",
+      "OCE"
+    ],
+    "niveles_asignados": [
+      "posgrado",
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": true,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 17 · Cubículo 110",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43138",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_gabrielayareli",
+    "nombre": "Dra. Gabriela Yareli Cervantes Díaz",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "gdiaz@uabc.edu.mx",
+    "email_normalizado": "gdiaz@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_jgcorrea",
+    "nombre": "Dr. Juan Gabriel Correa Reyes",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "jreyes@uabc.edu.mx",
+    "email_normalizado": "jreyes@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "MCOC",
+      "DOC",
+      "OCE"
+    ],
+    "niveles_asignados": [
+      "posgrado",
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": true,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 25 (IIO) · Cubículo 215",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43225",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_rcruz",
+    "nombre": "Dr. Ricardo Cruz López",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "rlopez@uabc.edu.mx",
+    "email_normalizado": "rlopez@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "MCOC",
+      "DOC",
+      "OCE"
+    ],
+    "niveles_asignados": [
+      "posgrado",
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": true,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 25 (IIO) · Cubículo 225",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
     "telefono_extension": "Ext. 43235",
-    "canal_contacto_estudiantes": "Correo UABC / R-Studio Hub",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
   {
-    "uid": "prof_mgalaviz",
-    "nombre": "Dr. Mario Galaviz",
+    "uid": "prof_eduardoamircue",
+    "nombre": "Dr. Eduardo Amir Cuevas Flores",
     "cargo": "Profesor-Investigador",
     "titulo_academico": "Dr.",
-    "email": "mgalaviz@uabc.edu.mx",
-    "email_normalizado": "mgalaviz@uabc.edu.mx",
+    "email": "eflores@uabc.edu.mx",
+    "email_normalizado": "eflores@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_luiswalterdaes",
+    "nombre": "Dr. Luis Walter Daessle Heuser",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "lheuser@uabc.edu.mx",
+    "email_normalizado": "lheuser@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_odelrio",
+    "nombre": "Dr. Oscar Basilio del Rio Zaragoza",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "ozaragoza@uabc.edu.mx",
+    "email_normalizado": "ozaragoza@uabc.edu.mx",
     "role": "profesor",
     "programas_asignados_ids": [
       "MCOC",
-      "DOC"
+      "DOC",
+      "OCE"
     ],
     "niveles_asignados": [
-      "posgrado"
+      "posgrado",
+      "licenciatura"
     ],
     "activo": true,
     "origen_pdf_posgrado": true,
-    "academia_area": "Bioquímica y Fisiología Digestiva Marina",
-    "cubiculo": "Edificio 15 · Cubículo 204",
-    "horario_tutorias": "Martes y Miércoles 14:00 - 16:00",
-    "telefono_extension": "Ext. 43128",
-    "canal_contacto_estudiantes": "Correo UABC",
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 17 · Cubículo 108",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43136",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_franciscodelga",
+    "nombre": "Dr. Francisco Delgadillo Hinojosa",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "fhinojosa@uabc.edu.mx",
+    "email_normalizado": "fhinojosa@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
   {
     "uid": "prof_afelix",
-    "nombre": "Dr. A. Félix",
+    "nombre": "Dr. Armando Félix Bermudez",
     "cargo": "Profesor-Investigador",
     "titulo_academico": "Dr.",
-    "email": "afelix@uabc.edu.mx",
-    "email_normalizado": "afelix@uabc.edu.mx",
+    "email": "abermudez@uabc.edu.mx",
+    "email_normalizado": "abermudez@uabc.edu.mx",
     "role": "profesor",
     "programas_asignados_ids": [
       "MCOC",
-      "DOC"
+      "DOC",
+      "OCE"
     ],
     "niveles_asignados": [
-      "posgrado"
+      "posgrado",
+      "licenciatura"
     ],
     "activo": true,
     "origen_pdf_posgrado": true,
-    "academia_area": "Biogeoquímica Marina y Flujos de Carbono",
-    "cubiculo": "Edificio 25 (IIO) · Cubículo 108",
-    "horario_tutorias": "Viernes 14:00 - 16:00",
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 25 (IIO) · Cubículo 220",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43230",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_alejandraferre",
+    "nombre": "Dra. Alejandra Ferreira Arrieta",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "aarrieta@uabc.edu.mx",
+    "email_normalizado": "aarrieta@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_hgnava",
+    "nombre": "Dr. Hector García Nava",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "hnava@uabc.edu.mx",
+    "email_normalizado": "hnava@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "MCOC",
+      "DOC",
+      "OCE"
+    ],
+    "niveles_asignados": [
+      "posgrado",
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": true,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 25 (IIO) · Cubículo 210",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43220",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_ngudino",
+    "nombre": "Dr. Napoleon Gudiño Elizondo",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "nelizondo@uabc.edu.mx",
+    "email_normalizado": "nelizondo@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "MCOC",
+      "DOC",
+      "OCE"
+    ],
+    "niveles_asignados": [
+      "posgrado",
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": true,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 25 (IIO) · Cubículo 212",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
     "telefono_extension": "Ext. 43222",
-    "canal_contacto_estudiantes": "Correo UABC",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_ricardoaarongu",
+    "nombre": "Dr. Ricardo Aaron Gutiérrez",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "rgutierrez@uabc.edu.mx",
+    "email_normalizado": "rgutierrez@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_josemanuelguzm",
+    "nombre": "Dr. Jose Manuel Guzman Calderon",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "jcalderon@uabc.edu.mx",
+    "email_normalizado": "jcalderon@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_ramirohernande",
+    "nombre": "Dr. Ramiro Hernández García",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "rgarcia@uabc.edu.mx",
+    "email_normalizado": "rgarcia@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_felixaugustohe",
+    "nombre": "Dr. Félix Augusto Hernández Guzman",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "fguzman@uabc.edu.mx",
+    "email_normalizado": "fguzman@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_bjuarez",
+    "nombre": "Dr. Braulio Juarez Araiza",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "baraiza@uabc.edu.mx",
+    "email_normalizado": "baraiza@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "MCOC",
+      "DOC",
+      "OCE"
+    ],
+    "niveles_asignados": [
+      "posgrado",
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": true,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 16 · Cubículo 112",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43144",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_jessicaabethla",
+    "nombre": "Dra. Jessica Abeth Lagos Fregoso",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "jfregoso@uabc.edu.mx",
+    "email_normalizado": "jfregoso@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_cristinalandac",
+    "nombre": "Dra. Cristina Landa Cansigno",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "ccansigno@uabc.edu.mx",
+    "email_normalizado": "ccansigno@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_juanaclaudiale",
+    "nombre": "Dra. Juana Claudia Leyva Aguilera",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "jaguilera@uabc.edu.mx",
+    "email_normalizado": "jaguilera@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_llopez",
+    "nombre": "Dra. Laura Liliana López Galindo",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "lgalindo@uabc.edu.mx",
+    "email_normalizado": "lgalindo@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "MCOC",
+      "DOC",
+      "OCE"
+    ],
+    "niveles_asignados": [
+      "posgrado",
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": true,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 25 (IIO) · Cubículo 208",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43215",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_victoralfonsom",
+    "nombre": "Dr. Victor Alfonso Macias Carranza",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "vcarranza@uabc.edu.mx",
+    "email_normalizado": "vcarranza@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_lmalpica",
+    "nombre": "Dr. Luis Malpica Cruz",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "lcruz@uabc.edu.mx",
+    "email_normalizado": "lcruz@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "MCOC",
+      "DOC",
+      "OCE"
+    ],
+    "niveles_asignados": [
+      "posgrado",
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": true,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 25 (IIO) · Cubículo 218",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43228",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_leopoldoguille",
+    "nombre": "Dr. Leopoldo Guillermo Mendoza Espinosa",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "lespinosa@uabc.edu.mx",
+    "email_normalizado": "lespinosa@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_onorzagaray",
+    "nombre": "Dr. Carlos Orión Norzagaray López",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "clopez@uabc.edu.mx",
+    "email_normalizado": "clopez@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "MCOC",
+      "DOC",
+      "OCE"
+    ],
+    "niveles_asignados": [
+      "posgrado",
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": true,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Cubículo 208",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43161",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_tolivares",
+    "nombre": "Dra. Tatiana Nenetzen Olivares Bañuelos",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "tbanuelos@uabc.edu.mx",
+    "email_normalizado": "tbanuelos@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "MCOC",
+      "DOC",
+      "OCE"
+    ],
+    "niveles_asignados": [
+      "posgrado",
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": true,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Cubículo 207",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43162",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_alexandroorozc",
+    "nombre": "Dr. Alexandro Orozco Duran",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "aduran@uabc.edu.mx",
+    "email_normalizado": "aduran@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_emyrsaulpenama",
+    "nombre": "Dr. Emyr Saúl Peña Marin",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "emarin@uabc.edu.mx",
+    "email_normalizado": "emarin@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_cristinaquezad",
+    "nombre": "Dra. Cristina Quezada Hernández",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "chernandez@uabc.edu.mx",
+    "email_normalizado": "chernandez@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_nancyramirezal",
+    "nombre": "Dra. Nancy Ramírez Álvarez",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "nalvarez@uabc.edu.mx",
+    "email_normalizado": "nalvarez@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_mauriciomoises",
+    "nombre": "Dr. Mauricio Moisés Reyes Bravo",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "mbravo@uabc.edu.mx",
+    "email_normalizado": "mbravo@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_isaacrodriguez",
+    "nombre": "Dr. Isaac Rodríguez Padilla",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "ipadilla@uabc.edu.mx",
+    "email_normalizado": "ipadilla@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_marianasanchez",
+    "nombre": "Dra. Mariana Sánchez Barredo",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "mbarredo@uabc.edu.mx",
+    "email_normalizado": "mbarredo@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_hildajanetsanc",
+    "nombre": "Dra. Hilda Janet Sánchez Sánchez",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "hsanchez@uabc.edu.mx",
+    "email_normalizado": "hsanchez@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_jmsandoval",
+    "nombre": "Dr. Jose Miguel Sandoval Gil",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "jgil@uabc.edu.mx",
+    "email_normalizado": "jgil@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "MCOC",
+      "DOC",
+      "OCE"
+    ],
+    "niveles_asignados": [
+      "posgrado",
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": true,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 17 · Cubículo 103",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43132",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_hortenciasilva",
+    "nombre": "Dra. Hortencia Silva Jiménez",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "hjimenez@uabc.edu.mx",
+    "email_normalizado": "hjimenez@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_mariadanielata",
+    "nombre": "Dra. Maria Daniela Tazzo Rangel",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "mrangel@uabc.edu.mx",
+    "email_normalizado": "mrangel@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_eunisevanessat",
+    "nombre": "Dra. Eunise Vanessa Torres Delgado",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "edelgado@uabc.edu.mx",
+    "email_normalizado": "edelgado@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_christinaveron",
+    "nombre": "Dra. Christina Veronica Treinen Crespo",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "ccrespo@uabc.edu.mx",
+    "email_normalizado": "ccrespo@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_jacobalbertova",
+    "nombre": "Dr. Jacob Alberto Valdivieso Ojeda",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "jojeda@uabc.edu.mx",
+    "email_normalizado": "jojeda@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_joseaugustoval",
+    "nombre": "Dr. Jose Augusto Valencia Gasti",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "jgasti@uabc.edu.mx",
+    "email_normalizado": "jgasti@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_enriquevalenzu",
+    "nombre": "Dr. Enrique Valenzuela Wood",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "ewood@uabc.edu.mx",
+    "email_normalizado": "ewood@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_jorgearmandove",
+    "nombre": "Dr. Jorge Armando Velásquez Aristizábal",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "jaristizabal@uabc.edu.mx",
+    "email_normalizado": "jaristizabal@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_mariateresavia",
+    "nombre": "Dra. Maria Teresa Viana Castrillón",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "mcastrillon@uabc.edu.mx",
+    "email_normalizado": "mcastrillon@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_marianavillada",
+    "nombre": "Dra. Mariana Villada Canela",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "mcanela@uabc.edu.mx",
+    "email_normalizado": "mcanela@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_amaiaruizdeale",
+    "nombre": "Dra. Amaia Ruiz de Alegría Arzaburu",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "aarzaburu@uabc.edu.mx",
+    "email_normalizado": "aarzaburu@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_omarezequielag",
+    "nombre": "Dr. Omar Ezequiel Aguillón Hernández",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "ohernandez@uabc.edu.mx",
+    "email_normalizado": "ohernandez@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_nancyalarconge",
+    "nombre": "Dra. Nancy Alarcon Geraldo",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "ngeraldo@uabc.edu.mx",
+    "email_normalizado": "ngeraldo@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_lucycoralalarc",
+    "nombre": "Dra. Lucy Coral Alarcon Ortega",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "lortega@uabc.edu.mx",
+    "email_normalizado": "lortega@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_dantenocalvare",
+    "nombre": "Dr. Dantenoc Álvarez Millan",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "dmillan@uabc.edu.mx",
+    "email_normalizado": "dmillan@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_osmarrobertoar",
+    "nombre": "Dr. Osmar Roberto Araujo Leyva",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "oleyva@uabc.edu.mx",
+    "email_normalizado": "oleyva@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_josepedroarces",
+    "nombre": "Dr. Jose Pedro Arce Serrano",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "jserrano@uabc.edu.mx",
+    "email_normalizado": "jserrano@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_gabrieladejesu",
+    "nombre": "Dra. Gabriela de Jesus Arreguín Rodríguez",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "grodriguez@uabc.edu.mx",
+    "email_normalizado": "grodriguez@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_brendaguadalup",
+    "nombre": "Dra. Brenda Guadalupe Bonett Calzada",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "bcalzada@uabc.edu.mx",
+    "email_normalizado": "bcalzada@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_karlaroxanacer",
+    "nombre": "Dra. Karla Roxana Cervantes Flores",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "kflores@uabc.edu.mx",
+    "email_normalizado": "kflores@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_luzdelourdesau",
+    "nombre": "Dra. Luz de Lourdes Aurora Coronado Álvarez",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "lalvarez@uabc.edu.mx",
+    "email_normalizado": "lalvarez@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_gabrieladelape",
+    "nombre": "Dra. Gabriela de la Peña Nettel",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "gnettel@uabc.edu.mx",
+    "email_normalizado": "gnettel@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_marianadelgado",
+    "nombre": "Dra. Mariana Delgado Fernandez",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "mfernandez@uabc.edu.mx",
+    "email_normalizado": "mfernandez@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_guadalupediazg",
+    "nombre": "Dra. Guadalupe Díaz Gutiérrez",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "ggutierrez@uabc.edu.mx",
+    "email_normalizado": "ggutierrez@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_danielalbertod",
+    "nombre": "Dr. Daniel Alberto Díaz Guzman",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "dguzman@uabc.edu.mx",
+    "email_normalizado": "dguzman@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_juancarlosdomi",
+    "nombre": "Dr. Juan Carlos Dominguez Vargas",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "jvargas@uabc.edu.mx",
+    "email_normalizado": "jvargas@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_arturofajardoy",
+    "nombre": "Dr. Arturo Fajardo Yamamoto",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "ayamamoto@uabc.edu.mx",
+    "email_normalizado": "ayamamoto@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_robertoantonio",
+    "nombre": "Dr. Roberto Antonio Flores Aguilar",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "raguilar@uabc.edu.mx",
+    "email_normalizado": "raguilar@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_brisamarisolfl",
+    "nombre": "Dra. Brisa Marisol Flores Miranda",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "bmiranda@uabc.edu.mx",
+    "email_normalizado": "bmiranda@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_berthagarciaca",
+    "nombre": "Dra. Bertha García Capitanachi",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "bcapitanachi@uabc.edu.mx",
+    "email_normalizado": "bcapitanachi@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_almadeliagiles",
+    "nombre": "Dra. Alma Delia Giles Guzman",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "aguzman@uabc.edu.mx",
+    "email_normalizado": "aguzman@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_elianagomezoca",
+    "nombre": "Dra. Eliana Gomez Ocampo",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "eocampo@uabc.edu.mx",
+    "email_normalizado": "eocampo@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_abrahamgonzale",
+    "nombre": "Dr. Abraham González Mena",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "amena@uabc.edu.mx",
+    "email_normalizado": "amena@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_lizzgonzalezmo",
+    "nombre": "Dra. Lizz González Moreno",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "lmoreno@uabc.edu.mx",
+    "email_normalizado": "lmoreno@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_luisandresguer",
+    "nombre": "Dr. Luis Andres Guerrero Murcia",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "lmurcia@uabc.edu.mx",
+    "email_normalizado": "lmurcia@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_dulceguadalupe",
+    "nombre": "Dra. Dulce Guadalupe Guillén Matus",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "dmatus@uabc.edu.mx",
+    "email_normalizado": "dmatus@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_claramariahere",
+    "nombre": "Dra. Clara Maria Hereu",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "chereu@uabc.edu.mx",
+    "email_normalizado": "chereu@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_carlosemiliohe",
+    "nombre": "Dr. Carlos Emilio Hernández Rodríguez",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "crodriguez@uabc.edu.mx",
+    "email_normalizado": "crodriguez@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_agustinjaimega",
+    "nombre": "Dr. Agustin Jaime Garcilazo",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "agarcilazo@uabc.edu.mx",
+    "email_normalizado": "agarcilazo@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_coniejaramonta",
+    "nombre": "Dra. Conie Jara Montañez",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "cmontanez@uabc.edu.mx",
+    "email_normalizado": "cmontanez@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_oscaralbertoji",
+    "nombre": "Dr. Oscar Alberto Jiménez Orocio",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "oorocio@uabc.edu.mx",
+    "email_normalizado": "oorocio@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_tadashikonomar",
+    "nombre": "Dr. Tadashi Kono Martínez",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "tmartinez@uabc.edu.mx",
+    "email_normalizado": "tmartinez@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_ernestolarioss",
+    "nombre": "Dr. Ernesto Larios Soriano",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "esoriano@uabc.edu.mx",
+    "email_normalizado": "esoriano@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_lorenapatricia",
+    "nombre": "Dra. Lorena Patricia Linacre Rojas",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "lrojas@uabc.edu.mx",
+    "email_normalizado": "lrojas@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_deniselubinsky",
+    "nombre": "Dra. Denise Lubinsky Jinich",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "djinich@uabc.edu.mx",
+    "email_normalizado": "djinich@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_evnikazariname",
+    "nombre": "Dra. Evnika Zarina Medina Romo",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "eromo@uabc.edu.mx",
+    "email_normalizado": "eromo@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_rebecamorenosa",
+    "nombre": "Dra. Rebeca Moreno Santoyo",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "rsantoyo@uabc.edu.mx",
+    "email_normalizado": "rsantoyo@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_estrellaazalia",
+    "nombre": "Dra. Estrella Azalia Nuñez Zarco",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "ezarco@uabc.edu.mx",
+    "email_normalizado": "ezarco@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_normalidiaoliv",
+    "nombre": "Dra. Norma Lidia Oliva Méndez",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "nmendez@uabc.edu.mx",
+    "email_normalizado": "nmendez@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_carlosfrancisc",
+    "nombre": "Dr. Carlos Francisco Peynador Sánchez",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "csanchez@uabc.edu.mx",
+    "email_normalizado": "csanchez@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_gabrielrendonm",
+    "nombre": "Dr. Gabriel Rendon Marquez",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "gmarquez@uabc.edu.mx",
+    "email_normalizado": "gmarquez@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_nataliaalejand",
+    "nombre": "Dra. Natalia Alejandra Rodríguez Revelo",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "nrevelo@uabc.edu.mx",
+    "email_normalizado": "nrevelo@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_joseernestosam",
+    "nombre": "Dr. Jose Ernesto Sampedro Ávila",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "javila@uabc.edu.mx",
+    "email_normalizado": "javila@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_joseluissanche",
+    "nombre": "Dr. Jose Luis Sánchez Osorio",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "josorio@uabc.edu.mx",
+    "email_normalizado": "josorio@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_eduardosantiag",
+    "nombre": "Dr. Eduardo Santiago Ojeda",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "eojeda@uabc.edu.mx",
+    "email_normalizado": "eojeda@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_marisoltorresa",
+    "nombre": "Dra. Marisol Torres Aguilar",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "maguilar@uabc.edu.mx",
+    "email_normalizado": "maguilar@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_idalytrejoesca",
+    "nombre": "Dra. Idaly Trejo Escamilla",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "iescamilla@uabc.edu.mx",
+    "email_normalizado": "iescamilla@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_doraalejandrat",
+    "nombre": "Dra. Dora Alejandra Trejo Ramos",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "dramos@uabc.edu.mx",
+    "email_normalizado": "dramos@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_auribe",
+    "nombre": "Dra. Alicia Guadalupe Uribe López",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "alopez@uabc.edu.mx",
+    "email_normalizado": "alopez@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "MCOC",
+      "DOC",
+      "OCE"
+    ],
+    "niveles_asignados": [
+      "posgrado",
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": true,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Cubículo 211",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43165",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_alfredovenegas",
+    "nombre": "Dr. Alfredo Venegas Vega",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "avega@uabc.edu.mx",
+    "email_normalizado": "avega@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_samanthavictor",
+    "nombre": "Dra. Samantha Victoria Cota",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "scota@uabc.edu.mx",
+    "email_normalizado": "scota@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_claudiamariawa",
+    "nombre": "Dra. Claudia Maria Wall Medrano",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "cmedrano@uabc.edu.mx",
+    "email_normalizado": "cmedrano@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_andreayazminza",
+    "nombre": "Dra. Andrea Yazmin Zamora Quintero",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dra.",
+    "email": "aquintero@uabc.edu.mx",
+    "email_normalizado": "aquintero@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
@@ -748,298 +4493,268 @@ export const USUARIOS_INICIALES: Usuario[] = [
     "nombre": "Dr. Guillermo Alberto Samperio Ramos",
     "cargo": "Profesor-Investigador",
     "titulo_academico": "Dr.",
-    "email": "gsamperio@uabc.edu.mx",
-    "email_normalizado": "gsamperio@uabc.edu.mx",
+    "email": "gramos@uabc.edu.mx",
+    "email_normalizado": "gramos@uabc.edu.mx",
     "role": "profesor",
     "programas_asignados_ids": [
       "MCOC",
-      "DOC"
+      "DOC",
+      "OCE"
     ],
     "niveles_asignados": [
-      "posgrado"
+      "posgrado",
+      "licenciatura"
     ],
     "activo": true,
     "origen_pdf_posgrado": true,
-    "academia_area": "Biogeoquímica Marina y Procesos Costeros",
-    "cubiculo": "Edificio 25 (IIO) · Cubículo 110",
-    "horario_tutorias": "Viernes 16:00 - 18:00",
-    "telefono_extension": "Ext. 43224",
-    "canal_contacto_estudiantes": "Correo UABC",
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Cubículo 204",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43159",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
   {
-    "uid": "prof_auribe",
-    "nombre": "Dra. Abigail Uribe",
-    "cargo": "Profesora-Investigadora · Tutora MCOC",
+    "uid": "prof_pumachavezadri",
+    "nombre": "Dra. Adriana Puma Chávez",
+    "cargo": "Profesor-Investigador",
     "titulo_academico": "Dra.",
-    "email": "auribe@uabc.edu.mx",
-    "email_normalizado": "auribe@uabc.edu.mx",
+    "email": "achavez@uabc.edu.mx",
+    "email_normalizado": "achavez@uabc.edu.mx",
     "role": "profesor",
     "programas_asignados_ids": [
-      "MCOC",
-      "DOC"
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
     ],
     "niveles_asignados": [
-      "posgrado"
+      "licenciatura"
     ],
     "activo": true,
-    "origen_pdf_posgrado": true,
-    "academia_area": "Tutorías y Ecología Marina",
-    "cubiculo": "Edificio 18 · Cubículo 202",
-    "horario_tutorias": "Lunes 19:00 - 21:00 (VIR)",
-    "telefono_extension": "Ext. 43155",
-    "canal_contacto_estudiantes": "Correo UABC / Teams",
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
   {
-    "uid": "prof_aabadia",
-    "nombre": "Dra. Alicia Abadía",
-    "cargo": "Profesora-Investigadora · Tutora MCOC",
+    "uid": "prof_naylaberenicem",
+    "nombre": "Dra. Nayla Berenice Muñoz Euán",
+    "cargo": "Profesor-Investigador",
     "titulo_academico": "Dra.",
-    "email": "aabadia@uabc.edu.mx",
-    "email_normalizado": "aabadia@uabc.edu.mx",
+    "email": "neuan@uabc.edu.mx",
+    "email_normalizado": "neuan@uabc.edu.mx",
     "role": "profesor",
     "programas_asignados_ids": [
-      "MCOC",
-      "DOC"
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
     ],
     "niveles_asignados": [
-      "posgrado"
+      "licenciatura"
     ],
     "activo": true,
-    "origen_pdf_posgrado": true,
-    "academia_area": "Tutorías y Biología Marina",
-    "cubiculo": "Edificio 15 · Cubículo 201",
-    "horario_tutorias": "Lunes 19:00 - 21:00 (VIR)",
-    "telefono_extension": "Ext. 43126",
-    "canal_contacto_estudiantes": "Correo UABC / Teams",
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
   {
-    "uid": "prof_abraga",
-    "nombre": "Dr. André Luiz Braga de Souza",
-    "cargo": "Profesor-Investigador · Tutor MCOC",
+    "uid": "prof_jeremielouisna",
+    "nombre": "Dr. Jeremie Louis Natan Bauer",
+    "cargo": "Profesor-Investigador",
     "titulo_academico": "Dr.",
-    "email": "abraga@uabc.edu.mx",
-    "email_normalizado": "abraga@uabc.edu.mx",
+    "email": "jbauer@uabc.edu.mx",
+    "email_normalizado": "jbauer@uabc.edu.mx",
     "role": "profesor",
     "programas_asignados_ids": [
-      "MCOC",
-      "DOC"
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
     ],
     "niveles_asignados": [
-      "posgrado"
+      "licenciatura"
     ],
     "activo": true,
-    "origen_pdf_posgrado": true,
-    "academia_area": "Tutorías y Oceanografía Costera",
-    "cubiculo": "Edificio 16 · Cubículo 206",
-    "horario_tutorias": "Lunes 19:00 - 21:00 (VIR)",
-    "telefono_extension": "Ext. 43152",
-    "canal_contacto_estudiantes": "Correo UABC / Teams",
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
   {
-    "uid": "prof_jvaca",
-    "nombre": "Dr. Juan Vaca",
-    "cargo": "Profesor-Investigador · Tutor MCOC",
-    "titulo_academico": "Dr.",
-    "email": "jvaca@uabc.edu.mx",
-    "email_normalizado": "jvaca@uabc.edu.mx",
-    "role": "profesor",
-    "programas_asignados_ids": [
-      "MCOC",
-      "DOC"
-    ],
-    "niveles_asignados": [
-      "posgrado"
-    ],
-    "activo": true,
-    "origen_pdf_posgrado": true,
-    "academia_area": "Tutorías y Física Marina",
-    "cubiculo": "Edificio 16 · Cubículo 110",
-    "horario_tutorias": "Lunes 19:00 - 21:00 (VIR)",
-    "telefono_extension": "Ext. 43142",
-    "canal_contacto_estudiantes": "Correo UABC / Teams",
-    "createdAt": "2027-01-10T08:00:00.000Z",
-    "updatedAt": "2027-01-10T08:00:00.000Z"
-  },
-  {
-    "uid": "prof_klugo",
-    "nombre": "Dra. Karina Lugo",
-    "cargo": "Profesora-Investigadora · Tutora MCOC",
+    "uid": "prof_arlettemarimar",
+    "nombre": "Dra. Arlette Marimar Pacheco Sandoval",
+    "cargo": "Profesor-Investigador",
     "titulo_academico": "Dra.",
-    "email": "klugo@uabc.edu.mx",
-    "email_normalizado": "klugo@uabc.edu.mx",
+    "email": "asandoval@uabc.edu.mx",
+    "email_normalizado": "asandoval@uabc.edu.mx",
     "role": "profesor",
     "programas_asignados_ids": [
-      "MCOC",
-      "DOC"
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
     ],
     "niveles_asignados": [
-      "posgrado"
+      "licenciatura"
     ],
     "activo": true,
-    "origen_pdf_posgrado": true,
-    "academia_area": "Tutorías y Biogeoquímica",
-    "cubiculo": "Edificio 25 (IIO) · Cubículo 106",
-    "horario_tutorias": "Lunes 19:00 - 21:00 (VIR)",
-    "telefono_extension": "Ext. 43221",
-    "canal_contacto_estudiantes": "Correo UABC / Teams",
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
   {
-    "uid": "prof_cdominguez",
-    "nombre": "Dr. Carlos Alejandro Domínguez Pérez",
-    "cargo": "Profesor-Investigador · Tutor MCOC",
+    "uid": "prof_emilianonelson",
+    "nombre": "Dr. Emiliano Nelson Gorr",
+    "cargo": "Profesor-Investigador",
     "titulo_academico": "Dr.",
-    "email": "cdominguez@uabc.edu.mx",
-    "email_normalizado": "cdominguez@uabc.edu.mx",
+    "email": "egorr@uabc.edu.mx",
+    "email_normalizado": "egorr@uabc.edu.mx",
     "role": "profesor",
     "programas_asignados_ids": [
-      "MCOC",
-      "DOC"
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
     ],
     "niveles_asignados": [
-      "posgrado"
+      "licenciatura"
     ],
     "activo": true,
-    "origen_pdf_posgrado": true,
-    "academia_area": "Tutorías y Ciencias Ambientales",
-    "cubiculo": "Edificio 18 · Cubículo 208",
-    "horario_tutorias": "Lunes 19:00 - 21:00 (VIR)",
-    "telefono_extension": "Ext. 43164",
-    "canal_contacto_estudiantes": "Correo UABC / Teams",
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
   {
-    "uid": "prof_onorzagaray",
-    "nombre": "Dr. Orión Norzagaray",
-    "cargo": "Profesor-Investigador · Tutor MCOC",
+    "uid": "prof_julioenriquema",
+    "nombre": "Dr. Julio Enrique Martínez García",
+    "cargo": "Profesor-Investigador",
     "titulo_academico": "Dr.",
-    "email": "onorzagaray@uabc.edu.mx",
-    "email_normalizado": "onorzagaray@uabc.edu.mx",
+    "email": "jgarcia@uabc.edu.mx",
+    "email_normalizado": "jgarcia@uabc.edu.mx",
     "role": "profesor",
     "programas_asignados_ids": [
-      "MCOC",
-      "DOC"
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
     ],
     "niveles_asignados": [
-      "posgrado"
+      "licenciatura"
     ],
     "activo": true,
-    "origen_pdf_posgrado": true,
-    "academia_area": "Tutorías y Ecología Litoral",
-    "cubiculo": "Edificio 18 · Cubículo 206",
-    "horario_tutorias": "Lunes 19:00 - 21:00 (VIR)",
-    "telefono_extension": "Ext. 43162",
-    "canal_contacto_estudiantes": "Correo UABC / Teams",
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
   {
-    "uid": "prof_rbeas",
-    "nombre": "Dr. Rodrigo Beas",
-    "cargo": "Profesor-Investigador · Tutor MCOC",
+    "uid": "prof_andradesanchez",
+    "nombre": "Dr. Jorge Alberto Andrade Sánchez",
+    "cargo": "Profesor-Investigador",
     "titulo_academico": "Dr.",
-    "email": "rbeas@uabc.edu.mx",
-    "email_normalizado": "rbeas@uabc.edu.mx",
+    "email": "jsanchez@uabc.edu.mx",
+    "email_normalizado": "jsanchez@uabc.edu.mx",
     "role": "profesor",
     "programas_asignados_ids": [
-      "MCOC",
-      "DOC"
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
     ],
     "niveles_asignados": [
-      "posgrado"
+      "licenciatura"
     ],
     "activo": true,
-    "origen_pdf_posgrado": true,
-    "academia_area": "Tutorías y Ecología Marina Submarina",
-    "cubiculo": "Edificio 15 · Cubículo 105",
-    "horario_tutorias": "Lunes 19:00 - 21:00 (VIR)",
-    "telefono_extension": "Ext. 43130",
-    "canal_contacto_estudiantes": "Correo UABC / Teams",
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
   {
-    "uid": "prof_mruiz",
-    "nombre": "Dra. Mary Carmen Ruíz",
-    "cargo": "Profesora-Investigadora · Tutora MCOC",
+    "uid": "prof_alejandrogonza",
+    "nombre": "Dr. Alejandro González Rojas",
+    "cargo": "Profesor-Investigador",
+    "titulo_academico": "Dr.",
+    "email": "arojas@uabc.edu.mx",
+    "email_normalizado": "arojas@uabc.edu.mx",
+    "role": "profesor",
+    "programas_asignados_ids": [
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
+    ],
+    "niveles_asignados": [
+      "licenciatura"
+    ],
+    "activo": true,
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "createdAt": "2027-01-10T08:00:00.000Z",
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "uid": "prof_normapatriciae",
+    "nombre": "Dra. Norma Patricia Esprius Sanches",
+    "cargo": "Profesor-Investigador",
     "titulo_academico": "Dra.",
-    "email": "mruiz@uabc.edu.mx",
-    "email_normalizado": "mruiz@uabc.edu.mx",
+    "email": "nsanches@uabc.edu.mx",
+    "email_normalizado": "nsanches@uabc.edu.mx",
     "role": "profesor",
     "programas_asignados_ids": [
-      "MCOC",
-      "DOC"
+      "OCE",
+      "TC-CMA",
+      "LBA",
+      "LCA"
     ],
     "niveles_asignados": [
-      "posgrado"
+      "licenciatura"
     ],
     "activo": true,
-    "origen_pdf_posgrado": true,
-    "academia_area": "Tutorías y Biología Celular",
-    "cubiculo": "Edificio 15 · Cubículo 203",
-    "horario_tutorias": "Lunes 19:00 - 21:00 (VIR)",
-    "telefono_extension": "Ext. 43127",
-    "canal_contacto_estudiantes": "Correo UABC / Teams",
-    "createdAt": "2027-01-10T08:00:00.000Z",
-    "updatedAt": "2027-01-10T08:00:00.000Z"
-  },
-  {
-    "uid": "prof_msantiago",
-    "nombre": "Dr. Mauro Wilfrido Santiago García",
-    "cargo": "Profesor-Investigador · Tutor MCOC",
-    "titulo_academico": "Dr.",
-    "email": "msantiago@uabc.edu.mx",
-    "email_normalizado": "msantiago@uabc.edu.mx",
-    "role": "profesor",
-    "programas_asignados_ids": [
-      "MCOC",
-      "DOC"
-    ],
-    "niveles_asignados": [
-      "posgrado"
-    ],
-    "activo": true,
-    "origen_pdf_posgrado": true,
-    "academia_area": "Tutorías e Hidrodinámica",
-    "cubiculo": "Edificio 16 · Cubículo 114",
-    "horario_tutorias": "Lunes y Martes 19:00 - 21:00 (VIR)",
-    "telefono_extension": "Ext. 43148",
-    "canal_contacto_estudiantes": "Correo UABC / Teams",
-    "createdAt": "2027-01-10T08:00:00.000Z",
-    "updatedAt": "2027-01-10T08:00:00.000Z"
-  },
-  {
-    "uid": "prof_rcruz",
-    "nombre": "Dr. Ricardo Cruz López",
-    "cargo": "Profesor-Investigador · Tutor DCOC",
-    "titulo_academico": "Dr.",
-    "email": "rcruz@uabc.edu.mx",
-    "email_normalizado": "rcruz@uabc.edu.mx",
-    "role": "profesor",
-    "programas_asignados_ids": [
-      "MCOC",
-      "DOC"
-    ],
-    "niveles_asignados": [
-      "posgrado"
-    ],
-    "activo": true,
-    "origen_pdf_posgrado": true,
-    "academia_area": "Tutorías y Oceanografía Geológica",
-    "cubiculo": "Edificio 16 · Cubículo 202",
-    "horario_tutorias": "Lunes 19:00 - 21:00 (VIR)",
-    "telefono_extension": "Ext. 43154",
-    "canal_contacto_estudiantes": "Correo UABC / Teams",
+    "origen_pdf_posgrado": false,
+    "academia_area": "Ciencias Marinas y del Ambiente",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "telefono_extension": "Ext. 43100",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   }
@@ -1765,7 +5480,7 @@ export const GRUPOS_INICIALES: Grupo[] = [
     "profesores_ids": [
       "prof_palvarado",
       "prof_stanahara",
-      "prof_eolvera"
+      "prof_reaton"
     ],
     "requiere_subgrupos": false,
     "numero_subgrupos_sugerido": 1,
@@ -2488,7 +6203,7 @@ export const COMPONENTES_INICIALES: ComponenteGrupo[] = [
     "profesores_ids": [
       "prof_palvarado",
       "prof_stanahara",
-      "prof_eolvera"
+      "prof_reaton"
     ],
     "activo": true,
     "createdAt": "2027-01-10T08:00:00.000Z",
@@ -3061,7 +6776,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
       "prof_bmartin"
     ],
     "profesor_principal_id": "prof_bmartin",
-    "profesor_nombre": "Dr. Benjamín Martín",
+    "profesor_nombre": "Dra. Beatriz Martín Atienza",
     "nombre_visible": "Estadística Multivariada (C)",
     "programas_ids": [
       "MCOC",
@@ -3079,7 +6794,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
     "alumnos_programados": 25,
     "capacidad_espacio": 25,
     "estatus": "confirmado",
-    "notas": "Sesión oficial C en E-14 CPB - Dr. Benjamín Martín",
+    "notas": "Sesión oficial C en E-14 CPB - Dra. Beatriz Martín Atienza",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
@@ -3095,7 +6810,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
       "prof_bmartin"
     ],
     "profesor_principal_id": "prof_bmartin",
-    "profesor_nombre": "Dr. Benjamín Martín",
+    "profesor_nombre": "Dra. Beatriz Martín Atienza",
     "nombre_visible": "Estadística Multivariada (C)",
     "programas_ids": [
       "MCOC",
@@ -3113,7 +6828,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
     "alumnos_programados": 25,
     "capacidad_espacio": 25,
     "estatus": "confirmado",
-    "notas": "Sesión oficial C en E-14 CPB - Dr. Benjamín Martín",
+    "notas": "Sesión oficial C en E-14 CPB - Dra. Beatriz Martín Atienza",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
@@ -3129,7 +6844,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
       "prof_bmartin"
     ],
     "profesor_principal_id": "prof_bmartin",
-    "profesor_nombre": "Dr. Benjamín Martín",
+    "profesor_nombre": "Dra. Beatriz Martín Atienza",
     "nombre_visible": "Estadística Multivariada (T)",
     "programas_ids": [
       "MCOC",
@@ -3147,7 +6862,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
     "alumnos_programados": 25,
     "capacidad_espacio": 25,
     "estatus": "confirmado",
-    "notas": "Sesión oficial T en E-14 CPB - Dr. Benjamín Martín",
+    "notas": "Sesión oficial T en E-14 CPB - Dra. Beatriz Martín Atienza",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
@@ -3163,7 +6878,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
       "prof_bmartin"
     ],
     "profesor_principal_id": "prof_bmartin",
-    "profesor_nombre": "Dr. Benjamín Martín",
+    "profesor_nombre": "Dra. Beatriz Martín Atienza",
     "nombre_visible": "Estadística Multivariada (T)",
     "programas_ids": [
       "MCOC",
@@ -3181,7 +6896,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
     "alumnos_programados": 25,
     "capacidad_espacio": 25,
     "estatus": "confirmado",
-    "notas": "Sesión oficial T en E-14 CPB - Dr. Benjamín Martín",
+    "notas": "Sesión oficial T en E-14 CPB - Dra. Beatriz Martín Atienza",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
@@ -3333,7 +7048,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
       "prof_bjuarez"
     ],
     "profesor_principal_id": "prof_bjuarez",
-    "profesor_nombre": "Dr. Braulio Juárez A.",
+    "profesor_nombre": "Dr. Braulio Juárez Araiza",
     "nombre_visible": "Introducción a la Hidrodinámica de Estuarios (T)",
     "programas_ids": [
       "MCOC",
@@ -3351,7 +7066,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
     "alumnos_programados": 25,
     "capacidad_espacio": 25,
     "estatus": "confirmado",
-    "notas": "Sesión oficial T en E-14 CPB - Dr. Braulio Juárez A.",
+    "notas": "Sesión oficial T en E-14 CPB - Dr. Braulio Juárez Araiza",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
@@ -3367,7 +7082,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
       "prof_bjuarez"
     ],
     "profesor_principal_id": "prof_bjuarez",
-    "profesor_nombre": "Dr. Braulio Juárez A.",
+    "profesor_nombre": "Dr. Braulio Juárez Araiza",
     "nombre_visible": "Introducción a la Hidrodinámica de Estuarios (C)",
     "programas_ids": [
       "MCOC",
@@ -3385,7 +7100,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
     "alumnos_programados": 25,
     "capacidad_espacio": 25,
     "estatus": "confirmado",
-    "notas": "Sesión oficial C en E-14 CPB - Dr. Braulio Juárez A.",
+    "notas": "Sesión oficial C en E-14 CPB - Dr. Braulio Juárez Araiza",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
@@ -3400,10 +7115,10 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
     "profesores_ids": [
       "prof_palvarado",
       "prof_stanahara",
-      "prof_eolvera"
+      "prof_reaton"
     ],
     "profesor_principal_id": "prof_palvarado",
-    "profesor_nombre": "Dr. P. Alvarado, Dra. S. Tanahara, Dr. E. Olvera",
+    "profesor_nombre": "Dra. Patricia Alvarado Graef, Dra. Sarayda Aimé Tanahara Romero y Dr. Ricardo Bernardino Eaton González",
     "nombre_visible": "Modelación Numérica del Océano (C)",
     "programas_ids": [
       "MCOC",
@@ -3421,7 +7136,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
     "alumnos_programados": 25,
     "capacidad_espacio": 25,
     "estatus": "confirmado",
-    "notas": "Sesión oficial C en E-14 CPB - Dr. P. Alvarado, Dra. S. Tanahara, Dr. E. Olvera",
+    "notas": "Sesión oficial C en E-14 CPB - Dra. Patricia Alvarado Graef, Dra. Sarayda Aimé Tanahara Romero y Dr. Ricardo Bernardino Eaton González",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
@@ -3436,10 +7151,10 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
     "profesores_ids": [
       "prof_palvarado",
       "prof_stanahara",
-      "prof_eolvera"
+      "prof_reaton"
     ],
     "profesor_principal_id": "prof_palvarado",
-    "profesor_nombre": "Dr. P. Alvarado, Dra. S. Tanahara, Dr. E. Olvera",
+    "profesor_nombre": "Dra. Patricia Alvarado Graef, Dra. Sarayda Aimé Tanahara Romero y Dr. Ricardo Bernardino Eaton González",
     "nombre_visible": "Modelación Numérica del Océano (T)",
     "programas_ids": [
       "MCOC",
@@ -3457,7 +7172,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
     "alumnos_programados": 25,
     "capacidad_espacio": 25,
     "estatus": "confirmado",
-    "notas": "Sesión oficial T en E-14 CPB - Dr. P. Alvarado, Dra. S. Tanahara, Dr. E. Olvera",
+    "notas": "Sesión oficial T en E-14 CPB - Dra. Patricia Alvarado Graef, Dra. Sarayda Aimé Tanahara Romero y Dr. Ricardo Bernardino Eaton González",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
@@ -3473,7 +7188,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
       "prof_nmillan"
     ],
     "profesor_principal_id": "prof_nmillan",
-    "profesor_nombre": "Dr. Norberto Millán",
+    "profesor_nombre": "Dra. Natalie Millán Aguiñaga",
     "nombre_visible": "Seminario de Tesis (T)",
     "programas_ids": [
       "MCOC",
@@ -3491,7 +7206,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
     "alumnos_programados": 20,
     "capacidad_espacio": 20,
     "estatus": "confirmado",
-    "notas": "Sesión oficial T en E-14 SPD - Dr. Norberto Millán",
+    "notas": "Sesión oficial T en E-14 SPD - Dra. Natalie Millán Aguiñaga",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
@@ -3507,7 +7222,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
       "prof_vfernandez"
     ],
     "profesor_principal_id": "prof_vfernandez",
-    "profesor_nombre": "Dr. Víctor Fernández",
+    "profesor_nombre": "Dra. Violeta Zetzangari Fernández Díaz",
     "nombre_visible": "Avance de Tesis I (T)",
     "programas_ids": [
       "MCOC",
@@ -3525,7 +7240,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
     "alumnos_programados": 25,
     "capacidad_espacio": 25,
     "estatus": "confirmado",
-    "notas": "Sesión oficial T en E-14 CPB - Dr. Víctor Fernández",
+    "notas": "Sesión oficial T en E-14 CPB - Dra. Violeta Zetzangari Fernández Díaz",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
@@ -3541,7 +7256,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
       "admin_igiffard"
     ],
     "profesor_principal_id": "admin_igiffard",
-    "profesor_nombre": "Dra. Ivone Giffard",
+    "profesor_nombre": "Dra. Ivone Giffard Mena",
     "nombre_visible": "Avance de Tesis II (T)",
     "programas_ids": [
       "MCOC",
@@ -3559,7 +7274,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
     "alumnos_programados": 25,
     "capacidad_espacio": 25,
     "estatus": "confirmado",
-    "notas": "Sesión oficial T en E-14 CPB - Dra. Ivone Giffard",
+    "notas": "Sesión oficial T en E-14 CPB - Dra. Ivone Giffard Mena",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
@@ -3677,7 +7392,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
       "prof_jmsandoval"
     ],
     "profesor_principal_id": "prof_jmsandoval",
-    "profesor_nombre": "Dr. José Miguel Sandoval",
+    "profesor_nombre": "Dr. José Miguel Sandoval Gil",
     "nombre_visible": "Ecofisiología de Macrófitas Marinas (C)",
     "programas_ids": [
       "MCOC",
@@ -3695,7 +7410,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
     "alumnos_programados": 20,
     "capacidad_espacio": 100,
     "estatus": "confirmado",
-    "notas": "Sesión oficial C en VIR - Dr. José Miguel Sandoval",
+    "notas": "Sesión oficial C en VIR - Dr. José Miguel Sandoval Gil",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
@@ -3711,7 +7426,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
       "prof_jmsandoval"
     ],
     "profesor_principal_id": "prof_jmsandoval",
-    "profesor_nombre": "Dr. José Miguel Sandoval",
+    "profesor_nombre": "Dr. José Miguel Sandoval Gil",
     "nombre_visible": "Ecofisiología de Macrófitas Marinas (L)",
     "programas_ids": [
       "MCOC",
@@ -3729,7 +7444,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
     "alumnos_programados": 20,
     "capacidad_espacio": 100,
     "estatus": "confirmado",
-    "notas": "Sesión oficial L en VIR - Dr. José Miguel Sandoval",
+    "notas": "Sesión oficial L en VIR - Dr. José Miguel Sandoval Gil",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
@@ -3745,7 +7460,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
       "prof_lenriquez"
     ],
     "profesor_principal_id": "prof_lenriquez",
-    "profesor_nombre": "Dra. Lidia Enríquez",
+    "profesor_nombre": "Dr. Luis Manuel Enríquez Paredes",
     "nombre_visible": "Ecología Molecular (C)",
     "programas_ids": [
       "MCOC",
@@ -3763,7 +7478,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
     "alumnos_programados": 30,
     "capacidad_espacio": 35,
     "estatus": "confirmado",
-    "notas": "Sesión oficial C en E-56 TOA - Dra. Lidia Enríquez",
+    "notas": "Sesión oficial C en E-56 TOA - Dr. Luis Manuel Enríquez Paredes",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
@@ -3779,7 +7494,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
       "prof_lenriquez"
     ],
     "profesor_principal_id": "prof_lenriquez",
-    "profesor_nombre": "Dra. Lidia Enríquez",
+    "profesor_nombre": "Dr. Luis Manuel Enríquez Paredes",
     "nombre_visible": "Ecología Molecular (T)",
     "programas_ids": [
       "MCOC",
@@ -3797,7 +7512,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
     "alumnos_programados": 30,
     "capacidad_espacio": 35,
     "estatus": "confirmado",
-    "notas": "Sesión oficial T en E-56 TOA - Dra. Lidia Enríquez",
+    "notas": "Sesión oficial T en E-56 TOA - Dr. Luis Manuel Enríquez Paredes",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
@@ -3813,7 +7528,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
       "prof_lenriquez"
     ],
     "profesor_principal_id": "prof_lenriquez",
-    "profesor_nombre": "Dra. Lidia Enríquez",
+    "profesor_nombre": "Dr. Luis Manuel Enríquez Paredes",
     "nombre_visible": "Avance de Tesis III (T)",
     "programas_ids": [
       "MCOC",
@@ -3831,7 +7546,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
     "alumnos_programados": 30,
     "capacidad_espacio": 35,
     "estatus": "confirmado",
-    "notas": "Sesión oficial T en E-56 TOA - Dra. Lidia Enríquez",
+    "notas": "Sesión oficial T en E-56 TOA - Dr. Luis Manuel Enríquez Paredes",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
@@ -3916,7 +7631,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
       "prof_scastellanos"
     ],
     "profesor_principal_id": "prof_tolivares",
-    "profesor_nombre": "Dr. T. Olivares y Dra. S. Castellanos",
+    "profesor_nombre": "Dra. Tatiana Nenetzen Olivares Bañuelos y Dra. Sheila Castellanos Martínez",
     "nombre_visible": "Seminario de Acuacultura (T)",
     "programas_ids": [
       "MCOC",
@@ -3934,7 +7649,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
     "alumnos_programados": 20,
     "capacidad_espacio": 100,
     "estatus": "confirmado",
-    "notas": "Sesión oficial T en VIR - Dr. T. Olivares y Dra. S. Castellanos",
+    "notas": "Sesión oficial T en VIR - Dra. Tatiana Nenetzen Olivares Bañuelos y Dra. Sheila Castellanos Martínez",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
@@ -3950,7 +7665,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
       "prof_ngudino"
     ],
     "profesor_principal_id": "prof_ngudino",
-    "profesor_nombre": "Dr. N. Gudiño",
+    "profesor_nombre": "Dr. Napoleón Gudiño Elizondo",
     "nombre_visible": "Procesos Litorales y Manejo de la Erosión Costera (C)",
     "programas_ids": [
       "MCOC",
@@ -3968,7 +7683,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
     "alumnos_programados": 25,
     "capacidad_espacio": 25,
     "estatus": "confirmado",
-    "notas": "Sesión oficial C en E-25 SP1 - Dr. N. Gudiño",
+    "notas": "Sesión oficial C en E-25 SP1 - Dr. Napoleón Gudiño Elizondo",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
@@ -3984,7 +7699,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
       "prof_ngudino"
     ],
     "profesor_principal_id": "prof_ngudino",
-    "profesor_nombre": "Dr. N. Gudiño",
+    "profesor_nombre": "Dr. Napoleón Gudiño Elizondo",
     "nombre_visible": "Procesos Litorales y Manejo de la Erosión Costera (C)",
     "programas_ids": [
       "MCOC",
@@ -4002,7 +7717,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
     "alumnos_programados": 25,
     "capacidad_espacio": 25,
     "estatus": "confirmado",
-    "notas": "Sesión oficial C en E-25 SP1 - Dr. N. Gudiño",
+    "notas": "Sesión oficial C en E-25 SP1 - Dr. Napoleón Gudiño Elizondo",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
@@ -4018,7 +7733,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
       "prof_ngudino"
     ],
     "profesor_principal_id": "prof_ngudino",
-    "profesor_nombre": "Dr. N. Gudiño",
+    "profesor_nombre": "Dr. Napoleón Gudiño Elizondo",
     "nombre_visible": "Procesos Litorales y Manejo de la Erosión Costera (P)",
     "programas_ids": [
       "MCOC",
@@ -4036,7 +7751,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
     "alumnos_programados": 25,
     "capacidad_espacio": 25,
     "estatus": "confirmado",
-    "notas": "Sesión oficial P en E-25 SP1 - Dr. N. Gudiño",
+    "notas": "Sesión oficial P en E-25 SP1 - Dr. Napoleón Gudiño Elizondo",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
@@ -4053,7 +7768,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
       "prof_scastellanos"
     ],
     "profesor_principal_id": "prof_odelrio",
-    "profesor_nombre": "Dr. O. del Río y Dra. S. Castellanos",
+    "profesor_nombre": "Dr. Oscar Basilio del Río Zaragoza y Dra. Sheila Castellanos Martínez",
     "nombre_visible": "Patología y Bioseguridad Acuícola (C)",
     "programas_ids": [
       "MCOC",
@@ -4071,7 +7786,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
     "alumnos_programados": 25,
     "capacidad_espacio": 25,
     "estatus": "confirmado",
-    "notas": "Sesión oficial C en E-14 CPB - Dr. O. del Río y Dra. S. Castellanos",
+    "notas": "Sesión oficial C en E-14 CPB - Dr. Oscar Basilio del Río Zaragoza y Dra. Sheila Castellanos Martínez",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
@@ -4088,7 +7803,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
       "prof_scastellanos"
     ],
     "profesor_principal_id": "prof_odelrio",
-    "profesor_nombre": "Dr. O. del Río y Dra. S. Castellanos",
+    "profesor_nombre": "Dr. Oscar Basilio del Río Zaragoza y Dra. Sheila Castellanos Martínez",
     "nombre_visible": "Patología y Bioseguridad Acuícola (T)",
     "programas_ids": [
       "MCOC",
@@ -4106,7 +7821,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
     "alumnos_programados": 25,
     "capacidad_espacio": 25,
     "estatus": "confirmado",
-    "notas": "Sesión oficial T en E-14 CPB - Dr. O. del Río y Dra. S. Castellanos",
+    "notas": "Sesión oficial T en E-14 CPB - Dr. Oscar Basilio del Río Zaragoza y Dra. Sheila Castellanos Martínez",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
@@ -4123,7 +7838,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
       "prof_fbarreto"
     ],
     "profesor_principal_id": "prof_jgcorrea",
-    "profesor_nombre": "Dr. J.G. Correa y Dr. Fernando Barreto",
+    "profesor_nombre": "Dr. Juan Gabriel Correa Reyes y Dr. Fernando Barreto Curiel",
     "nombre_visible": "Sistemas en Acuacultura (T)",
     "programas_ids": [
       "MCOC",
@@ -4141,7 +7856,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
     "alumnos_programados": 25,
     "capacidad_espacio": 25,
     "estatus": "confirmado",
-    "notas": "Sesión oficial T en E-25 SP1 - Dr. J.G. Correa y Dr. Fernando Barreto",
+    "notas": "Sesión oficial T en E-25 SP1 - Dr. Juan Gabriel Correa Reyes y Dr. Fernando Barreto Curiel",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
@@ -4158,7 +7873,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
       "prof_fbarreto"
     ],
     "profesor_principal_id": "prof_jgcorrea",
-    "profesor_nombre": "Dr. J.G. Correa y Dr. Fernando Barreto",
+    "profesor_nombre": "Dr. Juan Gabriel Correa Reyes y Dr. Fernando Barreto Curiel",
     "nombre_visible": "Sistemas en Acuacultura (C)",
     "programas_ids": [
       "MCOC",
@@ -4176,7 +7891,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
     "alumnos_programados": 25,
     "capacidad_espacio": 25,
     "estatus": "confirmado",
-    "notas": "Sesión oficial C en E-25 SP1 - Dr. J.G. Correa y Dr. Fernando Barreto",
+    "notas": "Sesión oficial C en E-25 SP1 - Dr. Juan Gabriel Correa Reyes y Dr. Fernando Barreto Curiel",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
@@ -4193,7 +7908,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
       "prof_fbarreto"
     ],
     "profesor_principal_id": "prof_jgcorrea",
-    "profesor_nombre": "Dr. J.G. Correa y Dr. Fernando Barreto",
+    "profesor_nombre": "Dr. Juan Gabriel Correa Reyes y Dr. Fernando Barreto Curiel",
     "nombre_visible": "Sistemas en Acuacultura (T)",
     "programas_ids": [
       "MCOC",
@@ -4211,7 +7926,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
     "alumnos_programados": 25,
     "capacidad_espacio": 25,
     "estatus": "confirmado",
-    "notas": "Sesión oficial T en E-25 SP1 - Dr. J.G. Correa y Dr. Fernando Barreto",
+    "notas": "Sesión oficial T en E-25 SP1 - Dr. Juan Gabriel Correa Reyes y Dr. Fernando Barreto Curiel",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
@@ -4227,7 +7942,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
       "prof_acastillo"
     ],
     "profesor_principal_id": "prof_acastillo",
-    "profesor_nombre": "Dr. A. Castillo",
+    "profesor_nombre": "Dra. Alejandra de Jesús Castillo Ramírez",
     "nombre_visible": "Temas Selectos de Percepción Remota del Color del Océano (C)",
     "programas_ids": [
       "MCOC",
@@ -4245,7 +7960,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
     "alumnos_programados": 15,
     "capacidad_espacio": 15,
     "estatus": "confirmado",
-    "notas": "Sesión oficial C en E-14 SA - Dr. A. Castillo",
+    "notas": "Sesión oficial C en E-14 SA - Dra. Alejandra de Jesús Castillo Ramírez",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
@@ -4261,7 +7976,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
       "prof_acastillo"
     ],
     "profesor_principal_id": "prof_acastillo",
-    "profesor_nombre": "Dr. A. Castillo",
+    "profesor_nombre": "Dra. Alejandra de Jesús Castillo Ramírez",
     "nombre_visible": "Temas Selectos de Percepción Remota del Color del Océano (T)",
     "programas_ids": [
       "MCOC",
@@ -4279,7 +7994,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
     "alumnos_programados": 15,
     "capacidad_espacio": 15,
     "estatus": "confirmado",
-    "notas": "Sesión oficial T en E-14 SA - Dr. A. Castillo",
+    "notas": "Sesión oficial T en E-14 SA - Dra. Alejandra de Jesús Castillo Ramírez",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
@@ -4295,7 +8010,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
       "prof_lmalpica"
     ],
     "profesor_principal_id": "prof_lmalpica",
-    "profesor_nombre": "Dr. L. Malpica",
+    "profesor_nombre": "Dr. Luis Malpica Cruz",
     "nombre_visible": "Ecological Data in R (C)",
     "programas_ids": [
       "MCOC",
@@ -4313,7 +8028,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
     "alumnos_programados": 25,
     "capacidad_espacio": 25,
     "estatus": "confirmado",
-    "notas": "Sesión oficial C en E-25 SP1 - Dr. L. Malpica",
+    "notas": "Sesión oficial C en E-25 SP1 - Dr. Luis Malpica Cruz",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
@@ -4329,7 +8044,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
       "prof_lmalpica"
     ],
     "profesor_principal_id": "prof_lmalpica",
-    "profesor_nombre": "Dr. L. Malpica",
+    "profesor_nombre": "Dr. Luis Malpica Cruz",
     "nombre_visible": "Ecological Data in R (T)",
     "programas_ids": [
       "MCOC",
@@ -4347,7 +8062,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
     "alumnos_programados": 25,
     "capacidad_espacio": 25,
     "estatus": "confirmado",
-    "notas": "Sesión oficial T en E-25 SP1 - Dr. L. Malpica",
+    "notas": "Sesión oficial T en E-25 SP1 - Dr. Luis Malpica Cruz",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
@@ -4364,7 +8079,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
       "prof_fbarreto"
     ],
     "profesor_principal_id": "prof_mgalaviz",
-    "profesor_nombre": "Dr. Mario Galaviz y Dr. Fernando Barreto",
+    "profesor_nombre": "Dr. Mario Galaviz Espinoza y Dr. Fernando Barreto Curiel",
     "nombre_visible": "Bioquímica Nutricional Acuícola (C)",
     "programas_ids": [
       "MCOC",
@@ -4382,7 +8097,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
     "alumnos_programados": 25,
     "capacidad_espacio": 25,
     "estatus": "confirmado",
-    "notas": "Sesión oficial C en E-14 CPB - Dr. Mario Galaviz y Dr. Fernando Barreto",
+    "notas": "Sesión oficial C en E-14 CPB - Dr. Mario Galaviz Espinoza y Dr. Fernando Barreto Curiel",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
@@ -4399,7 +8114,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
       "prof_fbarreto"
     ],
     "profesor_principal_id": "prof_mgalaviz",
-    "profesor_nombre": "Dr. Mario Galaviz y Dr. Fernando Barreto",
+    "profesor_nombre": "Dr. Mario Galaviz Espinoza y Dr. Fernando Barreto Curiel",
     "nombre_visible": "Bioquímica Nutricional Acuícola (C)",
     "programas_ids": [
       "MCOC",
@@ -4417,7 +8132,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
     "alumnos_programados": 25,
     "capacidad_espacio": 25,
     "estatus": "confirmado",
-    "notas": "Sesión oficial C en E-25 SP1 - Dr. Mario Galaviz y Dr. Fernando Barreto",
+    "notas": "Sesión oficial C en E-25 SP1 - Dr. Mario Galaviz Espinoza y Dr. Fernando Barreto Curiel",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
@@ -4434,7 +8149,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
       "prof_gsamperio"
     ],
     "profesor_principal_id": "prof_afelix",
-    "profesor_nombre": "Dr. A. Félix y Dr. Guillermo Samperio",
+    "profesor_nombre": "Dr. Armando Félix Bermúdez y Dr. Guillermo Alberto Samperio Ramos",
     "nombre_visible": "Seminario de Biogeoquímica Acuática Avanzado (T)",
     "programas_ids": [
       "MCOC",
@@ -4452,7 +8167,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
     "alumnos_programados": 45,
     "capacidad_espacio": 45,
     "estatus": "confirmado",
-    "notas": "Sesión oficial T en E-25 AVI - Dr. A. Félix y Dr. Guillermo Samperio",
+    "notas": "Sesión oficial T en E-25 AVI - Dr. Armando Félix Bermúdez y Dr. Guillermo Alberto Samperio Ramos",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
@@ -4469,7 +8184,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
       "prof_gsamperio"
     ],
     "profesor_principal_id": "prof_afelix",
-    "profesor_nombre": "Dr. A. Félix y Dr. Guillermo Samperio",
+    "profesor_nombre": "Dr. Armando Félix Bermúdez y Dr. Guillermo Alberto Samperio Ramos",
     "nombre_visible": "Seminario de Biogeoquímica Acuática Avanzado (T)",
     "programas_ids": [
       "MCOC",
@@ -4487,7 +8202,7 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
     "alumnos_programados": 45,
     "capacidad_espacio": 45,
     "estatus": "confirmado",
-    "notas": "Sesión oficial T en E-25 AVI - Dr. A. Félix y Dr. Guillermo Samperio",
+    "notas": "Sesión oficial T en E-25 AVI - Dr. Armando Félix Bermúdez y Dr. Guillermo Alberto Samperio Ramos",
     "createdAt": "2027-01-10T08:00:00.000Z",
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
@@ -4586,10 +8301,10 @@ export const ASIGNACIONES_INICIALES: Asignacion[] = [
 
 export const PREFERENCIAS_INICIALES: PreferenciaDocente[] = [
   {
-    "id": "pref_2027-1_admin_igiffard",
+    "id": "pref_2027-1_prof_enriquezandrad",
     "periodo_id": "2027-1",
-    "profesor_id": "admin_igiffard",
-    "profesor_nombre": "Dra. Ivone Giffard",
+    "profesor_id": "prof_enriquezandrad",
+    "profesor_nombre": "Dr. Enriquez Andrade Roberto Ramón",
     "nivel_educativo": "posgrado",
     "programas_ids": [
       "MCOC",
@@ -4598,10 +8313,240 @@ export const PREFERENCIAS_INICIALES: PreferenciaDocente[] = [
     "dias_no_disponibles": [],
     "rangos_no_disponibles": [],
     "nivel_restriccion": "preferencia",
-    "cubiculo": "Edificio 14 (Dirección) · Cubículo Subdirección",
-    "horario_tutorias": "Lunes a Viernes 10:00 - 13:00 (Cita previa)",
-    "canal_contacto_estudiantes": "Correo UABC / Teams / Presencial",
-    "telefono_extension": "Ext. 43102",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_trueconaldavid",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_trueconaldavid",
+    "profesor_nombre": "Dr. Conal David True",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_arredondogarci",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_arredondogarci",
+    "profesor_nombre": "Dra. María Concepción Arredondo García",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_villegasvicenc",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_villegasvicenc",
+    "profesor_nombre": "Dr. Luis Javier Villegas Vicencio",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_wagnergutierre",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_wagnergutierre",
+    "profesor_nombre": "Dr. Juan Manuel Wagner Gutiérrez",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_schrammurrutia",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_schrammurrutia",
+    "profesor_nombre": "Dra. Yolanda Schramm Urrutia",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_jvaca",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_jvaca",
+    "profesor_nombre": "Dr. Juan Guillermo Vaca Rodríguez",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Cubículo 201",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43157",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_lopezacunalusm",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_lopezacunalusm",
+    "profesor_nombre": "Dra. Lus Mercedes López Acuña",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_palvarado",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_palvarado",
+    "profesor_nombre": "Dra. Patricia Alvarado Graef",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 16 · Cubículo 115",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43145",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_spelzmaderoron",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_spelzmaderoron",
+    "profesor_nombre": "Dr. Ronald Michael Spelz Madero",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_garciagastelum",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_garciagastelum",
+    "profesor_nombre": "Dr. Alejandro García Gastélum",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
     "equipos_requeridos": [
       "proyector",
       "red_uabc"
@@ -4612,7 +8557,7 @@ export const PREFERENCIAS_INICIALES: PreferenciaDocente[] = [
     "id": "pref_2027-1_prof_bmartin",
     "periodo_id": "2027-1",
     "profesor_id": "prof_bmartin",
-    "profesor_nombre": "Dr. Benjamín Martín",
+    "profesor_nombre": "Dra. Beatriz Martín Atienza",
     "nivel_educativo": "posgrado",
     "programas_ids": [
       "MCOC",
@@ -4622,8 +8567,8 @@ export const PREFERENCIAS_INICIALES: PreferenciaDocente[] = [
     "rangos_no_disponibles": [],
     "nivel_restriccion": "preferencia",
     "cubiculo": "Edificio 14 · Cubículo 104",
-    "horario_tutorias": "Miércoles y Viernes 11:00 - 13:00",
-    "canal_contacto_estudiantes": "Correo UABC / Teams",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
     "telefono_extension": "Ext. 43120",
     "equipos_requeridos": [
       "proyector",
@@ -4632,10 +8577,10 @@ export const PREFERENCIAS_INICIALES: PreferenciaDocente[] = [
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
   {
-    "id": "pref_2027-1_prof_llopez",
+    "id": "pref_2027-1_prof_gonzalezsilver",
     "periodo_id": "2027-1",
-    "profesor_id": "prof_llopez",
-    "profesor_nombre": "Dra. Laura Liliana López Galindo",
+    "profesor_id": "prof_gonzalezsilver",
+    "profesor_nombre": "Dra. Adriana González Silvera",
     "nivel_educativo": "posgrado",
     "programas_ids": [
       "MCOC",
@@ -4644,10 +8589,125 @@ export const PREFERENCIAS_INICIALES: PreferenciaDocente[] = [
     "dias_no_disponibles": [],
     "rangos_no_disponibles": [],
     "nivel_restriccion": "preferencia",
-    "cubiculo": "Edificio 25 (IIO) · Cubículo 208",
-    "horario_tutorias": "Martes y Jueves 10:00 - 12:00",
-    "canal_contacto_estudiantes": "Correo UABC",
-    "telefono_extension": "Ext. 43215",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_gsandoval",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_gsandoval",
+    "profesor_nombre": "Dr. Gerardo Sandoval Garibaldi",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_lenriquez",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_lenriquez",
+    "profesor_nombre": "Dr. Luis Manuel Enríquez Paredes",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 17 · Cubículo 105",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43135",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_reaton",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_reaton",
+    "profesor_nombre": "Dr. Ricardo Bernardino Eaton González",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_seingiergeorge",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_seingiergeorge",
+    "profesor_nombre": "Dr. Georges Seingier",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_admin_igiffard",
+    "periodo_id": "2027-1",
+    "profesor_id": "admin_igiffard",
+    "profesor_nombre": "Dra. Ivone Giffard Mena",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 14 (Dirección) · Cubículo Subdirección",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43102",
     "equipos_requeridos": [
       "proyector",
       "red_uabc"
@@ -4668,8 +8728,8 @@ export const PREFERENCIAS_INICIALES: PreferenciaDocente[] = [
     "rangos_no_disponibles": [],
     "nivel_restriccion": "preferencia",
     "cubiculo": "Edificio 14 · Cubículo 108",
-    "horario_tutorias": "Lunes y Viernes 13:00 - 15:00",
-    "canal_contacto_estudiantes": "Correo UABC / Teams",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
     "telefono_extension": "Ext. 43118",
     "equipos_requeridos": [
       "proyector",
@@ -4678,10 +8738,10 @@ export const PREFERENCIAS_INICIALES: PreferenciaDocente[] = [
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
   {
-    "id": "pref_2027-1_prof_bjuarez",
+    "id": "pref_2027-1_prof_riverahuertahi",
     "periodo_id": "2027-1",
-    "profesor_id": "prof_bjuarez",
-    "profesor_nombre": "Dr. Braulio Juárez A.",
+    "profesor_id": "prof_riverahuertahi",
+    "profesor_nombre": "Dr. Hiram Rivera Huerta",
     "nivel_educativo": "posgrado",
     "programas_ids": [
       "MCOC",
@@ -4690,10 +8750,10 @@ export const PREFERENCIAS_INICIALES: PreferenciaDocente[] = [
     "dias_no_disponibles": [],
     "rangos_no_disponibles": [],
     "nivel_restriccion": "preferencia",
-    "cubiculo": "Edificio 16 · Cubículo 112",
-    "horario_tutorias": "Martes y Jueves 14:00 - 16:00",
-    "canal_contacto_estudiantes": "Correo UABC / Teams",
-    "telefono_extension": "Ext. 43144",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
     "equipos_requeridos": [
       "proyector",
       "red_uabc"
@@ -4701,10 +8761,10 @@ export const PREFERENCIAS_INICIALES: PreferenciaDocente[] = [
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
   {
-    "id": "pref_2027-1_prof_palvarado",
+    "id": "pref_2027-1_prof_tanahararomero",
     "periodo_id": "2027-1",
-    "profesor_id": "prof_palvarado",
-    "profesor_nombre": "Dr. Pedro Alvarado",
+    "profesor_id": "prof_tanahararomero",
+    "profesor_nombre": "Dra. Tanahara Romero Sarayda Aimé",
     "nivel_educativo": "posgrado",
     "programas_ids": [
       "MCOC",
@@ -4713,10 +8773,10 @@ export const PREFERENCIAS_INICIALES: PreferenciaDocente[] = [
     "dias_no_disponibles": [],
     "rangos_no_disponibles": [],
     "nivel_restriccion": "preferencia",
-    "cubiculo": "Edificio 16 · Cubículo 115",
-    "horario_tutorias": "Martes y Viernes 15:00 - 17:00",
-    "canal_contacto_estudiantes": "Correo UABC / Teams",
-    "telefono_extension": "Ext. 43145",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
     "equipos_requeridos": [
       "proyector",
       "red_uabc"
@@ -4724,10 +8784,10 @@ export const PREFERENCIAS_INICIALES: PreferenciaDocente[] = [
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
   {
-    "id": "pref_2027-1_prof_stanahara",
+    "id": "pref_2027-1_prof_moraleschavezr",
     "periodo_id": "2027-1",
-    "profesor_id": "prof_stanahara",
-    "profesor_nombre": "Dra. Sheila Tanahara",
+    "profesor_id": "prof_moraleschavezr",
+    "profesor_nombre": "Dr. Rafael Morales Chávez",
     "nivel_educativo": "posgrado",
     "programas_ids": [
       "MCOC",
@@ -4736,10 +8796,10 @@ export const PREFERENCIAS_INICIALES: PreferenciaDocente[] = [
     "dias_no_disponibles": [],
     "rangos_no_disponibles": [],
     "nivel_restriccion": "preferencia",
-    "cubiculo": "Edificio 16 · Cubículo 116",
-    "horario_tutorias": "Martes 15:00 - 17:00",
-    "canal_contacto_estudiantes": "Correo UABC",
-    "telefono_extension": "Ext. 43146",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
     "equipos_requeridos": [
       "proyector",
       "red_uabc"
@@ -4747,10 +8807,10 @@ export const PREFERENCIAS_INICIALES: PreferenciaDocente[] = [
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
   {
-    "id": "pref_2027-1_prof_eolvera",
+    "id": "pref_2027-1_prof_cardozacontrer",
     "periodo_id": "2027-1",
-    "profesor_id": "prof_eolvera",
-    "profesor_nombre": "Dr. Eric Olvera",
+    "profesor_id": "prof_cardozacontrer",
+    "profesor_nombre": "Dra. Cardoza Contreras Marlene Nohemi",
     "nivel_educativo": "posgrado",
     "programas_ids": [
       "MCOC",
@@ -4759,10 +8819,10 @@ export const PREFERENCIAS_INICIALES: PreferenciaDocente[] = [
     "dias_no_disponibles": [],
     "rangos_no_disponibles": [],
     "nivel_restriccion": "preferencia",
-    "cubiculo": "Edificio 14 · Cubículo 109",
-    "horario_tutorias": "Viernes 15:00 - 17:00",
-    "canal_contacto_estudiantes": "Correo UABC",
-    "telefono_extension": "Ext. 43119",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
     "equipos_requeridos": [
       "proyector",
       "red_uabc"
@@ -4770,10 +8830,10 @@ export const PREFERENCIAS_INICIALES: PreferenciaDocente[] = [
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
   {
-    "id": "pref_2027-1_prof_nmillan",
+    "id": "pref_2027-1_prof_velazquezgonza",
     "periodo_id": "2027-1",
-    "profesor_id": "prof_nmillan",
-    "profesor_nombre": "Dr. Norberto Millán",
+    "profesor_id": "prof_velazquezgonza",
+    "profesor_nombre": "Dra. Ernestina Karen Velázquez González",
     "nivel_educativo": "posgrado",
     "programas_ids": [
       "MCOC",
@@ -4782,10 +8842,10 @@ export const PREFERENCIAS_INICIALES: PreferenciaDocente[] = [
     "dias_no_disponibles": [],
     "rangos_no_disponibles": [],
     "nivel_restriccion": "preferencia",
-    "cubiculo": "Edificio 14 (SPD) · Cubículo 102",
-    "horario_tutorias": "Lunes 16:00 - 18:00",
-    "canal_contacto_estudiantes": "Correo UABC",
-    "telefono_extension": "Ext. 43105",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
     "equipos_requeridos": [
       "proyector",
       "red_uabc"
@@ -4796,7 +8856,7 @@ export const PREFERENCIAS_INICIALES: PreferenciaDocente[] = [
     "id": "pref_2027-1_prof_vfernandez",
     "periodo_id": "2027-1",
     "profesor_id": "prof_vfernandez",
-    "profesor_nombre": "Dr. Víctor Fernández",
+    "profesor_nombre": "Dra. Violeta Zetzangari Fernández Díaz",
     "nivel_educativo": "posgrado",
     "programas_ids": [
       "MCOC",
@@ -4806,9 +8866,446 @@ export const PREFERENCIAS_INICIALES: PreferenciaDocente[] = [
     "rangos_no_disponibles": [],
     "nivel_restriccion": "preferencia",
     "cubiculo": "Edificio 18 · Cubículo 205",
-    "horario_tutorias": "Martes 17:00 - 19:00",
-    "canal_contacto_estudiantes": "Correo UABC",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
     "telefono_extension": "Ext. 43160",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_mgalaviz",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_mgalaviz",
+    "profesor_nombre": "Dr. Mario Galaviz Espinoza",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 14 · Cubículo 107",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43117",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_reyesortamaris",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_reyesortamaris",
+    "profesor_nombre": "Dra. Marisa Reyes Orta",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_klugo",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_klugo",
+    "profesor_nombre": "Dra. Karina del Carmen Lugo Ibarra",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 17 · Cubículo 106",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43134",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_jaramontanezro",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_jaramontanezro",
+    "profesor_nombre": "Dra. Rosario Jara Montañez",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_mruiz",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_mruiz",
+    "profesor_nombre": "Dra. Mary Carmen Ruíz de la Torre",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 14 · Cubículo 105",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43116",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_sancheznavaama",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_sancheznavaama",
+    "profesor_nombre": "Dra. Amara Thaydé Sánchez Nava",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_floresmoralesa",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_floresmoralesa",
+    "profesor_nombre": "Dra. Ana Laura Flores Morales",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_rbeas",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_rbeas",
+    "profesor_nombre": "Dr. Rodrigo Beas Luna",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Cubículo 206",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43164",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_aabadia",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_aabadia",
+    "profesor_nombre": "Dra. Alicia Abadía Cardoso",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 17 · Cubículo 102",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43131",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_vivancoarandam",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_vivancoarandam",
+    "profesor_nombre": "Dra. Miroslava Vivanco Aranda",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_evangelistaher",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_evangelistaher",
+    "profesor_nombre": "Dra. Viridiana Evangelista Hernández",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_fbarreto",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_fbarreto",
+    "profesor_nombre": "Dr. Fernando Barreto Curiel",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Cubículo 202",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43158",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_herreragutierr",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_herreragutierr",
+    "profesor_nombre": "Dr. Ángel Raúl Herrera Gutiérrez",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_yarbuhlugousam",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_yarbuhlugousam",
+    "profesor_nombre": "Dr. Usama Ismael Yarbuh Lugo",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_nmillan",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_nmillan",
+    "profesor_nombre": "Dra. Natalie Millán Aguiñaga",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 14 (SPD) · Cubículo 102",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43105",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_villegasmendoz",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_villegasmendoz",
+    "profesor_nombre": "Dr. Josué Rodolfo Villegas Mendoza",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_lopezcalderonj",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_lopezcalderonj",
+    "profesor_nombre": "Dr. Jorge Manuel López Calderón",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_mejiapinakarla",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_mejiapinakarla",
+    "profesor_nombre": "Dra. Karla Gabriela Mejía Piña",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_msantiago",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_msantiago",
+    "profesor_nombre": "Dr. Mauro Wilfrido Santiago García",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 16 · Cubículo 118",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43149",
     "equipos_requeridos": [
       "proyector",
       "red_uabc"
@@ -4829,9 +9326,9 @@ export const PREFERENCIAS_INICIALES: PreferenciaDocente[] = [
     "rangos_no_disponibles": [],
     "nivel_restriccion": "preferencia",
     "cubiculo": "Edificio 18 · Cubículo 209",
-    "horario_tutorias": "Jueves 15:00 - 17:00",
-    "canal_contacto_estudiantes": "Correo UABC / Teams",
-    "telefono_extension": "Ext. 43165",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43163",
     "equipos_requeridos": [
       "proyector",
       "red_uabc"
@@ -4839,10 +9336,10 @@ export const PREFERENCIAS_INICIALES: PreferenciaDocente[] = [
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
   {
-    "id": "pref_2027-1_prof_jmsandoval",
+    "id": "pref_2027-1_prof_lubinskyjinich",
     "periodo_id": "2027-1",
-    "profesor_id": "prof_jmsandoval",
-    "profesor_nombre": "Dr. José Miguel Sandoval",
+    "profesor_id": "prof_lubinskyjinich",
+    "profesor_nombre": "Dra. Mónica Lubinsky Jinich",
     "nivel_educativo": "posgrado",
     "programas_ids": [
       "MCOC",
@@ -4851,10 +9348,10 @@ export const PREFERENCIAS_INICIALES: PreferenciaDocente[] = [
     "dias_no_disponibles": [],
     "rangos_no_disponibles": [],
     "nivel_restriccion": "preferencia",
-    "cubiculo": "Edificio 25 (IIO) · Cubículo 105",
-    "horario_tutorias": "Miércoles 17:00 - 19:00",
-    "canal_contacto_estudiantes": "Correo UABC / Meet / Teams",
-    "telefono_extension": "Ext. 43220",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
     "equipos_requeridos": [
       "proyector",
       "red_uabc"
@@ -4862,10 +9359,10 @@ export const PREFERENCIAS_INICIALES: PreferenciaDocente[] = [
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
   {
-    "id": "pref_2027-1_prof_lenriquez",
+    "id": "pref_2027-1_prof_lopezcastillej",
     "periodo_id": "2027-1",
-    "profesor_id": "prof_lenriquez",
-    "profesor_nombre": "Dra. Lidia Enríquez",
+    "profesor_id": "prof_lopezcastillej",
+    "profesor_nombre": "Dr. Julio López Castillejos",
     "nivel_educativo": "posgrado",
     "programas_ids": [
       "MCOC",
@@ -4874,10 +9371,10 @@ export const PREFERENCIAS_INICIALES: PreferenciaDocente[] = [
     "dias_no_disponibles": [],
     "rangos_no_disponibles": [],
     "nivel_restriccion": "preferencia",
-    "cubiculo": "Edificio 56 · Cubículo 101",
-    "horario_tutorias": "Martes y Jueves 09:00 - 11:00",
-    "canal_contacto_estudiantes": "Correo UABC",
-    "telefono_extension": "Ext. 43190",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
     "equipos_requeridos": [
       "proyector",
       "red_uabc"
@@ -4885,10 +9382,10 @@ export const PREFERENCIAS_INICIALES: PreferenciaDocente[] = [
     "updatedAt": "2027-01-10T08:00:00.000Z"
   },
   {
-    "id": "pref_2027-1_prof_hgnava",
+    "id": "pref_2027-1_prof_arenasislasdia",
     "periodo_id": "2027-1",
-    "profesor_id": "prof_hgnava",
-    "profesor_nombre": "Dr. Héctor García Nava",
+    "profesor_id": "prof_arenasislasdia",
+    "profesor_nombre": "Dra. Diana Arenas Islas",
     "nivel_educativo": "posgrado",
     "programas_ids": [
       "MCOC",
@@ -4897,378 +9394,10 @@ export const PREFERENCIAS_INICIALES: PreferenciaDocente[] = [
     "dias_no_disponibles": [],
     "rangos_no_disponibles": [],
     "nivel_restriccion": "preferencia",
-    "cubiculo": "Edificio 25 (IIO) · Cubículo 210",
-    "horario_tutorias": "Lunes y Viernes 12:00 - 14:00",
-    "canal_contacto_estudiantes": "Correo UABC / Teams",
-    "telefono_extension": "Ext. 43230",
-    "equipos_requeridos": [
-      "proyector",
-      "red_uabc"
-    ],
-    "updatedAt": "2027-01-10T08:00:00.000Z"
-  },
-  {
-    "id": "pref_2027-1_prof_tolivares",
-    "periodo_id": "2027-1",
-    "profesor_id": "prof_tolivares",
-    "profesor_nombre": "Dr. T. Olivares",
-    "nivel_educativo": "posgrado",
-    "programas_ids": [
-      "MCOC",
-      "DOC"
-    ],
-    "dias_no_disponibles": [],
-    "rangos_no_disponibles": [],
-    "nivel_restriccion": "preferencia",
-    "cubiculo": "Edificio 41 · Cubículo 103",
-    "horario_tutorias": "Miércoles 12:00 - 14:00",
-    "canal_contacto_estudiantes": "Correo UABC",
-    "telefono_extension": "Ext. 43180",
-    "equipos_requeridos": [
-      "proyector",
-      "red_uabc"
-    ],
-    "updatedAt": "2027-01-10T08:00:00.000Z"
-  },
-  {
-    "id": "pref_2027-1_prof_scastellanos",
-    "periodo_id": "2027-1",
-    "profesor_id": "prof_scastellanos",
-    "profesor_nombre": "Dra. Sara Castellanos",
-    "nivel_educativo": "posgrado",
-    "programas_ids": [
-      "MCOC",
-      "DOC"
-    ],
-    "dias_no_disponibles": [],
-    "rangos_no_disponibles": [],
-    "nivel_restriccion": "preferencia",
-    "cubiculo": "Edificio 41 · Cubículo 104",
-    "horario_tutorias": "Lunes y Miércoles 14:00 - 16:00",
-    "canal_contacto_estudiantes": "Correo UABC",
-    "telefono_extension": "Ext. 43182",
-    "equipos_requeridos": [
-      "proyector",
-      "red_uabc"
-    ],
-    "updatedAt": "2027-01-10T08:00:00.000Z"
-  },
-  {
-    "id": "pref_2027-1_prof_ngudino",
-    "periodo_id": "2027-1",
-    "profesor_id": "prof_ngudino",
-    "profesor_nombre": "Dr. N. Gudiño",
-    "nivel_educativo": "posgrado",
-    "programas_ids": [
-      "MCOC",
-      "DOC"
-    ],
-    "dias_no_disponibles": [],
-    "rangos_no_disponibles": [],
-    "nivel_restriccion": "preferencia",
-    "cubiculo": "Edificio 16 · Cubículo 204",
-    "horario_tutorias": "Martes y Jueves 13:00 - 15:00",
-    "canal_contacto_estudiantes": "Correo UABC",
-    "telefono_extension": "Ext. 43150",
-    "equipos_requeridos": [
-      "proyector",
-      "red_uabc"
-    ],
-    "updatedAt": "2027-01-10T08:00:00.000Z"
-  },
-  {
-    "id": "pref_2027-1_prof_odelrio",
-    "periodo_id": "2027-1",
-    "profesor_id": "prof_odelrio",
-    "profesor_nombre": "Dr. Oscar Basilio del Río Zaragoza",
-    "nivel_educativo": "posgrado",
-    "programas_ids": [
-      "MCOC",
-      "DOC"
-    ],
-    "dias_no_disponibles": [],
-    "rangos_no_disponibles": [],
-    "nivel_restriccion": "preferencia",
-    "cubiculo": "Edificio 41 · Cubículo 105",
-    "horario_tutorias": "Lunes y Miércoles 14:00 - 16:00",
-    "canal_contacto_estudiantes": "Correo UABC",
-    "telefono_extension": "Ext. 43185",
-    "equipos_requeridos": [
-      "proyector",
-      "red_uabc"
-    ],
-    "updatedAt": "2027-01-10T08:00:00.000Z"
-  },
-  {
-    "id": "pref_2027-1_prof_jgcorrea",
-    "periodo_id": "2027-1",
-    "profesor_id": "prof_jgcorrea",
-    "profesor_nombre": "Dr. J.G. Correa",
-    "nivel_educativo": "posgrado",
-    "programas_ids": [
-      "MCOC",
-      "DOC"
-    ],
-    "dias_no_disponibles": [],
-    "rangos_no_disponibles": [],
-    "nivel_restriccion": "preferencia",
-    "cubiculo": "Edificio 41 · Cubículo 102",
-    "horario_tutorias": "Martes y Jueves 15:00 - 17:00",
-    "canal_contacto_estudiantes": "Correo UABC",
-    "telefono_extension": "Ext. 43178",
-    "equipos_requeridos": [
-      "proyector",
-      "red_uabc"
-    ],
-    "updatedAt": "2027-01-10T08:00:00.000Z"
-  },
-  {
-    "id": "pref_2027-1_prof_fbarreto",
-    "periodo_id": "2027-1",
-    "profesor_id": "prof_fbarreto",
-    "profesor_nombre": "Dr. Fernando Barreto Curiel",
-    "nivel_educativo": "posgrado",
-    "programas_ids": [
-      "MCOC",
-      "DOC"
-    ],
-    "dias_no_disponibles": [],
-    "rangos_no_disponibles": [],
-    "nivel_restriccion": "preferencia",
-    "cubiculo": "Edificio 17 · Cubículo 106",
-    "horario_tutorias": "Martes y Jueves 14:00 - 16:00",
-    "canal_contacto_estudiantes": "Correo UABC / Teams",
-    "telefono_extension": "Ext. 43135",
-    "equipos_requeridos": [
-      "proyector",
-      "red_uabc"
-    ],
-    "updatedAt": "2027-01-10T08:00:00.000Z"
-  },
-  {
-    "id": "pref_2027-1_prof_acastillo",
-    "periodo_id": "2027-1",
-    "profesor_id": "prof_acastillo",
-    "profesor_nombre": "Dr. A. Castillo",
-    "nivel_educativo": "posgrado",
-    "programas_ids": [
-      "MCOC",
-      "DOC"
-    ],
-    "dias_no_disponibles": [],
-    "rangos_no_disponibles": [],
-    "nivel_restriccion": "preferencia",
-    "cubiculo": "Edificio 14 · Cubículo 110",
-    "horario_tutorias": "Lunes y Viernes 12:00 - 14:00",
-    "canal_contacto_estudiantes": "Correo UABC",
-    "telefono_extension": "Ext. 43122",
-    "equipos_requeridos": [
-      "proyector",
-      "red_uabc"
-    ],
-    "updatedAt": "2027-01-10T08:00:00.000Z"
-  },
-  {
-    "id": "pref_2027-1_prof_lmalpica",
-    "periodo_id": "2027-1",
-    "profesor_id": "prof_lmalpica",
-    "profesor_nombre": "Dr. L. Malpica",
-    "nivel_educativo": "posgrado",
-    "programas_ids": [
-      "MCOC",
-      "DOC"
-    ],
-    "dias_no_disponibles": [],
-    "rangos_no_disponibles": [],
-    "nivel_restriccion": "preferencia",
-    "cubiculo": "Edificio 25 (IIO) · Cubículo 212",
-    "horario_tutorias": "Lunes y Miércoles 14:00 - 16:00",
-    "canal_contacto_estudiantes": "Correo UABC / R-Studio Hub",
-    "telefono_extension": "Ext. 43235",
-    "equipos_requeridos": [
-      "proyector",
-      "red_uabc"
-    ],
-    "updatedAt": "2027-01-10T08:00:00.000Z"
-  },
-  {
-    "id": "pref_2027-1_prof_mgalaviz",
-    "periodo_id": "2027-1",
-    "profesor_id": "prof_mgalaviz",
-    "profesor_nombre": "Dr. Mario Galaviz",
-    "nivel_educativo": "posgrado",
-    "programas_ids": [
-      "MCOC",
-      "DOC"
-    ],
-    "dias_no_disponibles": [],
-    "rangos_no_disponibles": [],
-    "nivel_restriccion": "preferencia",
-    "cubiculo": "Edificio 15 · Cubículo 204",
-    "horario_tutorias": "Martes y Miércoles 14:00 - 16:00",
-    "canal_contacto_estudiantes": "Correo UABC",
-    "telefono_extension": "Ext. 43128",
-    "equipos_requeridos": [
-      "proyector",
-      "red_uabc"
-    ],
-    "updatedAt": "2027-01-10T08:00:00.000Z"
-  },
-  {
-    "id": "pref_2027-1_prof_afelix",
-    "periodo_id": "2027-1",
-    "profesor_id": "prof_afelix",
-    "profesor_nombre": "Dr. A. Félix",
-    "nivel_educativo": "posgrado",
-    "programas_ids": [
-      "MCOC",
-      "DOC"
-    ],
-    "dias_no_disponibles": [],
-    "rangos_no_disponibles": [],
-    "nivel_restriccion": "preferencia",
-    "cubiculo": "Edificio 25 (IIO) · Cubículo 108",
-    "horario_tutorias": "Viernes 14:00 - 16:00",
-    "canal_contacto_estudiantes": "Correo UABC",
-    "telefono_extension": "Ext. 43222",
-    "equipos_requeridos": [
-      "proyector",
-      "red_uabc"
-    ],
-    "updatedAt": "2027-01-10T08:00:00.000Z"
-  },
-  {
-    "id": "pref_2027-1_prof_gsamperio",
-    "periodo_id": "2027-1",
-    "profesor_id": "prof_gsamperio",
-    "profesor_nombre": "Dr. Guillermo Alberto Samperio Ramos",
-    "nivel_educativo": "posgrado",
-    "programas_ids": [
-      "MCOC",
-      "DOC"
-    ],
-    "dias_no_disponibles": [],
-    "rangos_no_disponibles": [],
-    "nivel_restriccion": "preferencia",
-    "cubiculo": "Edificio 25 (IIO) · Cubículo 110",
-    "horario_tutorias": "Viernes 16:00 - 18:00",
-    "canal_contacto_estudiantes": "Correo UABC",
-    "telefono_extension": "Ext. 43224",
-    "equipos_requeridos": [
-      "proyector",
-      "red_uabc"
-    ],
-    "updatedAt": "2027-01-10T08:00:00.000Z"
-  },
-  {
-    "id": "pref_2027-1_prof_auribe",
-    "periodo_id": "2027-1",
-    "profesor_id": "prof_auribe",
-    "profesor_nombre": "Dra. Abigail Uribe",
-    "nivel_educativo": "posgrado",
-    "programas_ids": [
-      "MCOC",
-      "DOC"
-    ],
-    "dias_no_disponibles": [],
-    "rangos_no_disponibles": [],
-    "nivel_restriccion": "preferencia",
-    "cubiculo": "Edificio 18 · Cubículo 202",
-    "horario_tutorias": "Lunes 19:00 - 21:00 (VIR)",
-    "canal_contacto_estudiantes": "Correo UABC / Teams",
-    "telefono_extension": "Ext. 43155",
-    "equipos_requeridos": [
-      "proyector",
-      "red_uabc"
-    ],
-    "updatedAt": "2027-01-10T08:00:00.000Z"
-  },
-  {
-    "id": "pref_2027-1_prof_aabadia",
-    "periodo_id": "2027-1",
-    "profesor_id": "prof_aabadia",
-    "profesor_nombre": "Dra. Alicia Abadía",
-    "nivel_educativo": "posgrado",
-    "programas_ids": [
-      "MCOC",
-      "DOC"
-    ],
-    "dias_no_disponibles": [],
-    "rangos_no_disponibles": [],
-    "nivel_restriccion": "preferencia",
-    "cubiculo": "Edificio 15 · Cubículo 201",
-    "horario_tutorias": "Lunes 19:00 - 21:00 (VIR)",
-    "canal_contacto_estudiantes": "Correo UABC / Teams",
-    "telefono_extension": "Ext. 43126",
-    "equipos_requeridos": [
-      "proyector",
-      "red_uabc"
-    ],
-    "updatedAt": "2027-01-10T08:00:00.000Z"
-  },
-  {
-    "id": "pref_2027-1_prof_abraga",
-    "periodo_id": "2027-1",
-    "profesor_id": "prof_abraga",
-    "profesor_nombre": "Dr. André Luiz Braga de Souza",
-    "nivel_educativo": "posgrado",
-    "programas_ids": [
-      "MCOC",
-      "DOC"
-    ],
-    "dias_no_disponibles": [],
-    "rangos_no_disponibles": [],
-    "nivel_restriccion": "preferencia",
-    "cubiculo": "Edificio 16 · Cubículo 206",
-    "horario_tutorias": "Lunes 19:00 - 21:00 (VIR)",
-    "canal_contacto_estudiantes": "Correo UABC / Teams",
-    "telefono_extension": "Ext. 43152",
-    "equipos_requeridos": [
-      "proyector",
-      "red_uabc"
-    ],
-    "updatedAt": "2027-01-10T08:00:00.000Z"
-  },
-  {
-    "id": "pref_2027-1_prof_jvaca",
-    "periodo_id": "2027-1",
-    "profesor_id": "prof_jvaca",
-    "profesor_nombre": "Dr. Juan Vaca",
-    "nivel_educativo": "posgrado",
-    "programas_ids": [
-      "MCOC",
-      "DOC"
-    ],
-    "dias_no_disponibles": [],
-    "rangos_no_disponibles": [],
-    "nivel_restriccion": "preferencia",
-    "cubiculo": "Edificio 16 · Cubículo 110",
-    "horario_tutorias": "Lunes 19:00 - 21:00 (VIR)",
-    "canal_contacto_estudiantes": "Correo UABC / Teams",
-    "telefono_extension": "Ext. 43142",
-    "equipos_requeridos": [
-      "proyector",
-      "red_uabc"
-    ],
-    "updatedAt": "2027-01-10T08:00:00.000Z"
-  },
-  {
-    "id": "pref_2027-1_prof_klugo",
-    "periodo_id": "2027-1",
-    "profesor_id": "prof_klugo",
-    "profesor_nombre": "Dra. Karina Lugo",
-    "nivel_educativo": "posgrado",
-    "programas_ids": [
-      "MCOC",
-      "DOC"
-    ],
-    "dias_no_disponibles": [],
-    "rangos_no_disponibles": [],
-    "nivel_restriccion": "preferencia",
-    "cubiculo": "Edificio 25 (IIO) · Cubículo 106",
-    "horario_tutorias": "Lunes 19:00 - 21:00 (VIR)",
-    "canal_contacto_estudiantes": "Correo UABC / Teams",
-    "telefono_extension": "Ext. 43221",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
     "equipos_requeridos": [
       "proyector",
       "red_uabc"
@@ -5288,102 +9417,401 @@ export const PREFERENCIAS_INICIALES: PreferenciaDocente[] = [
     "dias_no_disponibles": [],
     "rangos_no_disponibles": [],
     "nivel_restriccion": "preferencia",
-    "cubiculo": "Edificio 18 · Cubículo 208",
-    "horario_tutorias": "Lunes 19:00 - 21:00 (VIR)",
-    "canal_contacto_estudiantes": "Correo UABC / Teams",
-    "telefono_extension": "Ext. 43164",
-    "equipos_requeridos": [
-      "proyector",
-      "red_uabc"
-    ],
-    "updatedAt": "2027-01-10T08:00:00.000Z"
-  },
-  {
-    "id": "pref_2027-1_prof_onorzagaray",
-    "periodo_id": "2027-1",
-    "profesor_id": "prof_onorzagaray",
-    "profesor_nombre": "Dr. Orión Norzagaray",
-    "nivel_educativo": "posgrado",
-    "programas_ids": [
-      "MCOC",
-      "DOC"
-    ],
-    "dias_no_disponibles": [],
-    "rangos_no_disponibles": [],
-    "nivel_restriccion": "preferencia",
-    "cubiculo": "Edificio 18 · Cubículo 206",
-    "horario_tutorias": "Lunes 19:00 - 21:00 (VIR)",
-    "canal_contacto_estudiantes": "Correo UABC / Teams",
-    "telefono_extension": "Ext. 43162",
-    "equipos_requeridos": [
-      "proyector",
-      "red_uabc"
-    ],
-    "updatedAt": "2027-01-10T08:00:00.000Z"
-  },
-  {
-    "id": "pref_2027-1_prof_rbeas",
-    "periodo_id": "2027-1",
-    "profesor_id": "prof_rbeas",
-    "profesor_nombre": "Dr. Rodrigo Beas",
-    "nivel_educativo": "posgrado",
-    "programas_ids": [
-      "MCOC",
-      "DOC"
-    ],
-    "dias_no_disponibles": [],
-    "rangos_no_disponibles": [],
-    "nivel_restriccion": "preferencia",
-    "cubiculo": "Edificio 15 · Cubículo 105",
-    "horario_tutorias": "Lunes 19:00 - 21:00 (VIR)",
-    "canal_contacto_estudiantes": "Correo UABC / Teams",
-    "telefono_extension": "Ext. 43130",
-    "equipos_requeridos": [
-      "proyector",
-      "red_uabc"
-    ],
-    "updatedAt": "2027-01-10T08:00:00.000Z"
-  },
-  {
-    "id": "pref_2027-1_prof_mruiz",
-    "periodo_id": "2027-1",
-    "profesor_id": "prof_mruiz",
-    "profesor_nombre": "Dra. Mary Carmen Ruíz",
-    "nivel_educativo": "posgrado",
-    "programas_ids": [
-      "MCOC",
-      "DOC"
-    ],
-    "dias_no_disponibles": [],
-    "rangos_no_disponibles": [],
-    "nivel_restriccion": "preferencia",
-    "cubiculo": "Edificio 15 · Cubículo 203",
-    "horario_tutorias": "Lunes 19:00 - 21:00 (VIR)",
-    "canal_contacto_estudiantes": "Correo UABC / Teams",
-    "telefono_extension": "Ext. 43127",
-    "equipos_requeridos": [
-      "proyector",
-      "red_uabc"
-    ],
-    "updatedAt": "2027-01-10T08:00:00.000Z"
-  },
-  {
-    "id": "pref_2027-1_prof_msantiago",
-    "periodo_id": "2027-1",
-    "profesor_id": "prof_msantiago",
-    "profesor_nombre": "Dr. Mauro Wilfrido Santiago García",
-    "nivel_educativo": "posgrado",
-    "programas_ids": [
-      "MCOC",
-      "DOC"
-    ],
-    "dias_no_disponibles": [],
-    "rangos_no_disponibles": [],
-    "nivel_restriccion": "preferencia",
     "cubiculo": "Edificio 16 · Cubículo 114",
-    "horario_tutorias": "Lunes y Martes 19:00 - 21:00 (VIR)",
-    "canal_contacto_estudiantes": "Correo UABC / Teams",
-    "telefono_extension": "Ext. 43148",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43147",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_romeroarteagaa",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_romeroarteagaa",
+    "profesor_nombre": "Dra. Angélica María Romero Arteaga",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_jgcorreaperez",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_jgcorreaperez",
+    "profesor_nombre": "Dr. Juan Gabriel Correa Pérez",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_acastillo",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_acastillo",
+    "profesor_nombre": "Dra. Alejandra de Jesús Castillo Ramírez",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 14 · Cubículo 106",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43115",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_villasusopalom",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_villasusopalom",
+    "profesor_nombre": "Dr. Villasuso Palomares Salvador",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_gomezhernandez",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_gomezhernandez",
+    "profesor_nombre": "Dra. Guadalupe Gómez Hernández",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_saenzavalosmar",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_saenzavalosmar",
+    "profesor_nombre": "Dra. Mariana Ana Laura Saenz-Ávalos",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_jennyferschong",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_jennyferschong",
+    "profesor_nombre": "Dra. Jennyfers Chong Robles",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_gustavoalexisc",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_gustavoalexisc",
+    "profesor_nombre": "Dr. Gustavo Alexis Cardenas López",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_victormanuello",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_victormanuello",
+    "profesor_nombre": "Dr. Victor Manuel Lomeli Quintero",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_astridhernande",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_astridhernande",
+    "profesor_nombre": "Dra. Astrid Hernández Cruz",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_poulettecaroli",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_poulettecaroli",
+    "profesor_nombre": "Dra. Poulette Carolina Álvarez Rosales",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_eulalioarambul",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_eulalioarambul",
+    "profesor_nombre": "Dr. Eulalio Arámbul Muñoz",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_abraga",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_abraga",
+    "profesor_nombre": "Dr. Andre Luiz Braga de Souza",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 25 (IIO) · Cubículo 222",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43232",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_victorfroylanc",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_victorfroylanc",
+    "profesor_nombre": "Dr. Victor Froylán Camacho Ibar",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_scastellanos",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_scastellanos",
+    "profesor_nombre": "Dra. Sheila Castellanos Martínez",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 17 · Cubículo 110",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43138",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_gabrielayareli",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_gabrielayareli",
+    "profesor_nombre": "Dra. Gabriela Yareli Cervantes Díaz",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_jgcorrea",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_jgcorrea",
+    "profesor_nombre": "Dr. Juan Gabriel Correa Reyes",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 25 (IIO) · Cubículo 215",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43225",
     "equipos_requeridos": [
       "proyector",
       "red_uabc"
@@ -5403,10 +9831,2402 @@ export const PREFERENCIAS_INICIALES: PreferenciaDocente[] = [
     "dias_no_disponibles": [],
     "rangos_no_disponibles": [],
     "nivel_restriccion": "preferencia",
-    "cubiculo": "Edificio 16 · Cubículo 202",
-    "horario_tutorias": "Lunes 19:00 - 21:00 (VIR)",
-    "canal_contacto_estudiantes": "Correo UABC / Teams",
-    "telefono_extension": "Ext. 43154",
+    "cubiculo": "Edificio 25 (IIO) · Cubículo 225",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43235",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_eduardoamircue",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_eduardoamircue",
+    "profesor_nombre": "Dr. Eduardo Amir Cuevas Flores",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_luiswalterdaes",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_luiswalterdaes",
+    "profesor_nombre": "Dr. Luis Walter Daessle Heuser",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_odelrio",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_odelrio",
+    "profesor_nombre": "Dr. Oscar Basilio del Rio Zaragoza",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 17 · Cubículo 108",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43136",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_franciscodelga",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_franciscodelga",
+    "profesor_nombre": "Dr. Francisco Delgadillo Hinojosa",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_afelix",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_afelix",
+    "profesor_nombre": "Dr. Armando Félix Bermudez",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 25 (IIO) · Cubículo 220",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43230",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_alejandraferre",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_alejandraferre",
+    "profesor_nombre": "Dra. Alejandra Ferreira Arrieta",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_hgnava",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_hgnava",
+    "profesor_nombre": "Dr. Hector García Nava",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 25 (IIO) · Cubículo 210",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43220",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_ngudino",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_ngudino",
+    "profesor_nombre": "Dr. Napoleon Gudiño Elizondo",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 25 (IIO) · Cubículo 212",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43222",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_ricardoaarongu",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_ricardoaarongu",
+    "profesor_nombre": "Dr. Ricardo Aaron Gutiérrez",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_josemanuelguzm",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_josemanuelguzm",
+    "profesor_nombre": "Dr. Jose Manuel Guzman Calderon",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_ramirohernande",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_ramirohernande",
+    "profesor_nombre": "Dr. Ramiro Hernández García",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_felixaugustohe",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_felixaugustohe",
+    "profesor_nombre": "Dr. Félix Augusto Hernández Guzman",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_bjuarez",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_bjuarez",
+    "profesor_nombre": "Dr. Braulio Juarez Araiza",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 16 · Cubículo 112",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43144",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_jessicaabethla",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_jessicaabethla",
+    "profesor_nombre": "Dra. Jessica Abeth Lagos Fregoso",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_cristinalandac",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_cristinalandac",
+    "profesor_nombre": "Dra. Cristina Landa Cansigno",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_juanaclaudiale",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_juanaclaudiale",
+    "profesor_nombre": "Dra. Juana Claudia Leyva Aguilera",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_llopez",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_llopez",
+    "profesor_nombre": "Dra. Laura Liliana López Galindo",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 25 (IIO) · Cubículo 208",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43215",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_victoralfonsom",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_victoralfonsom",
+    "profesor_nombre": "Dr. Victor Alfonso Macias Carranza",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_lmalpica",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_lmalpica",
+    "profesor_nombre": "Dr. Luis Malpica Cruz",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 25 (IIO) · Cubículo 218",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43228",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_leopoldoguille",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_leopoldoguille",
+    "profesor_nombre": "Dr. Leopoldo Guillermo Mendoza Espinosa",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_onorzagaray",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_onorzagaray",
+    "profesor_nombre": "Dr. Carlos Orión Norzagaray López",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Cubículo 208",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43161",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_tolivares",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_tolivares",
+    "profesor_nombre": "Dra. Tatiana Nenetzen Olivares Bañuelos",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Cubículo 207",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43162",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_alexandroorozc",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_alexandroorozc",
+    "profesor_nombre": "Dr. Alexandro Orozco Duran",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_emyrsaulpenama",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_emyrsaulpenama",
+    "profesor_nombre": "Dr. Emyr Saúl Peña Marin",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_cristinaquezad",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_cristinaquezad",
+    "profesor_nombre": "Dra. Cristina Quezada Hernández",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_nancyramirezal",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_nancyramirezal",
+    "profesor_nombre": "Dra. Nancy Ramírez Álvarez",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_mauriciomoises",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_mauriciomoises",
+    "profesor_nombre": "Dr. Mauricio Moisés Reyes Bravo",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_isaacrodriguez",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_isaacrodriguez",
+    "profesor_nombre": "Dr. Isaac Rodríguez Padilla",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_marianasanchez",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_marianasanchez",
+    "profesor_nombre": "Dra. Mariana Sánchez Barredo",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_hildajanetsanc",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_hildajanetsanc",
+    "profesor_nombre": "Dra. Hilda Janet Sánchez Sánchez",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_jmsandoval",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_jmsandoval",
+    "profesor_nombre": "Dr. Jose Miguel Sandoval Gil",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 17 · Cubículo 103",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43132",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_hortenciasilva",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_hortenciasilva",
+    "profesor_nombre": "Dra. Hortencia Silva Jiménez",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_mariadanielata",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_mariadanielata",
+    "profesor_nombre": "Dra. Maria Daniela Tazzo Rangel",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_eunisevanessat",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_eunisevanessat",
+    "profesor_nombre": "Dra. Eunise Vanessa Torres Delgado",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_christinaveron",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_christinaveron",
+    "profesor_nombre": "Dra. Christina Veronica Treinen Crespo",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_jacobalbertova",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_jacobalbertova",
+    "profesor_nombre": "Dr. Jacob Alberto Valdivieso Ojeda",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_joseaugustoval",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_joseaugustoval",
+    "profesor_nombre": "Dr. Jose Augusto Valencia Gasti",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_enriquevalenzu",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_enriquevalenzu",
+    "profesor_nombre": "Dr. Enrique Valenzuela Wood",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_jorgearmandove",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_jorgearmandove",
+    "profesor_nombre": "Dr. Jorge Armando Velásquez Aristizábal",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_mariateresavia",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_mariateresavia",
+    "profesor_nombre": "Dra. Maria Teresa Viana Castrillón",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_marianavillada",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_marianavillada",
+    "profesor_nombre": "Dra. Mariana Villada Canela",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_amaiaruizdeale",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_amaiaruizdeale",
+    "profesor_nombre": "Dra. Amaia Ruiz de Alegría Arzaburu",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_omarezequielag",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_omarezequielag",
+    "profesor_nombre": "Dr. Omar Ezequiel Aguillón Hernández",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_nancyalarconge",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_nancyalarconge",
+    "profesor_nombre": "Dra. Nancy Alarcon Geraldo",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_lucycoralalarc",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_lucycoralalarc",
+    "profesor_nombre": "Dra. Lucy Coral Alarcon Ortega",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_dantenocalvare",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_dantenocalvare",
+    "profesor_nombre": "Dr. Dantenoc Álvarez Millan",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_osmarrobertoar",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_osmarrobertoar",
+    "profesor_nombre": "Dr. Osmar Roberto Araujo Leyva",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_josepedroarces",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_josepedroarces",
+    "profesor_nombre": "Dr. Jose Pedro Arce Serrano",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_gabrieladejesu",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_gabrieladejesu",
+    "profesor_nombre": "Dra. Gabriela de Jesus Arreguín Rodríguez",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_brendaguadalup",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_brendaguadalup",
+    "profesor_nombre": "Dra. Brenda Guadalupe Bonett Calzada",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_karlaroxanacer",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_karlaroxanacer",
+    "profesor_nombre": "Dra. Karla Roxana Cervantes Flores",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_luzdelourdesau",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_luzdelourdesau",
+    "profesor_nombre": "Dra. Luz de Lourdes Aurora Coronado Álvarez",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_gabrieladelape",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_gabrieladelape",
+    "profesor_nombre": "Dra. Gabriela de la Peña Nettel",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_marianadelgado",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_marianadelgado",
+    "profesor_nombre": "Dra. Mariana Delgado Fernandez",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_guadalupediazg",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_guadalupediazg",
+    "profesor_nombre": "Dra. Guadalupe Díaz Gutiérrez",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_danielalbertod",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_danielalbertod",
+    "profesor_nombre": "Dr. Daniel Alberto Díaz Guzman",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_juancarlosdomi",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_juancarlosdomi",
+    "profesor_nombre": "Dr. Juan Carlos Dominguez Vargas",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_arturofajardoy",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_arturofajardoy",
+    "profesor_nombre": "Dr. Arturo Fajardo Yamamoto",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_robertoantonio",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_robertoantonio",
+    "profesor_nombre": "Dr. Roberto Antonio Flores Aguilar",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_brisamarisolfl",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_brisamarisolfl",
+    "profesor_nombre": "Dra. Brisa Marisol Flores Miranda",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_berthagarciaca",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_berthagarciaca",
+    "profesor_nombre": "Dra. Bertha García Capitanachi",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_almadeliagiles",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_almadeliagiles",
+    "profesor_nombre": "Dra. Alma Delia Giles Guzman",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_elianagomezoca",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_elianagomezoca",
+    "profesor_nombre": "Dra. Eliana Gomez Ocampo",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_abrahamgonzale",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_abrahamgonzale",
+    "profesor_nombre": "Dr. Abraham González Mena",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_lizzgonzalezmo",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_lizzgonzalezmo",
+    "profesor_nombre": "Dra. Lizz González Moreno",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_luisandresguer",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_luisandresguer",
+    "profesor_nombre": "Dr. Luis Andres Guerrero Murcia",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_dulceguadalupe",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_dulceguadalupe",
+    "profesor_nombre": "Dra. Dulce Guadalupe Guillén Matus",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_claramariahere",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_claramariahere",
+    "profesor_nombre": "Dra. Clara Maria Hereu",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_carlosemiliohe",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_carlosemiliohe",
+    "profesor_nombre": "Dr. Carlos Emilio Hernández Rodríguez",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_agustinjaimega",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_agustinjaimega",
+    "profesor_nombre": "Dr. Agustin Jaime Garcilazo",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_coniejaramonta",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_coniejaramonta",
+    "profesor_nombre": "Dra. Conie Jara Montañez",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_oscaralbertoji",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_oscaralbertoji",
+    "profesor_nombre": "Dr. Oscar Alberto Jiménez Orocio",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_tadashikonomar",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_tadashikonomar",
+    "profesor_nombre": "Dr. Tadashi Kono Martínez",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_ernestolarioss",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_ernestolarioss",
+    "profesor_nombre": "Dr. Ernesto Larios Soriano",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_lorenapatricia",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_lorenapatricia",
+    "profesor_nombre": "Dra. Lorena Patricia Linacre Rojas",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_deniselubinsky",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_deniselubinsky",
+    "profesor_nombre": "Dra. Denise Lubinsky Jinich",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_evnikazariname",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_evnikazariname",
+    "profesor_nombre": "Dra. Evnika Zarina Medina Romo",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_rebecamorenosa",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_rebecamorenosa",
+    "profesor_nombre": "Dra. Rebeca Moreno Santoyo",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_estrellaazalia",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_estrellaazalia",
+    "profesor_nombre": "Dra. Estrella Azalia Nuñez Zarco",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_normalidiaoliv",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_normalidiaoliv",
+    "profesor_nombre": "Dra. Norma Lidia Oliva Méndez",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_carlosfrancisc",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_carlosfrancisc",
+    "profesor_nombre": "Dr. Carlos Francisco Peynador Sánchez",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_gabrielrendonm",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_gabrielrendonm",
+    "profesor_nombre": "Dr. Gabriel Rendon Marquez",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_nataliaalejand",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_nataliaalejand",
+    "profesor_nombre": "Dra. Natalia Alejandra Rodríguez Revelo",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_joseernestosam",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_joseernestosam",
+    "profesor_nombre": "Dr. Jose Ernesto Sampedro Ávila",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_joseluissanche",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_joseluissanche",
+    "profesor_nombre": "Dr. Jose Luis Sánchez Osorio",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_eduardosantiag",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_eduardosantiag",
+    "profesor_nombre": "Dr. Eduardo Santiago Ojeda",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_marisoltorresa",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_marisoltorresa",
+    "profesor_nombre": "Dra. Marisol Torres Aguilar",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_idalytrejoesca",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_idalytrejoesca",
+    "profesor_nombre": "Dra. Idaly Trejo Escamilla",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_doraalejandrat",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_doraalejandrat",
+    "profesor_nombre": "Dra. Dora Alejandra Trejo Ramos",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_auribe",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_auribe",
+    "profesor_nombre": "Dra. Alicia Guadalupe Uribe López",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Cubículo 211",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43165",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_alfredovenegas",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_alfredovenegas",
+    "profesor_nombre": "Dr. Alfredo Venegas Vega",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_samanthavictor",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_samanthavictor",
+    "profesor_nombre": "Dra. Samantha Victoria Cota",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_claudiamariawa",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_claudiamariawa",
+    "profesor_nombre": "Dra. Claudia Maria Wall Medrano",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_andreayazminza",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_andreayazminza",
+    "profesor_nombre": "Dra. Andrea Yazmin Zamora Quintero",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_gsamperio",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_gsamperio",
+    "profesor_nombre": "Dr. Guillermo Alberto Samperio Ramos",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Cubículo 204",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43159",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_pumachavezadri",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_pumachavezadri",
+    "profesor_nombre": "Dra. Adriana Puma Chávez",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_naylaberenicem",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_naylaberenicem",
+    "profesor_nombre": "Dra. Nayla Berenice Muñoz Euán",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_jeremielouisna",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_jeremielouisna",
+    "profesor_nombre": "Dr. Jeremie Louis Natan Bauer",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_arlettemarimar",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_arlettemarimar",
+    "profesor_nombre": "Dra. Arlette Marimar Pacheco Sandoval",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_emilianonelson",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_emilianonelson",
+    "profesor_nombre": "Dr. Emiliano Nelson Gorr",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_julioenriquema",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_julioenriquema",
+    "profesor_nombre": "Dr. Julio Enrique Martínez García",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_andradesanchez",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_andradesanchez",
+    "profesor_nombre": "Dr. Jorge Alberto Andrade Sánchez",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_alejandrogonza",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_alejandrogonza",
+    "profesor_nombre": "Dr. Alejandro González Rojas",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
+    "equipos_requeridos": [
+      "proyector",
+      "red_uabc"
+    ],
+    "updatedAt": "2027-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "pref_2027-1_prof_normapatriciae",
+    "periodo_id": "2027-1",
+    "profesor_id": "prof_normapatriciae",
+    "profesor_nombre": "Dra. Norma Patricia Esprius Sanches",
+    "nivel_educativo": "posgrado",
+    "programas_ids": [
+      "MCOC",
+      "DOC"
+    ],
+    "dias_no_disponibles": [],
+    "rangos_no_disponibles": [],
+    "nivel_restriccion": "preferencia",
+    "cubiculo": "Edificio 18 · Sala de Profesores FCM",
+    "horario_tutorias": "Lunes a Jueves 11:00 - 13:00 (Cita previa)",
+    "canal_contacto_estudiantes": "Correo institucional UABC / Microsoft Teams",
+    "telefono_extension": "Ext. 43100",
     "equipos_requeridos": [
       "proyector",
       "red_uabc"
@@ -5447,7 +12267,7 @@ export const TUTORIAS_ESTUDIANTES_INICIALES = [
     "grupo": "A",
     "dia": "Lunes 19:00 - 21:00",
     "estudiante": "Isabel Quesada Ávila",
-    "tutor_nombre": "Dra. Abigail Uribe",
+    "tutor_nombre": "Dra. Alicia Guadalupe Uribe López",
     "tutor_id": "prof_auribe",
     "nivel": "Tutoría Académica I"
   },
@@ -5455,7 +12275,7 @@ export const TUTORIAS_ESTUDIANTES_INICIALES = [
     "grupo": "A",
     "dia": "Lunes 19:00 - 21:00",
     "estudiante": "Sebastián Ruiz Mejía",
-    "tutor_nombre": "Dra. Alicia Abadía",
+    "tutor_nombre": "Dra. Alicia Abadía Cardoso",
     "tutor_id": "prof_aabadia",
     "nivel": "Tutoría Académica I"
   },
@@ -5471,7 +12291,7 @@ export const TUTORIAS_ESTUDIANTES_INICIALES = [
     "grupo": "A",
     "dia": "Lunes 19:00 - 21:00",
     "estudiante": "Angélica San Pedro Granados",
-    "tutor_nombre": "Dr. Braulio Juárez A.",
+    "tutor_nombre": "Dr. Braulio Juárez Araiza",
     "tutor_id": "prof_bjuarez",
     "nivel": "Tutoría Académica I"
   },
@@ -5479,7 +12299,7 @@ export const TUTORIAS_ESTUDIANTES_INICIALES = [
     "grupo": "A",
     "dia": "Lunes 19:00 - 21:00",
     "estudiante": "Ulysses Guillermo Miramontes Salcedo",
-    "tutor_nombre": "Dr. Fernando Barreto",
+    "tutor_nombre": "Dr. Fernando Barreto Curiel",
     "tutor_id": "prof_fbarreto",
     "nivel": "Tutoría Académica I"
   },
@@ -5495,7 +12315,7 @@ export const TUTORIAS_ESTUDIANTES_INICIALES = [
     "grupo": "A",
     "dia": "Lunes 19:00 - 21:00",
     "estudiante": "Ana Nicole Magaña Sánchez",
-    "tutor_nombre": "Dr. Juan Vaca",
+    "tutor_nombre": "Dr. Juan Guillermo Vaca Rodríguez",
     "tutor_id": "prof_jvaca",
     "nivel": "Tutoría Académica I"
   },
@@ -5503,7 +12323,7 @@ export const TUTORIAS_ESTUDIANTES_INICIALES = [
     "grupo": "A",
     "dia": "Lunes 19:00 - 21:00",
     "estudiante": "Iván Córdova Medina",
-    "tutor_nombre": "Dra. Karina Lugo",
+    "tutor_nombre": "Dra. Karina del Carmen Lugo Ibarra",
     "tutor_id": "prof_klugo",
     "nivel": "Tutoría Académica I"
   },
@@ -5527,7 +12347,7 @@ export const TUTORIAS_ESTUDIANTES_INICIALES = [
     "grupo": "A",
     "dia": "Lunes 19:00 - 21:00",
     "estudiante": "Luis Ramón Rodríguez León",
-    "tutor_nombre": "Dr. Orión Norzagaray",
+    "tutor_nombre": "Dr. Carlos Orión Norzagaray López",
     "tutor_id": "prof_onorzagaray",
     "nivel": "Tutoría Académica I"
   },
@@ -5535,7 +12355,7 @@ export const TUTORIAS_ESTUDIANTES_INICIALES = [
     "grupo": "A",
     "dia": "Lunes 19:00 - 21:00",
     "estudiante": "Fátima del Rocío Balcázar Jiménez",
-    "tutor_nombre": "Dr. Oscar del Río",
+    "tutor_nombre": "Dr. Oscar Basilio del Río Zaragoza",
     "tutor_id": "prof_odelrio",
     "nivel": "Tutoría Académica I"
   },
@@ -5543,7 +12363,7 @@ export const TUTORIAS_ESTUDIANTES_INICIALES = [
     "grupo": "A",
     "dia": "Lunes 19:00 - 21:00",
     "estudiante": "Víctor Manuel Sánchez Franco",
-    "tutor_nombre": "Dr. Rodrigo Beas",
+    "tutor_nombre": "Dr. Rodrigo Beas Luna",
     "tutor_id": "prof_rbeas",
     "nivel": "Tutoría Académica I"
   },
@@ -5551,7 +12371,7 @@ export const TUTORIAS_ESTUDIANTES_INICIALES = [
     "grupo": "A",
     "dia": "Lunes 19:00 - 21:00",
     "estudiante": "José Pablo Morelos Padilla",
-    "tutor_nombre": "Dr. José Alberto Zepeda",
+    "tutor_nombre": "Dr. José Alberto Zepeda Domínguez",
     "tutor_id": "prof_jazepeda",
     "nivel": "Tutoría Académica I"
   },
@@ -5559,7 +12379,7 @@ export const TUTORIAS_ESTUDIANTES_INICIALES = [
     "grupo": "A",
     "dia": "Lunes 19:00 - 21:00",
     "estudiante": "Kenia Elizabeth Borbón Fuentes",
-    "tutor_nombre": "Dr. José Miguel Sandoval",
+    "tutor_nombre": "Dr. José Miguel Sandoval Gil",
     "tutor_id": "prof_jmsandoval",
     "nivel": "Tutoría Académica I"
   },
@@ -5567,7 +12387,7 @@ export const TUTORIAS_ESTUDIANTES_INICIALES = [
     "grupo": "A",
     "dia": "Lunes 19:00 - 21:00",
     "estudiante": "Gustavo Alexis Cárdenas López",
-    "tutor_nombre": "Dr. Mario Galaviz",
+    "tutor_nombre": "Dr. Mario Galaviz Espinoza",
     "tutor_id": "prof_mgalaviz",
     "nivel": "Tutoría Académica I"
   },
@@ -5575,7 +12395,7 @@ export const TUTORIAS_ESTUDIANTES_INICIALES = [
     "grupo": "A",
     "dia": "Lunes 19:00 - 21:00",
     "estudiante": "Itzel Mariana Salas Rodela",
-    "tutor_nombre": "Dra. Mary Carmen Ruíz",
+    "tutor_nombre": "Dra. Mary Carmen Ruíz de la Torre",
     "tutor_id": "prof_mruiz",
     "nivel": "Tutoría Académica I"
   },
@@ -5623,7 +12443,7 @@ export const TUTORIAS_ESTUDIANTES_INICIALES = [
     "grupo": "B",
     "dia": "Martes 19:00 - 21:00",
     "estudiante": "Daniela Rubí Galván Ramos",
-    "tutor_nombre": "Dr. Braulio Juárez A.",
+    "tutor_nombre": "Dr. Braulio Juárez Araiza",
     "tutor_id": "prof_bjuarez",
     "nivel": "Tutoría Académica I"
   },
@@ -5647,7 +12467,7 @@ export const TUTORIAS_ESTUDIANTES_INICIALES = [
     "grupo": "B",
     "dia": "Martes 19:00 - 21:00",
     "estudiante": "Camila Alejandra Reyes Rincón",
-    "tutor_nombre": "Dr. José Alberto Zepeda Dominguez",
+    "tutor_nombre": "Dr. José Alberto Zepeda Domínguez",
     "tutor_id": "prof_jazepeda",
     "nivel": "Tutoría Académica II"
   }

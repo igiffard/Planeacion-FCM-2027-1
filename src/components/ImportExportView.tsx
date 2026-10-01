@@ -241,7 +241,7 @@ export const ImportExportView: React.FC<ImportExportViewProps> = ({
       setContenidoCSV('');
       setAnalisisImportacion(null);
     } catch (err: any) {
-      alert(err.message || 'Error durante la importación');
+      setMensajeImportacion(`⚠️ ${err.message || 'Error durante la importación'}`);
     } finally {
       setImportando(false);
     }

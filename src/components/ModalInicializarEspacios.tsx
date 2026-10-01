@@ -28,6 +28,7 @@ export const ModalInicializarEspacios: React.FC<ModalInicializarEspaciosProps> =
   const [sobrescribir, setSobrescribir] = useState<boolean>(false);
   const [cargando, setCargando] = useState<boolean>(false);
   const [resultado, setResultado] = useState<any>(null);
+  const [error, setError] = useState<string | null>(null);
 
   if (!abierto) return null;
 
@@ -35,6 +36,7 @@ export const ModalInicializarEspacios: React.FC<ModalInicializarEspaciosProps> =
 
   const handleEjecutar = async () => {
     setCargando(true);
+    setError(null);
     try {
       const res = await onConfirmar(sobrescribir);
       setResultado(res);
@@ -43,7 +45,7 @@ export const ModalInicializarEspacios: React.FC<ModalInicializarEspaciosProps> =
         onCerrar();
       }, 2500);
     } catch (err: any) {
-      alert(err.message || 'Error durante la inicialización');
+      setError(err.message || 'Error durante la inicialización');
     } finally {
       setCargando(false);
     }
@@ -78,6 +80,13 @@ export const ModalInicializarEspacios: React.FC<ModalInicializarEspaciosProps> =
           </div>
         ) : (
           <>
+            {error && (
+              <div className="p-3 bg-rose-50 border border-rose-300 rounded-lg text-rose-800 text-xs font-bold flex items-center gap-2">
+                <X className="w-4 h-4 text-rose-600 shrink-0" />
+                <span>{error}</span>
+              </div>
+            )}
+
             <p className="text-xs text-slate-600 leading-relaxed">
               Esta acción verificará y registrará en la base de datos Firestore todos los espacios
               oficiales de la Facultad de Ciencias Marinas y del Instituto de Investigaciones

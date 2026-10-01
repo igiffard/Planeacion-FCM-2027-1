@@ -41,7 +41,7 @@ import {
 import { HISTORIAL_INICIAL } from '../data/historial_inicial';
 
 const STORAGE_PREFIX = 'fcm_planeacion_2027_1_';
-export const CURRENT_STORAGE_VERSION = 'fcm_2027_1_v6_pdf_posgrado_real';
+export const CURRENT_STORAGE_VERSION = 'fcm_2027_1_v7_profesores_reales_oficiales';
 
 const KEYS = {
   ESPACIOS: `${STORAGE_PREFIX}espacios`,

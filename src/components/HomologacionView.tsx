@@ -289,8 +289,9 @@ export const HomologacionView: React.FC<HomologacionViewProps> = ({
 
       await onAgregarEquivalencia(nueva);
       setNuevaEntrada('');
+      setMensajeUnificacion({ tipo: 'exito', texto: `Equivalencia para "${esp.codigo}" registrada correctamente.` });
     } catch (err: any) {
-      alert(err.message || 'Error al guardar');
+      setMensajeUnificacion({ tipo: 'error', texto: err.message || 'Error al guardar' });
     } finally {
       setGuardandoEq(false);
     }
@@ -1032,7 +1033,7 @@ export const HomologacionView: React.FC<HomologacionViewProps> = ({
                   </div>
 
                   <button
-                    onClick={() => alert(`Sugerencia: Homologar ${cursoA.codigo} y ${cursoB.codigo} bajo clave institucional unificada.`)}
+                    onClick={() => setMensajeUnificacion({ tipo: 'exito', texto: `Sugerencia de coordinación: Homologar ${cursoA.codigo} y ${cursoB.codigo} bajo una clave unificada.` })}
                     className="px-3 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-semibold rounded-lg border border-slate-300 transition"
                   >
                     Revisar Coincidencia

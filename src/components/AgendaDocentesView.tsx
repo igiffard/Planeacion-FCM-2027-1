@@ -267,6 +267,10 @@ export const AgendaDocentesView: React.FC<AgendaDocentesViewProps> = ({
       }
 
       return true;
+    }).sort((a, b) => {
+      const nomA = a.nombre.replace(/^(Dr\.|Dra\.|M\.C\.|Prof\.)\s*/i, '');
+      const nomB = b.nombre.replace(/^(Dr\.|Dra\.|M\.C\.|Prof\.)\s*/i, '');
+      return nomA.localeCompare(nomB);
     });
   }, [
     docentes,

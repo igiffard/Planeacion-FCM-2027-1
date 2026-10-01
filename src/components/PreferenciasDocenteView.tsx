@@ -159,6 +159,7 @@ export const PreferenciasDocenteView: React.FC<PreferenciasDocenteViewProps> = (
 
   const [guardando, setGuardando] = useState<boolean>(false);
   const [mensajeExito, setMensajeExito] = useState<string | null>(null);
+  const [mensajeError, setMensajeError] = useState<string | null>(null);
 
   // Actualizar formulario cuando cambia el docente seleccionado
   const handleCambiarDocente = (uid: string) => {
@@ -292,9 +293,12 @@ export const PreferenciasDocenteView: React.FC<PreferenciasDocenteViewProps> = (
     try {
       await onGuardarPreferencia(prefPayload);
       setMensajeExito(`Restricciones y preferencias individuales registradas exitosamente para ${docente.nombre}`);
+      setMensajeError(null);
       setTimeout(() => setMensajeExito(null), 5000);
     } catch (err: any) {
-      alert(err.message || 'Error al guardar');
+      setMensajeError(err.message || 'Error al guardar');
+      setMensajeExito(null);
+      setTimeout(() => setMensajeError(null), 6000);
     } finally {
       setGuardando(false);
     }
@@ -327,11 +331,13 @@ export const PreferenciasDocenteView: React.FC<PreferenciasDocenteViewProps> = (
               onChange={(e) => handleCambiarDocente(e.target.value)}
               className="bg-white border border-slate-300 rounded px-2.5 py-1 text-xs font-bold text-slate-800 focus:ring-1 focus:ring-indigo-500 shadow-2xs"
             >
-              {docentes.map((d) => (
-                <option key={d.uid} value={d.uid}>
-                  {d.nombre} ({d.academia_area || d.role})
-                </option>
-              ))}
+              {[...docentes]
+                .sort((a, b) => a.nombre.localeCompare(b.nombre))
+                .map((d) => (
+                  <option key={d.uid} value={d.uid}>
+                    {d.nombre} ({d.academia_area || d.role})
+                  </option>
+                ))}
             </select>
           </div>
 
@@ -351,6 +357,13 @@ export const PreferenciasDocenteView: React.FC<PreferenciasDocenteViewProps> = (
         <div className="p-3.5 bg-emerald-50 border border-emerald-300 rounded-xl text-xs text-emerald-900 flex items-center gap-2 font-medium shadow-2xs">
           <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" />
           <span>{mensajeExito}</span>
+        </div>
+      )}
+
+      {mensajeError && (
+        <div className="p-3.5 bg-rose-50 border border-rose-300 rounded-xl text-xs text-rose-900 flex items-center gap-2 font-medium shadow-2xs">
+          <AlertCircle className="w-4 h-4 text-rose-600 flex-shrink-0" />
+          <span>{mensajeError}</span>
         </div>
       )}
 
@@ -933,7 +946,11 @@ export const PreferenciasDocenteView: React.FC<PreferenciasDocenteViewProps> = (
               </thead>
               <tbody className="divide-y divide-slate-100">
                 {docentes
-                  .filter((d) => d.nombre.toLowerCase().includes(filtroDocenteResumen.toLowerCase()))
+                  .filter((d) =>
+                    d.nombre.toLowerCase().includes(filtroDocenteResumen.toLowerCase()) ||
+                    (d.email || '').toLowerCase().includes(filtroDocenteResumen.toLowerCase())
+                  )
+                  .sort((a, b) => a.nombre.localeCompare(b.nombre))
                   .map((doc) => {
                     const pref = preferencias.find(
                       (p) => p.profesor_id === doc.uid && p.periodo_id === periodoActivoId

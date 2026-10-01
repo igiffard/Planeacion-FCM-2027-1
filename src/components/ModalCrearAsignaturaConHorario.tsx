@@ -495,11 +495,13 @@ export const ModalCrearAsignaturaConHorario: React.FC<ModalCrearAsignaturaConHor
                   disabled={!esAdmin && Boolean(usuarioActual)}
                   className="w-full bg-white border border-slate-300 rounded-lg px-3 py-2 text-slate-900 font-semibold focus:ring-1 focus:ring-sky-500 disabled:bg-slate-100"
                 >
-                  {docentes.map((d) => (
-                    <option key={d.uid} value={d.uid}>
-                      {d.nombre} ({d.email})
-                    </option>
-                  ))}
+                  {[...docentes]
+                    .sort((a, b) => a.nombre.localeCompare(b.nombre))
+                    .map((d) => (
+                      <option key={d.uid} value={d.uid}>
+                        {d.nombre} ({d.email})
+                      </option>
+                    ))}
                 </select>
                 {!esAdmin && (
                   <p className="text-[10px] text-slate-500 mt-1">
