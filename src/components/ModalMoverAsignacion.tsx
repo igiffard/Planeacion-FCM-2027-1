@@ -16,10 +16,12 @@ import {
   Trash2,
   Move,
   ArrowRight,
-  Info
+  Info,
+  ShieldAlert,
+  Sparkles
 } from 'lucide-react';
-import { Asignacion, Espacio, Curso, Usuario, DiaSemana } from '../types';
-import { hayTraslapeHorario } from '../utils/conflicts';
+import { Asignacion, Espacio, Curso, Usuario, DiaSemana, PreferenciaDocente } from '../types';
+import { hayTraslapeHorario, validarAsignacion, sugerirEspaciosCompatibles } from '../utils/conflicts';
 
 interface ModalMoverAsignacionProps {
   abierto: boolean;
@@ -28,6 +30,7 @@ interface ModalMoverAsignacionProps {
   cursos: Curso[];
   docentes: Usuario[];
   todasAsignaciones: Asignacion[];
+  preferenciasDocentes?: PreferenciaDocente[];
   onCerrar: () => void;
   onGuardar: (asignacionActualizada: Asignacion) => Promise<void> | void;
   onEliminar?: (asignacionId: string) => Promise<void> | void;
@@ -68,19 +71,19 @@ export const ModalMoverAsignacion: React.FC<ModalMoverAsignacionProps> = ({
   cursos,
   docentes,
   todasAsignaciones,
+  preferenciasDocentes = [],
   onCerrar,
   onGuardar,
   onEliminar
 }) => {
-  if (!abierto || !asignacion) return null;
-
-  const [dia, setDia] = useState<DiaSemana>(asignacion.dia);
-  const [horaInicio, setHoraInicio] = useState<string>(asignacion.hora_inicio);
-  const [horaFin, setHoraFin] = useState<string>(asignacion.hora_fin);
-  const [espacioId, setEspacioId] = useState<string>(asignacion.espacio_id);
-  const [alumnos, setAlumnos] = useState<number>(asignacion.alumnos_programados || 30);
+  const [dia, setDia] = useState<DiaSemana>(asignacion?.dia || 'lunes');
+  const [horaInicio, setHoraInicio] = useState<string>(asignacion?.hora_inicio || '08:00');
+  const [horaFin, setHoraFin] = useState<string>(asignacion?.hora_fin || '10:00');
+  const [espacioId, setEspacioId] = useState<string>(asignacion?.espacio_id || (espacios[0]?.id ?? ''));
+  const [alumnos, setAlumnos] = useState<number>(asignacion?.alumnos_programados || 30);
   const [guardando, setGuardando] = useState(false);
   const [confirmarEliminar, setConfirmarEliminar] = useState(false);
+  const [autorizacionForzar, setAutorizacionForzar] = useState(false);
 
   useEffect(() => {
     if (asignacion) {
@@ -90,70 +93,72 @@ export const ModalMoverAsignacion: React.FC<ModalMoverAsignacionProps> = ({
       setEspacioId(asignacion.espacio_id);
       setAlumnos(asignacion.alumnos_programados || 30);
       setConfirmarEliminar(false);
+      setAutorizacionForzar(false);
     }
   }, [asignacion]);
 
-  const curso = useMemo(() => cursos.find((c) => c.id === asignacion.curso_id), [cursos, asignacion]);
-  const espacioActual = useMemo(() => espacios.find((e) => e.id === espacioId), [espacios, espacioId]);
+  const curso = useMemo(() => {
+    if (!asignacion) return undefined;
+    return cursos.find((c) => c.id === asignacion.curso_id);
+  }, [cursos, asignacion]);
+
+  const espacioActual = useMemo(() => {
+    return espacios.find((e) => e.id === espacioId);
+  }, [espacios, espacioId]);
+
+  const espaciosMap = useMemo(() => new Map(espacios.map((e) => [e.id, e])), [espacios]);
+
   const docentesAsignados = useMemo(() => {
-    return asignacion.profesores_ids
-      .map((id) => docentes.find((d) => d.uid === id)?.nombre || id)
+    if (!asignacion) return '';
+    return (asignacion.profesores_ids || [])
+      .map((id) => docentes.find((d) => d.uid === id || (d as any).id === id)?.nombre || id)
       .join(', ');
   }, [docentes, asignacion]);
 
-  // Chequeo de colisiones en tiempo real
-  const conflictosDetectados = useMemo(() => {
-    const list: string[] = [];
-
-    todasAsignaciones.forEach((otra) => {
-      if (otra.id === asignacion.id) return;
-      if (otra.escenario_id !== asignacion.escenario_id) return;
-      if (otra.dia !== dia) return;
-
-      const solapa = hayTraslapeHorario(horaInicio, horaFin, otra.hora_inicio, otra.hora_fin);
-      if (!solapa) return;
-
-      // Colisión de aula
-      if (otra.espacio_id === espacioId && espacioId !== 'espacio_VIR' && espacioId !== 'espacio_PEND') {
-        const otroCurso = cursos.find((c) => c.id === otra.curso_id);
-        list.push(
-          `El aula ${otra.espacio_codigo_snapshot || 'seleccionada'} ya está ocupada de ${otra.hora_inicio} a ${otra.hora_fin} por ${otroCurso?.nombre || 'otra clase'}.`
-        );
-      }
-
-      // Colisión de profesor
-      const docenteComun = asignacion.profesores_ids.find((pid) =>
-        otra.profesores_ids?.includes(pid)
-      );
-      if (docenteComun) {
-        const docObj = docentes.find((d) => d.uid === docenteComun);
-        const otroCurso = cursos.find((c) => c.id === otra.curso_id);
-        list.push(
-          `El docente ${docObj?.nombre || 'asignado'} ya tiene clase programada (${otroCurso?.nombre || 'otra materia'}) de ${otra.hora_inicio} a ${otra.hora_fin}.`
-        );
-      }
-    });
-
-    // Validar capacidad
-    if (espacioActual && alumnos > (espacioActual.capacidad_maxima || 40)) {
-      list.push(
-        `Capacidad excedida: El espacio tiene cupo máximo de ${espacioActual.capacidad_maxima} alumnos y se estiman ${alumnos}.`
-      );
+  // Validación completa de reglas: exclusividad de salón, cupo máximo y restricciones docentes
+  const validacion = useMemo(() => {
+    if (!asignacion) {
+      return { esValido: true, bloqueante: false, conflictos: [], erroresCriticos: [], advertencias: [] };
     }
+    const propuesta: Partial<Asignacion> = {
+      ...asignacion,
+      dia,
+      hora_inicio: horaInicio,
+      hora_fin: horaFin,
+      espacio_id: espacioId,
+      alumnos_programados: alumnos
+    };
+    return validarAsignacion(propuesta, todasAsignaciones, espaciosMap, preferenciasDocentes);
+  }, [asignacion, dia, horaInicio, horaFin, espacioId, alumnos, todasAsignaciones, espaciosMap, preferenciasDocentes]);
 
-    return list;
-  }, [
-    todasAsignaciones,
-    asignacion,
-    dia,
-    horaInicio,
-    horaFin,
-    espacioId,
-    alumnos,
-    espacioActual,
-    cursos,
-    docentes
-  ]);
+  // Cálculo de tasa de ocupación de infraestructura para el aula actual
+  const tasaOcupacion = useMemo(() => {
+    if (!espacioActual || !espacioActual.capacidad_maxima) return 0;
+    return Math.round((alumnos / espacioActual.capacidad_maxima) * 100);
+  }, [espacioActual, alumnos]);
+
+  // Sugerencias de espacios libres con ajuste óptimo (Maximizar infraestructura)
+  const espaciosSugeridos = useMemo(() => {
+    if (!asignacion) return [];
+    const tipoRequerido = curso?.tipo_actividad === 'laboratorio' ? 'laboratorio' : 'aula';
+    return sugerirEspaciosCompatibles(
+      tipoRequerido,
+      alumnos,
+      dia,
+      horaInicio,
+      horaFin,
+      asignacion.periodo_id,
+      asignacion.escenario_id,
+      espacios,
+      todasAsignaciones
+    )
+      .filter((s) => s.disponible && s.espacio.id !== espacioId)
+      .slice(0, 4);
+  }, [asignacion, curso, alumnos, dia, horaInicio, horaFin, espacios, todasAsignaciones, espacioId]);
+
+  const conflictosDetectados = useMemo(() => {
+    return [...validacion.erroresCriticos, ...validacion.advertencias];
+  }, [validacion]);
 
   const handlePreset = (inicio: string, fin: string) => {
     setHoraInicio(inicio);
@@ -162,6 +167,7 @@ export const ModalMoverAsignacion: React.FC<ModalMoverAsignacionProps> = ({
 
   const handleGuardarCambios = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!asignacion) return;
     setGuardando(true);
     try {
       const espacioObj = espacios.find((e) => e.id === espacioId);
@@ -188,6 +194,8 @@ export const ModalMoverAsignacion: React.FC<ModalMoverAsignacionProps> = ({
       setGuardando(false);
     }
   };
+
+  if (!abierto || !asignacion) return null;
 
   return (
     <div className="fixed inset-0 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4 z-50 overflow-y-auto">
@@ -340,70 +348,107 @@ export const ModalMoverAsignacion: React.FC<ModalMoverAsignacionProps> = ({
               className="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2 text-slate-800 font-medium focus:ring-2 focus:ring-sky-500"
               required
             >
-              <optgroup label="Salas de Posgrado e IIO">
-                {espacios
-                  .filter(
-                    (e) =>
-                      e.nombre.toLowerCase().includes('posgrado') ||
-                      e.nombre.toLowerCase().includes('sala') ||
-                      e.nombre.toLowerCase().includes('iio') ||
-                      e.nombre.toLowerCase().includes('totoaba') ||
-                      e.nombre.toLowerCase().includes('asesor')
-                  )
-                  .map((e) => (
-                    <option key={e.id} value={e.id}>
-                      {e.codigo} · {e.nombre} (Cap: {e.capacidad_maxima})
-                    </option>
-                  ))}
-              </optgroup>
+              {[
+                { id: 'E-14', titulo: 'Edificio 14 · Dirección FCM / Cómputo / Posgrado' },
+                { id: 'E-15', titulo: 'Edificio 15 · Biología Marina y Química' },
+                { id: 'E-16', titulo: 'Edificio 16 · Física y Oceanografía' },
+                { id: 'E-17', titulo: 'Edificio 17 · Aulas Teóricas S8, AM1, AM2 y Biología' },
+                { id: 'E-18', titulo: 'Edificio 18 · Pabellón de Docencia S1-S7 y Talleres' },
+                { id: 'E-20', titulo: 'Edificio 20 · Moluscos y Totoaba' },
+                { id: 'E-21', titulo: 'Edificio 21 · Geomática, Topografía y Especialidad' },
+                { id: 'E-25', titulo: 'Edificio 25 · Inst. Investigaciones Oceanológicas (IIO)' },
+                { id: 'E-41', titulo: 'Edificio 41 · Acuacultura y Fisiología' },
+                { id: 'E-56', titulo: 'Edificio 56 · Pabellón Totoaba y Peces' },
+                { id: 'E-13', titulo: 'Edificio 13 · Almacén General y Buceo' },
+                { id: 'GEN', titulo: 'Instalaciones Generales (Gimnasio, Cafetería, SMU)' },
+                { id: 'VIR', titulo: 'Modalidad Virtual (VIR)' }
+              ].map((grupo) => {
+                const items = espacios.filter((e) => {
+                  const ed = e.edificio_codigo || '';
+                  if (grupo.id === 'GEN') {
+                    return ed === 'Gimnasio' || ed === 'Cafetería' || ed === 'Sala de usos múltiples' || ed === 'GEN';
+                  }
+                  if (grupo.id === 'VIR') {
+                    return ed === 'VIR' || e.es_modalidad_virtual;
+                  }
+                  return ed === grupo.id || e.edificio?.includes(grupo.id);
+                });
 
-              <optgroup label="Aulas Regulares y Magnas FCM">
-                {espacios
-                  .filter(
-                    (e) =>
-                      e.tipo_espacio === 'aula' ||
-                      e.tipo_espacio === 'audiovisual' ||
-                      e.codigo.startsWith('S') ||
-                      e.codigo.startsWith('AM')
-                  )
-                  .map((e) => (
-                    <option key={e.id} value={e.id}>
-                      {e.codigo} · {e.nombre} (Cap: {e.capacidad_maxima})
-                    </option>
-                  ))}
-              </optgroup>
+                if (items.length === 0) return null;
 
-              <optgroup label="Laboratorios Especializados y Cómputo">
-                {espacios
-                  .filter(
-                    (e) =>
-                      e.tipo_espacio === 'laboratorio' ||
-                      e.tipo_espacio === 'aula_computo' ||
-                      e.tipo_espacio === 'taller'
-                  )
-                  .map((e) => (
-                    <option key={e.id} value={e.id}>
-                      {e.codigo} · {e.nombre} (Cap: {e.capacidad_maxima})
-                    </option>
-                  ))}
-              </optgroup>
-
-              <optgroup label="Modalidad Virtual / Pendiente">
-                {espacios
-                  .filter(
-                    (e) =>
-                      e.tipo_espacio === 'virtual' ||
-                      e.tipo_espacio === 'espacio_apoyo' ||
-                      e.codigo === 'VIR' ||
-                      e.codigo === 'PEND'
-                  )
-                  .map((e) => (
-                    <option key={e.id} value={e.id}>
-                      {e.codigo} · {e.nombre}
-                    </option>
-                  ))}
-              </optgroup>
+                return (
+                  <optgroup key={grupo.id} label={grupo.titulo}>
+                    {items.map((e) => (
+                      <option key={e.id} value={e.id}>
+                        {e.codigo} · {e.nombre} ({e.planta ? `${e.planta} · ` : ''}Cap: {e.capacidad_maxima})
+                      </option>
+                    ))}
+                  </optgroup>
+                );
+              })}
             </select>
+
+            {/* Indicador de Uso y Eficiencia de Infraestructura */}
+            {espacioActual && (
+              <div className="mt-2 p-2 bg-slate-50 rounded-lg border border-slate-200 flex flex-wrap items-center justify-between gap-2 text-[11px]">
+                <div className="flex items-center gap-1.5 text-slate-700">
+                  <Building2 className="w-3.5 h-3.5 text-slate-500" />
+                  <span>
+                    Cupo: <strong>{espacioActual.capacidad_maxima}</strong> alumnos · Uso previsto:{' '}
+                    <strong>{tasaOcupacion}%</strong> ({alumnos} est.)
+                  </span>
+                </div>
+
+                <div>
+                  {alumnos > espacioActual.capacidad_maxima ? (
+                    <span className="px-2 py-0.5 rounded font-bold bg-red-100 text-red-800 border border-red-300">
+                      ⛔ Cupo Excedido (+{alumnos - espacioActual.capacidad_maxima})
+                    </span>
+                  ) : tasaOcupacion >= 75 && tasaOcupacion <= 100 ? (
+                    <span className="px-2 py-0.5 rounded font-bold bg-emerald-100 text-emerald-800 border border-emerald-300">
+                      ✨ Ajuste Óptimo (Infraestructura 100%)
+                    </span>
+                  ) : tasaOcupacion >= 50 ? (
+                    <span className="px-2 py-0.5 rounded font-semibold bg-sky-100 text-sky-800 border border-sky-200">
+                      Alineación Adecuada
+                    </span>
+                  ) : (
+                    <span className="px-2 py-0.5 rounded font-semibold bg-amber-100 text-amber-800 border border-amber-200">
+                      Aula Subutilizada ({espacioActual.capacidad_maxima - alumnos} butacas vacías)
+                    </span>
+                  )}
+                </div>
+              </div>
+            )}
+
+            {/* Sugerencias de Espacios Libres con Ajuste Óptimo (Maximizar Infraestructura) */}
+            {espaciosSugeridos.length > 0 && (
+              <div className="mt-2 pt-2 border-t border-slate-100 space-y-1.5">
+                <div className="flex items-center justify-between text-[10px] text-slate-500 font-bold uppercase tracking-wider">
+                  <span className="flex items-center gap-1 text-indigo-700">
+                    <Sparkles className="w-3 h-3 text-amber-500" />
+                    <span>Aulas recomendadas libres a esta hora (Best Fit):</span>
+                  </span>
+                  <span>1 clic para elegir</span>
+                </div>
+                <div className="flex flex-wrap gap-1.5">
+                  {espaciosSugeridos.map((s) => (
+                    <button
+                      key={s.espacio.id}
+                      type="button"
+                      onClick={() => setEspacioId(s.espacio.id)}
+                      className="px-2.5 py-1 bg-indigo-50/70 hover:bg-indigo-100 text-indigo-900 border border-indigo-200 rounded text-[10px] font-semibold flex items-center gap-1.5 transition"
+                    >
+                      <span className="font-bold">{s.espacio.codigo}</span>
+                      <span className="text-slate-500">(Cap: {s.capacidad})</span>
+                      <span className="text-[9px] font-bold text-emerald-700 bg-emerald-100 px-1 rounded">
+                        {s.eficienciaLabel}
+                      </span>
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
 
           {/* Alumnos estimados */}
@@ -417,31 +462,54 @@ export const ModalMoverAsignacion: React.FC<ModalMoverAsignacionProps> = ({
               max={150}
               value={alumnos}
               onChange={(e) => setAlumnos(Number(e.target.value))}
-              className="w-32 bg-slate-50 border border-slate-300 rounded-lg px-2.5 py-1.5 text-slate-800"
+              className="w-32 bg-slate-50 border border-slate-300 rounded-lg px-2.5 py-1.5 text-slate-800 font-bold"
             />
           </div>
 
-          {/* Detección y Alertas de Conflictos en Vivo */}
-          {conflictosDetectados.length > 0 ? (
+          {/* Detección y Alertas de Conflictos y Reglas Críticas en Vivo */}
+          {validacion.erroresCriticos.length > 0 ? (
+            <div className="p-3.5 bg-red-50 border border-red-300 rounded-xl text-red-900 space-y-2">
+              <div className="flex items-center gap-2 font-bold text-red-950 text-xs">
+                <ShieldAlert className="w-4 h-4 text-red-600 flex-shrink-0" />
+                <span>Restricciones Críticas Bloqueantes Detectadas:</span>
+              </div>
+              <ul className="list-disc list-inside space-y-1 text-[11px] text-red-800 pl-1 font-medium">
+                {validacion.erroresCriticos.map((err, idx) => (
+                  <li key={idx}>{err}</li>
+                ))}
+              </ul>
+              
+              <div className="pt-2 border-t border-red-200/80">
+                <label className="flex items-start gap-2 text-[11px] text-red-950 font-bold cursor-pointer select-none">
+                  <input
+                    type="checkbox"
+                    checked={autorizacionForzar}
+                    onChange={(e) => setAutorizacionForzar(e.target.checked)}
+                    className="mt-0.5 rounded text-red-600 focus:ring-red-500"
+                  />
+                  <span>
+                    Autorización especial: Cuento con anuencia expresa de la Subdirección para autorizar esta asignación a pesar de la advertencia.
+                  </span>
+                </label>
+              </div>
+            </div>
+          ) : validacion.advertencias.length > 0 ? (
             <div className="p-3 bg-amber-50 border border-amber-300 rounded-xl text-amber-900 space-y-1">
               <div className="flex items-center gap-1.5 font-bold text-amber-950">
                 <AlertTriangle className="w-4 h-4 text-amber-600 flex-shrink-0" />
-                <span>Atención: Se detectaron advertencias de traslape</span>
+                <span>Advertencias de Disponibilidad o Preferencia Docente</span>
               </div>
               <ul className="list-disc list-inside space-y-0.5 text-[11px] text-amber-800">
-                {conflictosDetectados.map((conf, idx) => (
+                {validacion.advertencias.map((conf, idx) => (
                   <li key={idx}>{conf}</li>
                 ))}
               </ul>
-              <p className="text-[10px] text-amber-700 italic pt-1">
-                Puede guardar de todos modos si cuenta con anuencia de coordinación.
-              </p>
             </div>
           ) : (
             <div className="p-2.5 bg-emerald-50 border border-emerald-200 rounded-xl text-emerald-900 flex items-center gap-2">
               <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" />
               <span className="text-[11px] font-semibold">
-                Espacio y horario 100% libres de colisión.
+                Espacio y horario 100% libres de colisión. Disponibilidad y cupo respetados.
               </span>
             </div>
           )}
@@ -493,11 +561,21 @@ export const ModalMoverAsignacion: React.FC<ModalMoverAsignacionProps> = ({
               </button>
               <button
                 type="submit"
-                disabled={guardando}
-                className="flex items-center gap-1.5 px-4 py-2 bg-[#0369a1] text-white rounded-lg hover:bg-[#075985] font-bold shadow-xs transition"
+                disabled={guardando || (validacion.erroresCriticos.length > 0 && !autorizacionForzar)}
+                className={`flex items-center gap-1.5 px-4 py-2 text-white rounded-lg font-bold shadow-xs transition ${
+                  validacion.erroresCriticos.length > 0 && !autorizacionForzar
+                    ? 'bg-slate-400 cursor-not-allowed opacity-75'
+                    : 'bg-[#0369a1] hover:bg-[#075985]'
+                }`}
               >
                 <Save className="w-4 h-4" />
-                <span>{guardando ? 'Guardando...' : 'Aplicar Cambio de Horario y Aula'}</span>
+                <span>
+                  {guardando
+                    ? 'Guardando...'
+                    : validacion.erroresCriticos.length > 0 && !autorizacionForzar
+                    ? 'Bloqueado por Reglas'
+                    : 'Aplicar Cambio de Horario y Aula'}
+                </span>
               </button>
             </div>
           </div>

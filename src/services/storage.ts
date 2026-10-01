@@ -19,7 +19,8 @@ import {
   Periodo,
   EquivalenciaEspacio,
   PreferenciaDocente,
-  RegistroHistorialCambio
+  RegistroHistorialCambio,
+  AvisoEstudiantes
 } from '../types';
 
 import espaciosInicialesRaw from '../data/espacios_iniciales_2027_1.json';
@@ -33,11 +34,14 @@ import {
   COMPONENTES_INICIALES,
   SUBGRUPOS_INICIALES,
   ASIGNACIONES_INICIALES,
-  USUARIOS_INICIALES
+  USUARIOS_INICIALES,
+  PREFERENCIAS_INICIALES,
+  AVISOS_INICIALES
 } from '../data/seed_data';
 import { HISTORIAL_INICIAL } from '../data/historial_inicial';
 
 const STORAGE_PREFIX = 'fcm_planeacion_2027_1_';
+export const CURRENT_STORAGE_VERSION = 'fcm_2027_1_v6_pdf_posgrado_real';
 
 const KEYS = {
   ESPACIOS: `${STORAGE_PREFIX}espacios`,
@@ -52,9 +56,10 @@ const KEYS = {
   PERIODO: `${STORAGE_PREFIX}periodo`,
   EQUIVALENCIAS: `${STORAGE_PREFIX}equivalencias`,
   PREFERENCIAS: `${STORAGE_PREFIX}preferencias`,
+  AVISOS: `${STORAGE_PREFIX}avisos`,
   USUARIO_ACTIVO: `${STORAGE_PREFIX}usuario_activo`,
   HISTORIAL_CAMBIOS: `${STORAGE_PREFIX}historial_cambios`,
-  VERSION: `${STORAGE_PREFIX}version_v2`
+  VERSION: `${STORAGE_PREFIX}version_v6_pdf_posgrado_real`
 };
 
 export interface EstadoCompletoApp {
@@ -70,6 +75,7 @@ export interface EstadoCompletoApp {
   docentes: Usuario[];
   equivalencias: EquivalenciaEspacio[];
   preferencias: PreferenciaDocente[];
+  avisos?: AvisoEstudiantes[];
   usuarioActivo: Usuario | null;
   historialCambios?: RegistroHistorialCambio[];
 }
@@ -80,8 +86,8 @@ export interface EstadoCompletoApp {
 export function cargarEstadoInicial(): EstadoCompletoApp {
   try {
     const versionGuardada = localStorage.getItem(KEYS.VERSION);
-    // Si no hay versión o es anterior, inicializar con los datos oficiales de seed_data
-    if (!versionGuardada) {
+    // Si la versión no coincide, forzar restablecimiento a la base oficial de Posgrado
+    if (versionGuardada !== CURRENT_STORAGE_VERSION) {
       return restablecerDatosPredeterminados();
     }
 
@@ -95,6 +101,7 @@ export function cargarEstadoInicial(): EstadoCompletoApp {
     const periodoRaw = localStorage.getItem(KEYS.PERIODO);
     const equivalenciasRaw = localStorage.getItem(KEYS.EQUIVALENCIAS);
     const preferenciasRaw = localStorage.getItem(KEYS.PREFERENCIAS);
+    const avisosRaw = localStorage.getItem(KEYS.AVISOS);
     const usuarioActivoRaw = localStorage.getItem(KEYS.USUARIO_ACTIVO);
     const historialRaw = localStorage.getItem(KEYS.HISTORIAL_CAMBIOS);
 
@@ -113,6 +120,26 @@ export function cargarEstadoInicial(): EstadoCompletoApp {
       localStorage.setItem(KEYS.HISTORIAL_CAMBIOS, JSON.stringify(HISTORIAL_INICIAL));
     }
 
+    let preferenciasCargadas: PreferenciaDocente[] = PREFERENCIAS_INICIALES;
+    if (preferenciasRaw) {
+      try {
+        const parsed = JSON.parse(preferenciasRaw);
+        if (Array.isArray(parsed) && parsed.length > 0) {
+          preferenciasCargadas = parsed;
+        }
+      } catch (e) {}
+    }
+
+    let avisosCargados: AvisoEstudiantes[] = AVISOS_INICIALES;
+    if (avisosRaw) {
+      try {
+        const parsed = JSON.parse(avisosRaw);
+        if (Array.isArray(parsed) && parsed.length > 0) {
+          avisosCargados = parsed;
+        }
+      } catch (e) {}
+    }
+
     return {
       periodo: periodoRaw ? JSON.parse(periodoRaw) : PERIODO_INICIAL,
       escenarios: escenariosRaw ? JSON.parse(escenariosRaw) : ESCENARIOS_INICIALES,
@@ -125,7 +152,8 @@ export function cargarEstadoInicial(): EstadoCompletoApp {
       asignaciones: asignacionesRaw ? JSON.parse(asignacionesRaw) : ASIGNACIONES_INICIALES,
       docentes: docentesRaw ? JSON.parse(docentesRaw) : USUARIOS_INICIALES,
       equivalencias: equivalenciasRaw ? JSON.parse(equivalenciasRaw) : EQUIVALENCIAS_ESPACIOS_INICIALES,
-      preferencias: preferenciasRaw ? JSON.parse(preferenciasRaw) : [],
+      preferencias: preferenciasCargadas,
+      avisos: avisosCargados,
       usuarioActivo: usuarioActivoRaw ? JSON.parse(usuarioActivoRaw) : USUARIOS_INICIALES[0],
       historialCambios: historial
     };
@@ -154,13 +182,14 @@ export function restablecerDatosPredeterminados(): EstadoCompletoApp {
     asignaciones: ASIGNACIONES_INICIALES,
     docentes: USUARIOS_INICIALES,
     equivalencias: EQUIVALENCIAS_ESPACIOS_INICIALES,
-    preferencias: [],
+    preferencias: PREFERENCIAS_INICIALES,
+    avisos: AVISOS_INICIALES,
     usuarioActivo: USUARIOS_INICIALES[0],
     historialCambios: HISTORIAL_INICIAL
   };
 
   guardarTodoEnStorage(estado);
-  localStorage.setItem(KEYS.VERSION, 'fcm_2027_1_v2');
+  localStorage.setItem(KEYS.VERSION, CURRENT_STORAGE_VERSION);
   return estado;
 }
 
@@ -179,6 +208,9 @@ export function guardarTodoEnStorage(estado: EstadoCompletoApp): void {
     localStorage.setItem(KEYS.DOCENTES, JSON.stringify(estado.docentes));
     localStorage.setItem(KEYS.EQUIVALENCIAS, JSON.stringify(estado.equivalencias));
     localStorage.setItem(KEYS.PREFERENCIAS, JSON.stringify(estado.preferencias));
+    if (estado.avisos) {
+      localStorage.setItem(KEYS.AVISOS, JSON.stringify(estado.avisos));
+    }
     if (estado.usuarioActivo) {
       localStorage.setItem(KEYS.USUARIO_ACTIVO, JSON.stringify(estado.usuarioActivo));
     }
@@ -188,6 +220,12 @@ export function guardarTodoEnStorage(estado: EstadoCompletoApp): void {
   } catch (error) {
     console.error('Error guardando en localStorage:', error);
   }
+}
+
+export function guardarAvisosStorage(avisos: AvisoEstudiantes[]) {
+  try {
+    localStorage.setItem(KEYS.AVISOS, JSON.stringify(avisos));
+  } catch (e) {}
 }
 
 /**

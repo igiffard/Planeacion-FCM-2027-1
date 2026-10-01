@@ -101,7 +101,7 @@ export const ImportExportView: React.FC<ImportExportViewProps> = ({
 
   // Exportar CSV oficial con BOM
   const handleDescargarCSV = () => {
-    const nombreArchivo = `horario_fcm_2027_2_${escenarioActivo?.id || 'oficial'}.csv`;
+    const nombreArchivo = `horario_fcm_2027_1_${escenarioActivo?.id || 'oficial'}.csv`;
     exportarAsignacionesCSV(
       asignacionesParaExportar,
       cursosMap,
@@ -308,15 +308,15 @@ export const ImportExportView: React.FC<ImportExportViewProps> = ({
               <button
                 type="button"
                 onClick={() => {
-                  if (confirm('¿Desea restablecer todos los horarios y cursos a la propuesta original 2027-1?')) {
+                  if (confirm('¿Desea restablecer a la base oficial de Posgrado 2027-1? Esto cargará los horarios oficiales de Posgrado y dejará Licenciatura en blanco y lista para captura.')) {
                     onRestablecerDatos();
                   }
                 }}
                 className="flex items-center gap-1.5 px-3 py-2 bg-rose-50 hover:bg-rose-100 text-rose-700 border border-rose-200 font-bold text-xs rounded-md transition-colors"
-                title="Restablecer a datos base oficiales 2027-1"
+                title="Restablecer a la base oficial de Posgrado 2027-1 (Licenciatura lista para captura)"
               >
                 <RotateCcw className="w-3.5 h-3.5" />
-                <span>Restablecer 2027-1</span>
+                <span>Restablecer Posgrado Oficial</span>
               </button>
             )}
           </div>

@@ -15,9 +15,9 @@ import {
   FileSpreadsheet,
   Waves,
   HelpCircle,
-  MapPin,
   BarChart3,
-  History
+  History,
+  MessageSquare
 } from 'lucide-react';
 import { RoleUsuario, Usuario } from '../types';
 
@@ -26,8 +26,8 @@ export type VistaActiva =
   | 'reporte_avance'
   | 'planificacion'
   | 'matriz_espacios'
-  | 'mapa_aulas'
   | 'agenda_docentes'
+  | 'comunicacion_estudiantes'
   | 'homologacion'
   | 'preferencias'
   | 'conflictos'
@@ -55,8 +55,8 @@ export const Sidebar: React.FC<SidebarProps> = ({
   const items = [
     {
       id: 'dashboard' as VistaActiva,
-      label: 'Panel de Control',
-      descripcion: 'Resumen general y métricas',
+      label: 'Dashboard General',
+      descripcion: 'Ocupación por turno y métricas',
       icono: LayoutDashboard,
       roles: ['admin', 'coordinador', 'profesor']
     },
@@ -89,17 +89,17 @@ export const Sidebar: React.FC<SidebarProps> = ({
       roles: ['admin', 'coordinador', 'profesor']
     },
     {
-      id: 'mapa_aulas' as VistaActiva,
-      label: 'Mapa de la Unidad y Aulas',
-      descripcion: 'Ubicación física de aulas y labs',
-      icono: MapPin,
-      roles: ['admin', 'coordinador', 'profesor']
-    },
-    {
       id: 'agenda_docentes' as VistaActiva,
       label: 'Docentes y Carga Horaria',
       descripcion: 'Horarios individuales y horas',
       icono: Users,
+      roles: ['admin', 'coordinador', 'profesor']
+    },
+    {
+      id: 'comunicacion_estudiantes' as VistaActiva,
+      label: 'Comunicación y Tutorías',
+      descripcion: 'Directorio, cubículos y avisos',
+      icono: MessageSquare,
       roles: ['admin', 'coordinador', 'profesor']
     },
     {

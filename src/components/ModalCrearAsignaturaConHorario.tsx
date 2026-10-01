@@ -565,11 +565,44 @@ export const ModalCrearAsignaturaConHorario: React.FC<ModalCrearAsignaturaConHor
                 onChange={(e) => setEspacioId(e.target.value)}
                 className="w-full bg-white border border-slate-300 rounded-lg px-3 py-2 text-slate-900 font-semibold focus:ring-1 focus:ring-emerald-500"
               >
-                {espacios.map((esp) => (
-                  <option key={esp.id} value={esp.id}>
-                    {esp.codigo} - {esp.nombre} ({esp.edificio} · Capacidad: {esp.capacidad_maxima} alumnos)
-                  </option>
-                ))}
+                {[
+                  { id: 'E-14', titulo: 'Edificio 14 · Dirección FCM / Cómputo / Posgrado' },
+                  { id: 'E-15', titulo: 'Edificio 15 · Biología Marina y Química' },
+                  { id: 'E-16', titulo: 'Edificio 16 · Física y Oceanografía' },
+                  { id: 'E-17', titulo: 'Edificio 17 · Aulas Teóricas S8, AM1, AM2 y Biología' },
+                  { id: 'E-18', titulo: 'Edificio 18 · Pabellón de Docencia S1-S7 y Talleres' },
+                  { id: 'E-20', titulo: 'Edificio 20 · Moluscos y Totoaba' },
+                  { id: 'E-21', titulo: 'Edificio 21 · Geomática, Topografía y Especialidad' },
+                  { id: 'E-25', titulo: 'Edificio 25 · Inst. Investigaciones Oceanológicas (IIO)' },
+                  { id: 'E-41', titulo: 'Edificio 41 · Acuacultura y Fisiología' },
+                  { id: 'E-56', titulo: 'Edificio 56 · Pabellón Totoaba y Peces' },
+                  { id: 'E-13', titulo: 'Edificio 13 · Almacén General y Buceo' },
+                  { id: 'GEN', titulo: 'Instalaciones Generales (Gimnasio, Cafetería, SMU)' },
+                  { id: 'VIR', titulo: 'Modalidad Virtual (VIR)' }
+                ].map((grupo) => {
+                  const items = espacios.filter((e) => {
+                    const ed = e.edificio_codigo || '';
+                    if (grupo.id === 'GEN') {
+                      return ed === 'Gimnasio' || ed === 'Cafetería' || ed === 'Sala de usos múltiples' || ed === 'GEN';
+                    }
+                    if (grupo.id === 'VIR') {
+                      return ed === 'VIR' || e.es_modalidad_virtual;
+                    }
+                    return ed === grupo.id || e.edificio?.includes(grupo.id);
+                  });
+
+                  if (items.length === 0) return null;
+
+                  return (
+                    <optgroup key={grupo.id} label={grupo.titulo}>
+                      {items.map((esp) => (
+                        <option key={esp.id} value={esp.id}>
+                          {esp.codigo} - {esp.nombre} ({esp.planta ? `${esp.planta} · ` : ''}Cap: {esp.capacidad_maxima} alumnos)
+                        </option>
+                      ))}
+                    </optgroup>
+                  );
+                })}
               </select>
             </div>
 

@@ -74,7 +74,23 @@ const DIAS_SEMANA: { id: DiaSemana; nombre: string }[] = [
 
 const HORAS_DIA = [
   '07:00', '08:00', '09:00', '10:00', '11:00', '12:00',
-  '13:00', '14:00', '15:00', '16:00', '17:00', '18:00', '19:00', '20:00'
+  '13:00', '14:00', '15:00', '16:00', '17:00', '18:00', '19:00', '20:00', '21:00'
+];
+
+const EDIFICIOS_OFICIALES = [
+  { id: 'E-14', nombre: 'Edificio 14 · Dirección FCM / Cómputo / Posgrado', short: 'E-14 (Dirección)' },
+  { id: 'E-15', nombre: 'Edificio 15 · Biología Marina y Química', short: 'E-15 (Bio/Química)' },
+  { id: 'E-16', nombre: 'Edificio 16 · Física y Oceanografía', short: 'E-16 (Física/Oc.)' },
+  { id: 'E-17', nombre: 'Edificio 17 · Aulas Teóricas S8, AM1, AM2 y Biología', short: 'E-17 (Aulas/Auditorios)' },
+  { id: 'E-18', nombre: 'Edificio 18 · Pabellón de Docencia S1-S7 y Talleres', short: 'E-18 (Docencia)' },
+  { id: 'E-20', nombre: 'Edificio 20 · Moluscos y Totoaba', short: 'E-20 (Moluscos)' },
+  { id: 'E-21', nombre: 'Edificio 21 · Geomática, Topografía y Especialidad', short: 'E-21 (Geomática)' },
+  { id: 'E-25', nombre: 'Edificio 25 · Inst. Investigaciones Oceanológicas (IIO)', short: 'E-25 (IIO)' },
+  { id: 'E-41', nombre: 'Edificio 41 · Acuacultura y Fisiología', short: 'E-41 (Acuacultura)' },
+  { id: 'E-56', nombre: 'Edificio 56 · Pabellón Totoaba y Peces', short: 'E-56 (Totoaba)' },
+  { id: 'E-13', nombre: 'Edificio 13 · Almacén General y Buceo', short: 'E-13 (Almacenes)' },
+  { id: 'GEN', nombre: 'Instalaciones Generales (Gimnasio, Cafetería, SMU)', short: 'Inst. Generales' },
+  { id: 'VIR', nombre: 'Modalidad Virtual (VIR)', short: 'Virtual' }
 ];
 
 export const PlanificacionView: React.FC<PlanificacionViewProps> = ({
@@ -101,12 +117,15 @@ export const PlanificacionView: React.FC<PlanificacionViewProps> = ({
   // Filtros
   const [filtroNivel, setFiltroNivel] = useState<string>('todos');
   const [filtroPrograma, setFiltroPrograma] = useState<string>('todos');
+  const [filtroEdificio, setFiltroEdificio] = useState<string>('todos');
   const [filtroEspacio, setFiltroEspacio] = useState<string>('todos');
   const [filtroDocente, setFiltroDocente] = useState<string>('todos');
+  const [filtroGrupo, setFiltroGrupo] = useState<string>('todos');
   const [busquedaTexto, setBusquedaTexto] = useState<string>('');
 
   // Modales
   const [modalAbierto, setModalAbierto] = useState<boolean>(esModalNuevaAbierto);
+  const [modalDistribucionAbierto, setModalDistribucionAbierto] = useState<boolean>(false);
   const [asignacionEnEdicion, setAsignacionEnEdicion] = useState<Asignacion | null>(null);
   const [asignacionDetalle, setAsignacionDetalle] = useState<Asignacion | null>(null);
   const [guardando, setGuardando] = useState<boolean>(false);
@@ -133,14 +152,92 @@ export const PlanificacionView: React.FC<PlanificacionViewProps> = ({
   const gruposMap = useMemo(() => new Map(grupos.map((g) => [g.id, g])), [grupos]);
   const programasMap = useMemo(() => new Map(programas.map((p) => [p.id, p])), [programas]);
 
+  // Agrupación de espacios por edificio oficial para selectores
+  const gruposEspaciosPorEdificio = useMemo(() => {
+    const lista = filtroEdificio === 'todos'
+      ? espacios
+      : espacios.filter((e) => {
+          const ed = e.edificio_codigo || '';
+          const edNom = e.edificio || '';
+          if (filtroEdificio === 'GEN') {
+            return ed === 'Gimnasio' || ed === 'Cafetería' || ed === 'Sala de usos múltiples' || ed === 'GEN';
+          }
+          if (filtroEdificio === 'VIR') {
+            return ed === 'VIR' || e.es_modalidad_virtual;
+          }
+          return ed === filtroEdificio || edNom.includes(filtroEdificio);
+        });
+
+    const grupos: { edificioId: string; label: string; espacios: Espacio[] }[] = [];
+    const agrupadosMap = new Map<string, Espacio[]>();
+
+    lista.forEach((esp) => {
+      let edId = esp.edificio_codigo || 'OTRO';
+      if (esp.es_modalidad_virtual) edId = 'VIR';
+      else if (edId === 'Gimnasio' || edId === 'Cafetería' || edId === 'Sala de usos múltiples') edId = 'GEN';
+
+      if (!agrupadosMap.has(edId)) agrupadosMap.set(edId, []);
+      agrupadosMap.get(edId)!.push(esp);
+    });
+
+    EDIFICIOS_OFICIALES.forEach((ed) => {
+      const items = agrupadosMap.get(ed.id);
+      if (items && items.length > 0) {
+        grupos.push({
+          edificioId: ed.id,
+          label: ed.nombre,
+          espacios: items.sort((a, b) => (a.planta || '').localeCompare(b.planta || '') || a.codigo.localeCompare(b.codigo))
+        });
+        agrupadosMap.delete(ed.id);
+      }
+    });
+
+    agrupadosMap.forEach((items, key) => {
+      if (items.length > 0) {
+        grupos.push({
+          edificioId: key,
+          label: `Otros Espacios (${key})`,
+          espacios: items
+        });
+      }
+    });
+
+    return grupos;
+  }, [espacios, filtroEdificio]);
+
   // Asignaciones filtradas por escenario activo y criterios de UI
   const asignacionesFiltradas = useMemo(() => {
     return asignaciones.filter((asig) => {
       if (asig.escenario_id !== escenarioActivoId) return false;
       if (filtroNivel !== 'todos' && asig.nivel_educativo !== filtroNivel) return false;
       if (filtroPrograma !== 'todos' && !asig.programas_ids?.includes(filtroPrograma)) return false;
+
+      // Filtro de Edificio Oficial
+      if (filtroEdificio !== 'todos') {
+        const espacio = espaciosMap.get(asig.espacio_id);
+        const ed = espacio?.edificio_codigo || '';
+        const edNom = espacio?.edificio || '';
+        let coincide = ed === filtroEdificio;
+        if (filtroEdificio === 'GEN') {
+          coincide = ed === 'Gimnasio' || ed === 'Cafetería' || ed === 'Sala de usos múltiples' || ed === 'GEN' || edNom.includes('Gimnasio') || edNom.includes('Cafetería') || edNom.includes('usos múltiples');
+        } else if (filtroEdificio === 'VIR') {
+          coincide = ed === 'VIR' || Boolean(espacio?.es_modalidad_virtual);
+        } else if (!coincide) {
+          coincide = edNom.includes(filtroEdificio);
+        }
+        if (!coincide) return false;
+      }
+
       if (filtroEspacio !== 'todos' && asig.espacio_id !== filtroEspacio) return false;
       if (filtroDocente !== 'todos' && !asig.profesores_ids?.includes(filtroDocente)) return false;
+
+      // Filtro de Grupo del PDF Oficial
+      if (filtroGrupo !== 'todos') {
+        if (filtroGrupo === 'G1' && !asig.grupo_principal_id.includes('G1')) return false;
+        if (filtroGrupo === 'G2' && !asig.grupo_principal_id.includes('G2')) return false;
+        if (filtroGrupo === 'G3' && !asig.grupo_principal_id.includes('G3')) return false;
+        if (filtroGrupo === 'tutorias' && !asig.grupo_principal_id.includes('TUT')) return false;
+      }
 
       if (busquedaTexto.trim()) {
         const busq = busquedaTexto.toLowerCase();
@@ -155,6 +252,7 @@ export const PlanificacionView: React.FC<PlanificacionViewProps> = ({
           curso?.codigo.toLowerCase().includes(busq) ||
           espacio?.nombre.toLowerCase().includes(busq) ||
           espacio?.codigo.toLowerCase().includes(busq) ||
+          (espacio?.edificio && espacio.edificio.toLowerCase().includes(busq)) ||
           docNombres.includes(busq) ||
           asig.grupo_principal_id.toLowerCase().includes(busq);
 
@@ -168,8 +266,10 @@ export const PlanificacionView: React.FC<PlanificacionViewProps> = ({
     escenarioActivoId,
     filtroNivel,
     filtroPrograma,
+    filtroEdificio,
     filtroEspacio,
     filtroDocente,
+    filtroGrupo,
     busquedaTexto,
     cursosMap,
     espaciosMap,
@@ -364,6 +464,16 @@ export const PlanificacionView: React.FC<PlanificacionViewProps> = ({
 
           {/* Botones de Acción */}
           <div className="flex flex-wrap items-center gap-2">
+            <button
+              id="btn-ver-distribucion-aulas"
+              onClick={() => setModalDistribucionAbierto(true)}
+              className="flex items-center justify-center gap-1.5 px-3 py-2 bg-[#0c2d48] hover:bg-[#164268] text-white text-xs font-bold rounded-md shadow-2xs transition-colors"
+              title="Consultar catálogo de edificios, plantas y aulas oficiales del campus FCM"
+            >
+              <Building2 className="w-3.5 h-3.5 text-amber-400" />
+              <span>Distribución de Aulas FCM</span>
+            </button>
+
             {onAbrirNuevaAsignaturaConHorario && (
               <button
                 id="btn-nueva-asignatura-horario"
@@ -399,8 +509,8 @@ export const PlanificacionView: React.FC<PlanificacionViewProps> = ({
           </div>
         </div>
 
-        {/* Fila de Filtros */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-3 text-xs">
+        {/* Fila de Filtros Enriquecida */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 text-xs">
           {/* Nivel */}
           <div>
             <label className="block text-[11px] font-semibold text-slate-500 mb-1">Nivel Educativo</label>
@@ -434,6 +544,41 @@ export const PlanificacionView: React.FC<PlanificacionViewProps> = ({
             </select>
           </div>
 
+          {/* Edificio Oficial */}
+          <div>
+            <label className="block text-[11px] font-semibold text-slate-500 mb-1 flex items-center justify-between">
+              <span>Edificio Oficial</span>
+              {filtroEdificio !== 'todos' && (
+                <button
+                  type="button"
+                  onClick={() => {
+                    setFiltroEdificio('todos');
+                    setFiltroEspacio('todos');
+                  }}
+                  className="text-[10px] text-sky-700 hover:underline"
+                >
+                  Limpiar
+                </button>
+              )}
+            </label>
+            <select
+              id="filtro-edificio"
+              value={filtroEdificio}
+              onChange={(e) => {
+                setFiltroEdificio(e.target.value);
+                setFiltroEspacio('todos');
+              }}
+              className="w-full bg-slate-50 border border-slate-300 rounded-lg px-2.5 py-1.5 text-slate-800 font-semibold focus:ring-1 focus:ring-sky-500"
+            >
+              <option value="todos">Todos los edificios</option>
+              {EDIFICIOS_OFICIALES.map((ed) => (
+                <option key={ed.id} value={ed.id}>
+                  {ed.short}
+                </option>
+              ))}
+            </select>
+          </div>
+
           {/* Espacio */}
           <div>
             <label className="block text-[11px] font-semibold text-slate-500 mb-1">Espacio / Aula / Lab.</label>
@@ -444,10 +589,14 @@ export const PlanificacionView: React.FC<PlanificacionViewProps> = ({
               className="w-full bg-slate-50 border border-slate-300 rounded-lg px-2.5 py-1.5 text-slate-800 focus:ring-1 focus:ring-sky-500"
             >
               <option value="todos">Todos los espacios</option>
-              {espacios.map((esp) => (
-                <option key={esp.id} value={esp.id}>
-                  {esp.codigo} - {esp.nombre}
-                </option>
+              {gruposEspaciosPorEdificio.map((grupo) => (
+                <optgroup key={grupo.edificioId} label={grupo.label}>
+                  {grupo.espacios.map((esp) => (
+                    <option key={esp.id} value={esp.id}>
+                      {esp.codigo} - {esp.nombre} ({esp.planta ? `${esp.planta} · ` : ''}Cap: {esp.capacidad_maxima})
+                    </option>
+                  ))}
+                </optgroup>
               ))}
             </select>
           </div>
@@ -477,7 +626,7 @@ export const PlanificacionView: React.FC<PlanificacionViewProps> = ({
               <input
                 id="input-busqueda-horario"
                 type="text"
-                placeholder="Materia, código, etc..."
+                placeholder="Materia, aula, etc..."
                 value={busquedaTexto}
                 onChange={(e) => setBusquedaTexto(e.target.value)}
                 className="w-full bg-slate-50 border border-slate-300 rounded-lg pl-8 pr-2.5 py-1.5 text-slate-800 focus:ring-1 focus:ring-sky-500"
@@ -487,6 +636,188 @@ export const PlanificacionView: React.FC<PlanificacionViewProps> = ({
           </div>
         </div>
       </div>
+
+      {/* Selector Rápido de Grupos Oficiales Posgrado FCM (PDF Oficial) */}
+      <div className="bg-white rounded-xl border border-slate-200 p-3 shadow-2xs space-y-2">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <CalendarDays className="w-4 h-4 text-emerald-600" />
+            <span className="text-xs font-bold text-slate-800">
+              Vistas Oficiales por Grupo de Posgrado (PDF):
+            </span>
+          </div>
+          {filtroGrupo !== 'todos' && (
+            <button
+              onClick={() => setFiltroGrupo('todos')}
+              className="text-[11px] font-semibold text-emerald-700 hover:text-emerald-900 flex items-center gap-1"
+            >
+              <X className="w-3 h-3" />
+              <span>Ver todos los grupos combinados</span>
+            </button>
+          )}
+        </div>
+
+        <div className="flex items-center gap-2 overflow-x-auto pb-1 text-xs">
+          <button
+            type="button"
+            onClick={() => setFiltroGrupo('todos')}
+            className={`px-3 py-1.5 rounded-lg font-bold transition shrink-0 ${
+              filtroGrupo === 'todos'
+                ? 'bg-[#0c2d48] text-white shadow-xs'
+                : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+            }`}
+          >
+            Todos los Grupos (44 sesiones)
+          </button>
+
+          <button
+            type="button"
+            onClick={() => setFiltroGrupo('G1')}
+            className={`px-3 py-1.5 rounded-lg font-bold transition shrink-0 flex items-center gap-1.5 ${
+              filtroGrupo === 'G1'
+                ? 'bg-emerald-700 text-white shadow-xs'
+                : 'bg-emerald-50 text-emerald-800 hover:bg-emerald-100 border border-emerald-200'
+            }`}
+          >
+            <span className="w-2 h-2 rounded-full bg-emerald-400" />
+            <span>Grupo 1 · Pág. 1 PDF (18 sesiones)</span>
+          </button>
+
+          <button
+            type="button"
+            onClick={() => setFiltroGrupo('G2')}
+            className={`px-3 py-1.5 rounded-lg font-bold transition shrink-0 flex items-center gap-1.5 ${
+              filtroGrupo === 'G2'
+                ? 'bg-sky-700 text-white shadow-xs'
+                : 'bg-sky-50 text-sky-800 hover:bg-sky-100 border border-sky-200'
+            }`}
+          >
+            <span className="w-2 h-2 rounded-full bg-sky-400" />
+            <span>Grupo 2 · Pág. 2 PDF (14 sesiones)</span>
+          </button>
+
+          <button
+            type="button"
+            onClick={() => setFiltroGrupo('G3')}
+            className={`px-3 py-1.5 rounded-lg font-bold transition shrink-0 flex items-center gap-1.5 ${
+              filtroGrupo === 'G3'
+                ? 'bg-amber-700 text-white shadow-xs'
+                : 'bg-amber-50 text-amber-800 hover:bg-amber-100 border border-amber-200'
+            }`}
+          >
+            <span className="w-2 h-2 rounded-full bg-amber-400" />
+            <span>Grupo 3 · Pág. 3 PDF (10 sesiones)</span>
+          </button>
+
+          <button
+            type="button"
+            onClick={() => setFiltroGrupo('tutorias')}
+            className={`px-3 py-1.5 rounded-lg font-bold transition shrink-0 flex items-center gap-1.5 ${
+              filtroGrupo === 'tutorias'
+                ? 'bg-purple-700 text-white shadow-xs'
+                : 'bg-purple-50 text-purple-800 hover:bg-purple-100 border border-purple-200'
+            }`}
+          >
+            <span className="w-2 h-2 rounded-full bg-purple-400" />
+            <span>Tutorías A y B · Pág. 4 PDF (2 sesiones)</span>
+          </button>
+        </div>
+      </div>
+
+      {/* Barra Rápida de Navegación de Profesores */}
+      <div className="bg-white rounded-xl border border-slate-200 p-3 shadow-2xs space-y-2">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <Users className="w-4 h-4 text-[#0369a1]" />
+            <span className="text-xs font-bold text-slate-800">
+              Navegación Rápida por Profesor:
+            </span>
+            {filtroDocente !== 'todos' && (
+              <span className="px-2 py-0.5 rounded-full text-[10px] font-bold bg-sky-100 text-sky-800 border border-sky-300">
+                Filtrando: {docentesMap.get(filtroDocente)?.nombre || filtroDocente}
+              </span>
+            )}
+          </div>
+          {filtroDocente !== 'todos' && (
+            <button
+              onClick={() => setFiltroDocente('todos')}
+              className="text-[11px] font-semibold text-sky-700 hover:text-sky-900 flex items-center gap-1"
+            >
+              <X className="w-3 h-3" />
+              <span>Ver todos los profesores</span>
+            </button>
+          )}
+        </div>
+
+        <div className="flex items-center gap-1.5 overflow-x-auto pb-1">
+          <button
+            type="button"
+            onClick={() => setFiltroDocente('todos')}
+            className={`px-2.5 py-1 rounded-lg text-xs font-bold transition shrink-0 ${
+              filtroDocente === 'todos'
+                ? 'bg-[#0c2d48] text-white shadow-xs'
+                : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+            }`}
+          >
+            Todos ({docentes.length})
+          </button>
+
+          {docentes.map((d) => {
+            const activo = filtroDocente === d.uid;
+            const tieneAsig = asignaciones.some(
+              (a) => a.profesores_ids?.includes(d.uid) && a.escenario_id === escenarioActivoId
+            );
+            return (
+              <button
+                key={d.uid}
+                type="button"
+                onClick={() => setFiltroDocente(activo ? 'todos' : d.uid)}
+                className={`px-2.5 py-1 rounded-lg text-xs font-semibold transition shrink-0 flex items-center gap-1.5 ${
+                  activo
+                    ? 'bg-[#0369a1] text-white shadow-xs font-bold ring-2 ring-sky-300'
+                    : tieneAsig
+                    ? 'bg-sky-50 text-sky-900 hover:bg-sky-100 border border-sky-200'
+                    : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
+                }`}
+                title={d.academia_area || d.cargo}
+              >
+                <span>{d.nombre}</span>
+                {tieneAsig && (
+                  <span className={`w-1.5 h-1.5 rounded-full ${activo ? 'bg-white' : 'bg-sky-600'}`} />
+                )}
+              </button>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Banner de Licenciatura lista para captura */}
+      {filtroNivel === 'licenciatura' && asignacionesFiltradas.length === 0 && (
+        <div className="bg-sky-50 border border-sky-200 rounded-xl p-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-sky-900 shadow-xs">
+          <div className="flex items-start gap-3">
+            <div className="p-2 bg-sky-100 rounded-lg text-sky-700 mt-0.5">
+              <BookOpen className="w-5 h-5" />
+            </div>
+            <div>
+              <h4 className="font-bold text-sm text-sky-950">
+                Módulo de Licenciatura en blanco y listo para captura
+              </h4>
+              <p className="text-xs text-sky-800 mt-0.5">
+                La base de datos actual refleja fielmente los horarios oficiales de Posgrado. La oferta de Licenciatura (Tronco Común, Oceanología, Biotecnología en Acuacultura y Ciencias Ambientales) está limpia y lista para comenzar a registrar asignaturas, grupos y sesiones.
+              </p>
+            </div>
+          </div>
+          {onAbrirNuevaAsignaturaConHorario && (
+            <button
+              onClick={onAbrirNuevaAsignaturaConHorario}
+              className="whitespace-nowrap px-3.5 py-2 bg-[#0369a1] hover:bg-[#075985] text-white rounded-lg text-xs font-bold shadow-xs flex items-center gap-1.5 transition shrink-0"
+            >
+              <Plus className="w-4 h-4" />
+              <span>+ Capturar Asignatura Licenciatura</span>
+            </button>
+          )}
+        </div>
+      )}
 
       {/* Cuadrícula Interactiva Semanal */}
       <div className="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden">
@@ -554,14 +885,23 @@ export const PlanificacionView: React.FC<PlanificacionViewProps> = ({
                               {curso?.codigo} · {curso?.nombre}
                             </div>
 
-                            <div className="text-[11px] font-semibold text-slate-700 flex items-center justify-between mb-1">
-                              <span className="flex items-center gap-1 truncate">
-                                <Building2 className="w-3 h-3 text-slate-500 flex-shrink-0" />
-                                {espacio?.codigo || asig.espacio_codigo_snapshot} ({espacio?.nombre || asig.espacio_nombre_snapshot})
+                            <div className="flex items-center gap-1 flex-wrap mb-1">
+                              <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-[10px] font-bold bg-white text-slate-900 border border-slate-200 shadow-2xs">
+                                <Building2 className="w-3 h-3 text-[#0369a1] flex-shrink-0" />
+                                {espacio?.edificio_codigo ? `${espacio.edificio_codigo} · ` : ''}{espacio?.codigo || asig.espacio_codigo_snapshot}
                               </span>
-                              <span className="text-[10px] text-slate-500 font-normal">
+                              {espacio?.planta && (
+                                <span className="px-1 py-0.2 rounded text-[9px] font-medium bg-emerald-100 text-emerald-900">
+                                  {espacio.planta === 'Planta Baja' ? 'PB' : espacio.planta === 'Planta Alta' ? 'PA' : espacio.planta}
+                                </span>
+                              )}
+                              <span className="text-[10px] text-slate-500 ml-auto font-medium">
                                 {asig.alumnos_programados}/{asig.capacidad_espacio}
                               </span>
+                            </div>
+
+                            <div className="text-[10px] text-slate-600 font-medium truncate mb-1" title={espacio?.nombre || asig.espacio_nombre_snapshot}>
+                              {espacio?.nombre || asig.espacio_nombre_snapshot}
                             </div>
 
                             <div className="text-[10px] text-slate-600 truncate flex items-center gap-1">
@@ -650,10 +990,21 @@ export const PlanificacionView: React.FC<PlanificacionViewProps> = ({
               </div>
 
               <div className="p-2.5 rounded-lg bg-slate-50 border border-slate-200">
-                <span className="text-slate-400 block font-medium">Espacio Asignado:</span>
-                <span className="font-bold text-slate-800">
-                  {asignacionDetalle.espacio_codigo_snapshot} · {asignacionDetalle.espacio_nombre_snapshot}
-                </span>
+                <span className="text-slate-400 block font-medium">Espacio Asignado (Campus FCM):</span>
+                <div className="font-bold text-slate-800 flex items-center gap-1.5 flex-wrap mt-0.5">
+                  <span className="bg-sky-100 text-sky-800 px-1.5 py-0.5 rounded text-xs font-bold">
+                    {espaciosMap.get(asignacionDetalle.espacio_id)?.edificio_codigo || 'Campus'} · {asignacionDetalle.espacio_codigo_snapshot}
+                  </span>
+                  {espaciosMap.get(asignacionDetalle.espacio_id)?.planta && (
+                    <span className="bg-emerald-100 text-emerald-800 px-1.5 py-0.5 rounded text-[10px] font-semibold">
+                      {espaciosMap.get(asignacionDetalle.espacio_id)?.planta}
+                    </span>
+                  )}
+                  <span>{asignacionDetalle.espacio_nombre_snapshot}</span>
+                </div>
+                <div className="text-[11px] text-slate-500 mt-1">
+                  {espaciosMap.get(asignacionDetalle.espacio_id)?.ubicacion || espaciosMap.get(asignacionDetalle.espacio_id)?.edificio}
+                </div>
               </div>
 
               <div className="p-2.5 rounded-lg bg-slate-50 border border-slate-200 col-span-2">
@@ -944,13 +1295,21 @@ export const PlanificacionView: React.FC<PlanificacionViewProps> = ({
                   value={formEspacioId}
                   onChange={(e) => setFormEspacioId(e.target.value)}
                   required
-                  className="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2 text-slate-800 text-xs focus:ring-1 focus:ring-sky-500"
+                  className="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2 text-slate-800 text-xs focus:ring-1 focus:ring-sky-500 font-medium"
                 >
-                  <option value="">Seleccione un espacio...</option>
-                  {espaciosSugeridos.map(({ espacio, capacidad, disponible }) => (
-                    <option key={espacio.id} value={espacio.id}>
-                      {disponible ? '✓ LIBRE' : '✗ OCUPADO'} · {espacio.codigo} - {espacio.nombre} (Cap: {capacidad}, {espacio.edificio})
-                    </option>
+                  <option value="">Seleccione un espacio del campus FCM...</option>
+                  {gruposEspaciosPorEdificio.map((grupo) => (
+                    <optgroup key={grupo.edificioId} label={grupo.label}>
+                      {grupo.espacios.map((esp) => {
+                        const sug = espaciosSugeridos.find((s) => s.espacio.id === esp.id);
+                        const libre = sug ? sug.disponible : true;
+                        return (
+                          <option key={esp.id} value={esp.id}>
+                            {libre ? '✓ LIBRE' : '✗ OCUPADO'} · {esp.codigo} - {esp.nombre} ({esp.planta ? `${esp.planta} · ` : ''}Cap: {esp.capacidad_maxima})
+                          </option>
+                        );
+                      })}
+                    </optgroup>
                   ))}
                 </select>
               </div>

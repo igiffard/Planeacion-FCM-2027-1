@@ -3162,7 +3162,8 @@
     "oficial_mapa": false,
     "duda_homologacion": true,
     "estado_catalogo": "pendiente_revision_subdireccion",
-    "motivo_duda": "Espacio no figura en la lámina oficial de Aulas/Laboratorios FCM (Mapa 4K). Pasa a Homologación de Catálogo para revisión de Subdirección."
+    "motivo_duda": "Espacio no figura en la lámina oficial de Aulas/Laboratorios FCM (Mapa 4K). Pasa a Homologación de Catálogo para revisión de Subdirección.",
+    "edificio_codigo": "E-17"
   },
   {
     "id": "espacio_AF2",
@@ -3210,7 +3211,8 @@
     "oficial_mapa": false,
     "duda_homologacion": true,
     "estado_catalogo": "pendiente_revision_subdireccion",
-    "motivo_duda": "Espacio no figura en la lámina oficial de Aulas/Laboratorios FCM (Mapa 4K). Pasa a Homologación de Catálogo para revisión de Subdirección."
+    "motivo_duda": "Espacio no figura en la lámina oficial de Aulas/Laboratorios FCM (Mapa 4K). Pasa a Homologación de Catálogo para revisión de Subdirección.",
+    "edificio_codigo": "E-17"
   },
   {
     "id": "espacio_AF3",
@@ -3258,7 +3260,8 @@
     "oficial_mapa": false,
     "duda_homologacion": true,
     "estado_catalogo": "pendiente_revision_subdireccion",
-    "motivo_duda": "Espacio no figura en la lámina oficial de Aulas/Laboratorios FCM (Mapa 4K). Pasa a Homologación de Catálogo para revisión de Subdirección."
+    "motivo_duda": "Espacio no figura en la lámina oficial de Aulas/Laboratorios FCM (Mapa 4K). Pasa a Homologación de Catálogo para revisión de Subdirección.",
+    "edificio_codigo": "E-17"
   },
   {
     "id": "espacio_DIE",
@@ -3304,7 +3307,8 @@
     "oficial_mapa": false,
     "duda_homologacion": true,
     "estado_catalogo": "pendiente_revision_subdireccion",
-    "motivo_duda": "Espacio no figura en la lámina oficial de Aulas/Laboratorios FCM (Mapa 4K). Pasa a Homologación de Catálogo para revisión de Subdirección."
+    "motivo_duda": "Espacio no figura en la lámina oficial de Aulas/Laboratorios FCM (Mapa 4K). Pasa a Homologación de Catálogo para revisión de Subdirección.",
+    "edificio_codigo": "E-41"
   },
   {
     "id": "espacio_P3",
@@ -3352,7 +3356,8 @@
     "oficial_mapa": false,
     "duda_homologacion": true,
     "estado_catalogo": "pendiente_revision_subdireccion",
-    "motivo_duda": "Espacio no figura en la lámina oficial de Aulas/Laboratorios FCM (Mapa 4K). Pasa a Homologación de Catálogo para revisión de Subdirección."
+    "motivo_duda": "Espacio no figura en la lámina oficial de Aulas/Laboratorios FCM (Mapa 4K). Pasa a Homologación de Catálogo para revisión de Subdirección.",
+    "edificio_codigo": "E-25"
   },
   {
     "id": "espacio_SPI",
@@ -3400,7 +3405,8 @@
     "oficial_mapa": false,
     "duda_homologacion": true,
     "estado_catalogo": "pendiente_revision_subdireccion",
-    "motivo_duda": "Espacio no figura en la lámina oficial de Aulas/Laboratorios FCM (Mapa 4K). Pasa a Homologación de Catálogo para revisión de Subdirección."
+    "motivo_duda": "Espacio no figura en la lámina oficial de Aulas/Laboratorios FCM (Mapa 4K). Pasa a Homologación de Catálogo para revisión de Subdirección.",
+    "edificio_codigo": "E-25"
   },
   {
     "id": "espacio_IIO_ESP",
@@ -3449,7 +3455,8 @@
     "oficial_mapa": false,
     "duda_homologacion": true,
     "estado_catalogo": "pendiente_revision_subdireccion",
-    "motivo_duda": "Espacio no figura en la lámina oficial de Aulas/Laboratorios FCM (Mapa 4K). Pasa a Homologación de Catálogo para revisión de Subdirección."
+    "motivo_duda": "Espacio no figura en la lámina oficial de Aulas/Laboratorios FCM (Mapa 4K). Pasa a Homologación de Catálogo para revisión de Subdirección.",
+    "edificio_codigo": "E-25"
   },
   {
     "id": "espacio_P5",
@@ -3496,7 +3503,8 @@
     "oficial_mapa": false,
     "duda_homologacion": true,
     "estado_catalogo": "pendiente_revision_subdireccion",
-    "motivo_duda": "Espacio no figura en la lámina oficial de Aulas/Laboratorios FCM (Mapa 4K). Pasa a Homologación de Catálogo para revisión de Subdirección."
+    "motivo_duda": "Espacio no figura en la lámina oficial de Aulas/Laboratorios FCM (Mapa 4K). Pasa a Homologación de Catálogo para revisión de Subdirección.",
+    "edificio_codigo": "E-14"
   },
   {
     "id": "espacio_DOM",
@@ -3546,7 +3554,8 @@
     "oficial_mapa": false,
     "duda_homologacion": true,
     "estado_catalogo": "pendiente_revision_subdireccion",
-    "motivo_duda": "Espacio no figura en la lámina oficial de Aulas/Laboratorios FCM (Mapa 4K). Pasa a Homologación de Catálogo para revisión de Subdirección."
+    "motivo_duda": "Espacio no figura en la lámina oficial de Aulas/Laboratorios FCM (Mapa 4K). Pasa a Homologación de Catálogo para revisión de Subdirección.",
+    "edificio_codigo": "E-14"
   },
   {
     "id": "espacio_EAP2",
@@ -3594,7 +3603,8 @@
     "oficial_mapa": false,
     "duda_homologacion": true,
     "estado_catalogo": "pendiente_revision_subdireccion",
-    "motivo_duda": "Espacio no figura en la lámina oficial de Aulas/Laboratorios FCM (Mapa 4K). Pasa a Homologación de Catálogo para revisión de Subdirección."
+    "motivo_duda": "Espacio no figura en la lámina oficial de Aulas/Laboratorios FCM (Mapa 4K). Pasa a Homologación de Catálogo para revisión de Subdirección.",
+    "edificio_codigo": "E-21"
   },
   {
     "id": "espacio_SJT",
@@ -3639,7 +3649,8 @@
     "oficial_mapa": false,
     "duda_homologacion": true,
     "estado_catalogo": "pendiente_revision_subdireccion",
-    "motivo_duda": "Espacio no figura en la lámina oficial de Aulas/Laboratorios FCM (Mapa 4K). Pasa a Homologación de Catálogo para revisión de Subdirección."
+    "motivo_duda": "Espacio no figura en la lámina oficial de Aulas/Laboratorios FCM (Mapa 4K). Pasa a Homologación de Catálogo para revisión de Subdirección.",
+    "edificio_codigo": "E-56"
   },
   {
     "id": "espacio_CPA",
@@ -3688,7 +3699,8 @@
     "oficial_mapa": false,
     "duda_homologacion": true,
     "estado_catalogo": "pendiente_revision_subdireccion",
-    "motivo_duda": "Espacio no figura en la lámina oficial de Aulas/Laboratorios FCM (Mapa 4K). Pasa a Homologación de Catálogo para revisión de Subdirección."
+    "motivo_duda": "Espacio no figura en la lámina oficial de Aulas/Laboratorios FCM (Mapa 4K). Pasa a Homologación de Catálogo para revisión de Subdirección.",
+    "edificio_codigo": "E-14"
   },
   {
     "id": "espacio_SJG",
@@ -3738,7 +3750,8 @@
     "oficial_mapa": false,
     "duda_homologacion": true,
     "estado_catalogo": "pendiente_revision_subdireccion",
-    "motivo_duda": "Espacio no figura en la lámina oficial de Aulas/Laboratorios FCM (Mapa 4K). Pasa a Homologación de Catálogo para revisión de Subdirección."
+    "motivo_duda": "Espacio no figura en la lámina oficial de Aulas/Laboratorios FCM (Mapa 4K). Pasa a Homologación de Catálogo para revisión de Subdirección.",
+    "edificio_codigo": "E-21"
   },
   {
     "id": "espacio_IIO_AUD",
@@ -3788,7 +3801,8 @@
     "oficial_mapa": false,
     "duda_homologacion": true,
     "estado_catalogo": "pendiente_revision_subdireccion",
-    "motivo_duda": "Espacio no figura en la lámina oficial de Aulas/Laboratorios FCM (Mapa 4K). Pasa a Homologación de Catálogo para revisión de Subdirección."
+    "motivo_duda": "Espacio no figura en la lámina oficial de Aulas/Laboratorios FCM (Mapa 4K). Pasa a Homologación de Catálogo para revisión de Subdirección.",
+    "edificio_codigo": "E-25"
   },
   {
     "id": "espacio_SALAB",
@@ -3841,7 +3855,8 @@
     "oficial_mapa": false,
     "duda_homologacion": true,
     "estado_catalogo": "pendiente_revision_subdireccion",
-    "motivo_duda": "Espacio no figura en la lámina oficial de Aulas/Laboratorios FCM (Mapa 4K). Pasa a Homologación de Catálogo para revisión de Subdirección."
+    "motivo_duda": "Espacio no figura en la lámina oficial de Aulas/Laboratorios FCM (Mapa 4K). Pasa a Homologación de Catálogo para revisión de Subdirección.",
+    "edificio_codigo": "E-14"
   },
   {
     "id": "espacio_S1_IIO",
@@ -3891,7 +3906,8 @@
     "oficial_mapa": false,
     "duda_homologacion": true,
     "estado_catalogo": "pendiente_revision_subdireccion",
-    "motivo_duda": "Espacio no figura en la lámina oficial de Aulas/Laboratorios FCM (Mapa 4K). Pasa a Homologación de Catálogo para revisión de Subdirección."
+    "motivo_duda": "Espacio no figura en la lámina oficial de Aulas/Laboratorios FCM (Mapa 4K). Pasa a Homologación de Catálogo para revisión de Subdirección.",
+    "edificio_codigo": "E-25"
   },
   {
     "id": "espacio_PEND",
@@ -3931,6 +3947,7 @@
     "oficial_mapa": false,
     "duda_homologacion": true,
     "estado_catalogo": "pendiente_revision_subdireccion",
-    "motivo_duda": "Espacio no figura en la lámina oficial de Aulas/Laboratorios FCM (Mapa 4K). Pasa a Homologación de Catálogo para revisión de Subdirección."
+    "motivo_duda": "Espacio no figura en la lámina oficial de Aulas/Laboratorios FCM (Mapa 4K). Pasa a Homologación de Catálogo para revisión de Subdirección.",
+    "edificio_codigo": "GEN"
   }
 ]

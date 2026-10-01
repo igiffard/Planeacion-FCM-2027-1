@@ -21,6 +21,11 @@ export interface Usuario {
   niveles_asignados: NivelEducativo[];
   activo: boolean;
   academia_area?: string;
+  cubiculo?: string;
+  horario_tutorias?: string;
+  telefono_extension?: string;
+  canal_contacto_estudiantes?: string;
+  origen_pdf_posgrado?: boolean;
   createdAt: string;
   updatedAt: string;
 }
@@ -303,6 +308,18 @@ export interface PreferenciaDocente {
   rangos_preferidos?: RangoHorario[];
   nivel_restriccion: NivelRestriccion;
   motivo_restriccion?: string;
+  // Restricciones individuales avanzadas
+  hora_minima_inicio?: string; // e.g. "08:00"
+  hora_maxima_fin?: string; // e.g. "18:00"
+  max_horas_continuas?: number; // e.g. 4
+  max_horas_dia?: number; // e.g. 6
+  bloqueos_matriz_semanal?: Record<string, boolean>; // e.g. "lunes_08:00": true
+  // Datos para facilitar comunicación con estudiantes
+  cubiculo?: string;
+  horario_tutorias?: string;
+  canal_contacto_estudiantes?: string;
+  mensaje_estudiantes?: string;
+  telefono_extension?: string;
   tipo_espacio_requerido?: TipoEspacio;
   equipos_requeridos: string[];
   capacidad_requerida?: number;
@@ -314,6 +331,54 @@ export interface PreferenciaDocente {
   estado?: EstadoPreferencia;
   createdAt?: string;
   updatedAt: string;
+}
+
+export interface AvisoEstudiantes {
+  id: string;
+  periodo_id: string;
+  profesor_id: string;
+  profesor_nombre: string;
+  curso_id?: string;
+  curso_nombre?: string;
+  grupo_clave?: string;
+  aula_codigo?: string;
+  titulo: string;
+  contenido: string;
+  tipo: 'aviso_general' | 'cambio_aula' | 'material_laboratorio' | 'tutorias' | 'examen';
+  prioridad: 'normal' | 'importante' | 'urgente';
+  fecha_publicacion: string;
+  contacto?: string;
+}
+
+export interface MetricasInfraestructura {
+  tasaOcupacionGlobal: number;
+  espaciosTotales: number;
+  espaciosEnUso: number;
+  horasAulasDisponiblesSemana: number;
+  horasAulasOcupadasSemana: number;
+  aulasConSobrecupo: number;
+  aulasSubutilizadas: number;
+  aulasOptimas: number;
+  sugerenciasOptimizacion: SugerenciaOptimizacionInfraestructura[];
+}
+
+export interface SugerenciaOptimizacionInfraestructura {
+  id: string;
+  tipo: 'cambio_aula_subutilizada' | 'aula_vacia_disponible' | 'alivio_sobrecupo';
+  asignacion_id: string;
+  curso_nombre: string;
+  grupo_clave: string;
+  dia: DiaSemana;
+  horario: string;
+  aula_actual_codigo: string;
+  aula_actual_capacidad: number;
+  alumnos_programados: number;
+  tasa_actual: number;
+  aula_sugerida_id: string;
+  aula_sugerida_codigo: string;
+  aula_sugerida_capacidad: number;
+  tasa_proyectada: number;
+  beneficio: string;
 }
 
 export type EstatusAsignacion = 'borrador' | 'en_revision' | 'confirmado' | 'publicado' | 'cancelado';
@@ -330,6 +395,8 @@ export interface Asignacion {
   nivel_programacion: NivelProgramacion;
   profesores_ids: string[];
   profesor_principal_id: string;
+  profesor_nombre?: string;
+  nombre_visible?: string;
   programas_ids: string[];
   nivel_educativo: NivelEducativo;
   espacio_id: string;
@@ -442,6 +509,9 @@ export type TipoAccionHistorial =
   | 'crear_aula'
   | 'editar_aula'
   | 'unificar_aulas'
+  | 'crear_docente'
+  | 'actualizar_docente'
+  | 'eliminar_docente'
   | 'importar_csv'
   | 'restablecer_datos'
   | 'nota_auditoria'
@@ -452,6 +522,9 @@ export interface DetalleCambioPlaneacion {
   curso_codigo?: string;
   curso_nombre?: string;
   grupo_clave?: string;
+  profesor_id?: string;
+  profesor_nombre?: string;
+  programas?: string[];
   espacio_anterior_codigo?: string;
   espacio_anterior_nombre?: string;
   espacio_nuevo_codigo?: string;
@@ -479,4 +552,52 @@ export interface RegistroHistorialCambio {
   tipo_accion: TipoAccionHistorial;
   descripcion: string;
   detalles?: DetalleCambioPlaneacion;
+}
+
+export interface SolapamientoPosgrado {
+  id: string;
+  tipo:
+    | 'traslape_aula_posgrado'
+    | 'traslape_docente_posgrado'
+    | 'laboratorio_no_priorizado'
+    | 'laboratorio_faltante'
+    | 'capacidad_critica_laboratorio';
+  severidad: 'critico' | 'advertencia' | 'optimizacion';
+  titulo: string;
+  mensaje: string;
+  bloqueante: boolean;
+  dia: DiaSemana;
+  horario: string;
+  espacio_id: string;
+  espacio_codigo: string;
+  espacio_nombre: string;
+  es_laboratorio_especializado: boolean;
+  curso_a_id: string;
+  curso_a_nombre: string;
+  curso_a_codigo: string;
+  asignacion_a_id: string;
+  docentes_a_nombres: string[];
+  requerimiento_laboratorio_plan_estudios_a?: string;
+  curso_b_id?: string;
+  curso_b_nombre?: string;
+  curso_b_codigo?: string;
+  asignacion_b_id?: string;
+  docentes_b_nombres?: string[];
+  solucion_recomendada: string;
+  espacios_alternativos_disponibles?: {
+    id: string;
+    codigo: string;
+    nombre: string;
+    capacidad: number;
+    edificio: string;
+  }[];
+}
+
+export interface ResultadoSolapamientosPosgrado {
+  totalSolapamientosCriticos: number;
+  totalAdvertenciasLaboratorio: number;
+  totalOptimizaciones: number;
+  solapamientos: SolapamientoPosgrado[];
+  resumenPorAula: Record<string, number>;
+  aulasEspecializadasAnalizadas: string[];
 }

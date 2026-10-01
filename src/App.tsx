@@ -22,9 +22,9 @@ import { ModalCrearAula } from './components/ModalCrearAula';
 import { ModalCrearAsignaturaConHorario } from './components/ModalCrearAsignaturaConHorario';
 import { ModalMoverAsignacion } from './components/ModalMoverAsignacion';
 import { InfografiaView } from './components/InfografiaView';
-import { MapaAulasView } from './components/MapaAulasView';
 import { ReporteAvanceView } from './components/ReporteAvanceView';
 import { HistorialCambiosView } from './components/HistorialCambiosView';
+import { ComunicacionDocentesView } from './components/ComunicacionDocentesView';
 
 import {
   Espacio,
@@ -41,7 +41,8 @@ import {
   PreferenciaDocente,
   Conflicto,
   RegistroHistorialCambio,
-  TipoAccionHistorial
+  TipoAccionHistorial,
+  AvisoEstudiantes
 } from './types';
 
 import {
@@ -53,6 +54,7 @@ import {
   guardarDocentesStorage,
   guardarGruposStorage,
   guardarUsuarioActivoStorage,
+  guardarAvisosStorage,
   exportarRespaldoJSON,
   importarRespaldoJSON,
   restablecerDatosPredeterminados,
@@ -630,6 +632,127 @@ export default function App() {
     });
   };
 
+  // Manejadores de gestión integral de profesores (Alta, Edición, Baja)
+  const handleCrearDocente = async (nuevoDocente: Usuario) => {
+    setEstaCargando(true);
+    try {
+      registrarAccionAuditoria({
+        usuario_id: usuarioActual?.uid || 'admin',
+        usuario_nombre: usuarioActual?.nombre || 'Subdirección Académica',
+        usuario_email: usuarioActual?.email || 'fcm@uabc.edu.mx',
+        usuario_rol: (usuarioActual?.role as any) || 'admin',
+        usuario_cargo: usuarioActual?.cargo || 'Subdirección',
+        tipo_accion: 'crear_docente',
+        descripcion: `Alta en padrón del profesor ${nuevoDocente.nombre} (${nuevoDocente.cargo || 'Profesor de Posgrado'})`,
+        detalles: {
+          profesor_id: nuevoDocente.uid,
+          profesor_nombre: nuevoDocente.nombre,
+          programas: nuevoDocente.programas_asignados_ids
+        }
+      });
+
+      setDocentes((prev) => {
+        const existe = prev.some((d) => d.uid === nuevoDocente.uid);
+        const actualizados = existe
+          ? prev.map((d) => (d.uid === nuevoDocente.uid ? nuevoDocente : d))
+          : [...prev, nuevoDocente];
+        guardarDocentesStorage(actualizados);
+        return actualizados;
+      });
+    } catch (error) {
+      console.error('Error al registrar profesor:', error);
+      throw error;
+    } finally {
+      setEstaCargando(false);
+    }
+  };
+
+  const handleActualizarDocente = async (docenteActualizado: Usuario) => {
+    setEstaCargando(true);
+    try {
+      registrarAccionAuditoria({
+        usuario_id: usuarioActual?.uid || 'admin',
+        usuario_nombre: usuarioActual?.nombre || 'Subdirección Académica',
+        usuario_email: usuarioActual?.email || 'fcm@uabc.edu.mx',
+        usuario_rol: (usuarioActual?.role as any) || 'admin',
+        usuario_cargo: usuarioActual?.cargo || 'Subdirección',
+        tipo_accion: 'actualizar_docente',
+        descripcion: `Actualización de datos del profesor ${docenteActualizado.nombre}`,
+        detalles: {
+          profesor_id: docenteActualizado.uid,
+          profesor_nombre: docenteActualizado.nombre
+        }
+      });
+
+      setDocentes((prev) => {
+        const actualizados = prev.map((d) =>
+          d.uid === docenteActualizado.uid ? docenteActualizado : d
+        );
+        guardarDocentesStorage(actualizados);
+        return actualizados;
+      });
+
+      if (usuarioActual?.uid === docenteActualizado.uid) {
+        setUsuarioActual(docenteActualizado);
+        guardarUsuarioActivoStorage(docenteActualizado);
+      }
+    } catch (error) {
+      console.error('Error al actualizar profesor:', error);
+      throw error;
+    } finally {
+      setEstaCargando(false);
+    }
+  };
+
+  const handleEliminarDocente = async (docenteUid: string) => {
+    setEstaCargando(true);
+    try {
+      const docenteAEliminar = docentes.find((d) => d.uid === docenteUid);
+      registrarAccionAuditoria({
+        usuario_id: usuarioActual?.uid || 'admin',
+        usuario_nombre: usuarioActual?.nombre || 'Subdirección Académica',
+        usuario_email: usuarioActual?.email || 'fcm@uabc.edu.mx',
+        usuario_rol: (usuarioActual?.role as any) || 'admin',
+        usuario_cargo: usuarioActual?.cargo || 'Subdirección',
+        tipo_accion: 'eliminar_docente',
+        descripcion: `Baja del profesor ${docenteAEliminar?.nombre || docenteUid} del padrón docente`,
+        detalles: {
+          profesor_id: docenteUid,
+          profesor_nombre: docenteAEliminar?.nombre
+        }
+      });
+
+      setDocentes((prev) => {
+        const filtrados = prev.filter((d) => d.uid !== docenteUid);
+        guardarDocentesStorage(filtrados);
+        return filtrados;
+      });
+
+      // Retirar docente de asignaciones donde estuviera vinculado
+      setAsignaciones((prev) => {
+        const actualizadas = prev.map((a) => {
+          if (a.profesores_ids?.includes(docenteUid)) {
+            const nuevosProfes = a.profesores_ids.filter((uid) => uid !== docenteUid);
+            return {
+              ...a,
+              profesores_ids: nuevosProfes,
+              profesor_principal_id:
+                a.profesor_principal_id === docenteUid ? (nuevosProfes[0] || '') : a.profesor_principal_id
+            };
+          }
+          return a;
+        });
+        guardarAsignacionesStorage(actualizadas);
+        return actualizadas;
+      });
+    } catch (error) {
+      console.error('Error al eliminar profesor:', error);
+      throw error;
+    } finally {
+      setEstaCargando(false);
+    }
+  };
+
   const handleUnificarAulas = async (variante: string, espacioOficialId: string) => {
     const espacioOficial = espacios.find((e) => e.id === espacioOficialId);
     if (!espacioOficial) {
@@ -1056,17 +1179,12 @@ export default function App() {
               espacios={espacios}
               preferenciasDocentes={preferenciasDocentes}
               escenarioActivoId={escenarioActivoId}
-            />
-          )}
-
-          {vistaActiva === 'mapa_aulas' && (
-            <MapaAulasView
-              espacios={espacios}
-              asignaciones={asignaciones.filter((a) => a.escenario_id === escenarioActivoId)}
-              onNavegarVista={setVistaActiva}
-              onVerOcupacionEspacio={(_espacioId) => {
-                setVistaActiva('matriz_espacios');
-              }}
+              periodoActivoId={periodoActivo.id}
+              roleUsuario={usuarioActual?.role}
+              onMoverAsignacion={handleAbrirMoverAsignacion}
+              onCrearDocente={handleCrearDocente}
+              onActualizarDocente={handleActualizarDocente}
+              onEliminarDocente={handleEliminarDocente}
             />
           )}
 
@@ -1155,33 +1273,25 @@ export default function App() {
         </main>
       </div>
 
-      {/* Pie Institucional */}
-      <footer className="h-10 bg-slate-100 border-t border-slate-200 flex items-center justify-between px-6 sm:px-8 text-[10px] text-slate-500 font-bold uppercase tracking-widest flex-shrink-0">
-        <div className="flex items-center gap-3 truncate">
-          <span>Facultad de Ciencias Marinas · UABC</span>
-          <span className="text-slate-300">|</span>
-          <span className="text-emerald-700 font-semibold truncate">Plataforma Abierta de Horarios 2027-1 · Despliegue en Google Sites &amp; GitHub</span>
-        </div>
-        <div className="flex-shrink-0">UABC &copy; 2027-1</div>
-      </footer>
-
       {/* Modal para Mover Asignación en Tiempo y Espacio Físico */}
-      <ModalMoverAsignacion
-        abierto={modalMoverAbierto}
-        asignacion={asignacionParaMover}
-        espacios={espacios}
-        cursos={cursos}
-        docentes={docentes}
-        todasAsignaciones={asignaciones.filter(
-          (a) => a.escenario_id === escenarioActivoId && a.estatus !== 'cancelado'
-        )}
-        onCerrar={() => {
-          setModalMoverAbierto(false);
-          setAsignacionParaMover(null);
-        }}
-        onGuardar={handleGuardarAsignacion}
-        onEliminar={handleEliminarAsignacion}
-      />
+      {modalMoverAbierto && asignacionParaMover && (
+        <ModalMoverAsignacion
+          abierto={modalMoverAbierto}
+          asignacion={asignacionParaMover}
+          espacios={espacios}
+          cursos={cursos}
+          docentes={docentes}
+          todasAsignaciones={asignaciones.filter(
+            (a) => a.escenario_id === escenarioActivoId && a.estatus !== 'cancelado'
+          )}
+          onCerrar={() => {
+            setModalMoverAbierto(false);
+            setAsignacionParaMover(null);
+          }}
+          onGuardar={handleGuardarAsignacion}
+          onEliminar={handleEliminarAsignacion}
+        />
+      )}
 
       {/* Modal de Inicialización de Catálogo de Espacios FCM / IIO */}
       <ModalInicializarEspacios
